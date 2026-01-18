@@ -1,1 +1,16 @@
-# 8002 Ders İçeriği
+## 📅 Haftalık İçerik
+
+- [Week 01 – Giriş ve Web’e Genel Bakış](weeks/week01/)
+- [Week 02 – İnternet & Web Temelleri](weeks/week02/)
+- [Week 03 – HTTP, URL, Tarayıcı Mantığı](weeks/week03/)
+- [Week 04 – HTML Temelleri](weeks/week04/)
+- [Week 05 – Modern Web Ekosistemi](weeks/week05/)
+- [Week 06 – Svelte’e Giriş](weeks/week06/)
+- [Week 07 – Template & State](weeks/week07/)
+- [Week 08 – Routing (SvelteKit)](weeks/week08/)
+- [Week 09 – Data Fetching & API](weeks/week09/)
+- [Week 10 – Forms & Actions](weeks/week10/)
+- [Week 11 – Auth & State Management](weeks/week11/)
+- [Week 12 – SSR, CSR, Hydration](weeks/week12/)
+- [Week 13 – Deployment](weeks/week13/)
+- [Week 14 – Mini Proje / Final](weeks/week14/)
