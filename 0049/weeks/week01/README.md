@@ -1,66 +1,66 @@
-# Week 01 – Paket Programlara Giriş
+<h2>01. Paket Programlara Giriş</h2>
 
-## 🎯 Dersin Amacı
+<h3>Dersin Amacı</h3>
+<p>
 Bu haftada öğrenciler, “paket program” kavramını tanıyacak,
 hazır kütüphane ve framework kullanarak uygulama geliştirmenin
 mantığını anlayacaklardır. Ayrıca Streamlit framework’üne genel
 bir bakış sunulacaktır.
+</p>
 
-## 📘 Ders İçeriği
-- Paket program nedir?
-- Masaüstü, web ve hibrit paket programlar
-- Framework ve kütüphane kavramları
-- Streamlit nedir, ne için kullanılır?
-- Ders boyunca geliştirilecek uygulamaların genel yapısı
+<h3>Ders Kaynakları</h3>
+<ul>
+    <li>Ders Tanıtım Dokümanı</li>
+    <li>Streamlit Framework Tanıtım Slaytları</li>
+    <li>Örnek Proje Yapısı</li>
+</ul>
 
-## 📂 Ders Kaynakları
-- Ders Tanıtım Dokümanı
-- Streamlit Framework Tanıtım Slaytları
-- Örnek Proje Yapısı
+<h3>Görsel Kaynaklar</h3>
+<ul>
+    <li>Dersin Asenkron Tanıtım Videosu</li>
+    <li>Streamlit ile Örnek Uygulama Tanıtım Videosu</li>
+</ul>
 
-## 🎥 Görsel / Video Kaynakları
-- Dersin Asenkron Tanıtım Videosu
-- Streamlit ile Örnek Uygulama Tanıtımı
+<h3>Dış Kaynaklar</h3>
+<ul>
+    <li>Streamlit Resmi Web Sitesi</li>
+    <li>Streamlit Dokümantasyonu</li>
+    <li>Paket program kavramı üzerine makale</li>
+</ul>
 
-## 🌐 Dış Kaynaklar
-- https://streamlit.io
-- https://docs.streamlit.io
-- Paket program kavramı üzerine makale
+<h3>Uygulamalar</h3>
+<ul>
+    <li>Streamlit kurulumu (pip ile)</li>
+    <li>Basit “Hello Streamlit” uygulaması oluşturulması</li>
+    <li>Uygulamanın tarayıcı üzerinden çalıştırılması</li>
+    <li>
+        Kullanıcıdan isim alıp ekranda dinamik olarak gösteren
+        basit bir Streamlit uygulaması geliştirilmesi
+    </li>
+    <li>
+        Kullanılan temel bileşenler:
+        <code>st.title</code>,
+        <code>st.text_input</code>,
+        <code>st.button</code>,
+        <code>st.write</code>
+    </li>
+</ul>
 
-## 🧪 Uygulamalar
-- Streamlit kurulumu (pip ile)
-- Basit “Hello Streamlit” uygulaması
-- Tarayıcı üzerinden uygulamanın çalıştırılması
+<h3>Ödev</h3>
+<ul>
+    <li>
+        <strong>Ödev 1:</strong>
+        Streamlit kullanarak kendinizi tanıtan basit bir paket program geliştiriniz.
+        Uygulamada en az başlık, metin girişi ve buton bulunmalıdır.
+    </li>
+</ul>
 
-## 💻 Streamlit Uygulaması
-Bu hafta geliştirilecek uygulama:
+<h3>Kısa Sınav (Quiz)</h3>
+<ul>
+    <li>Quiz 1: Paket Program ve Framework Kavramları</li>
+</ul>
 
-**Amaç:**  
-Kullanıcıdan isim alıp ekranda dinamik olarak gösteren
-basit bir Streamlit uygulaması.
-
-**Özellikler:**
-- Metin girişi
-- Buton
-- Dinamik çıktı
-
-**Kullanılan Bileşenler:**
-- `st.title`
-- `st.text_input`
-- `st.button`
-- `st.write`
-
-## 📝 Ödev
-**Ödev 1:**  
-Streamlit kullanarak kendinizi tanıtan basit bir paket program geliştiriniz.
-Uygulamada en az:
-- Başlık
-- Metin girişi
-- Buton
-bulunmalıdır.
-
-## ❓ Kısa Sınav (Quiz)
-- Quiz 1: Paket Program ve Framework Kavramları
-
-## 🟢 Canlı Ders
-- Canlı ders üzerinden Streamlit kurulumu ve örnek uygulama geliştirilecektir.
+<h3>Canlı Ders</h3>
+<ul>
+    <li>Canlı ders üzerinden Streamlit kurulumu ve örnek uygulama geliştirilmesi</li>
+</ul>
