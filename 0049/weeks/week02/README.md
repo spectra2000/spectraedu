@@ -1,66 +1,65 @@
-# Week 02 – Streamlit’e Giriş
+<h2>02. Streamlit’e Giriş</h2>
 
-## 🎯 Dersin Amacı
+<h3>Dersin Amacı</h3>
+<p>
 Bu haftada öğrenciler Streamlit framework’ünün temel çalışma
 mantığını öğrenecek, bir Streamlit uygulamasının nasıl
 çalıştırıldığını ve yapılandırıldığını anlayacaklardır.
+</p>
 
-## 📘 Ders İçeriği
-- Streamlit nedir?
-- Streamlit’in kullanım alanları
-- Streamlit çalışma mantığı (`streamlit run`)
-- Script tabanlı UI yaklaşımı
-- İlk Streamlit uygulaması
+<h3>Ders Kaynakları</h3>
+<ul>
+    <li>Streamlit Kurulum Dokümanı</li>
+    <li>Örnek Streamlit Projesi</li>
+    <li>Ders Slaytları</li>
+</ul>
 
-## 📂 Ders Kaynakları
-- Streamlit Kurulum Dokümanı
-- Örnek Streamlit Projesi
-- Ders Slaytları
+<h3>Görsel Kaynaklar</h3>
+<ul>
+    <li>Streamlit Tanıtım Videosu</li>
+    <li>İlk Streamlit Uygulaması Demo Videosu</li>
+</ul>
 
-## 🎥 Görsel / Video Kaynakları
-- Streamlit Tanıtım Videosu
-- İlk Streamlit Uygulaması Demo Videosu
+<h3>Dış Kaynaklar</h3>
+<ul>
+    <li>Streamlit Resmi Web Sitesi</li>
+    <li>Streamlit “Get Started” Dokümantasyonu</li>
+    <li>Streamlit GitHub Repository</li>
+</ul>
 
-## 🌐 Dış Kaynaklar
-- https://streamlit.io
-- https://docs.streamlit.io/library/get-started
-- Streamlit GitHub Repository
+<h3>Uygulamalar</h3>
+<ul>
+    <li>Streamlit kurulumu (<code>pip install streamlit</code>)</li>
+    <li>Basit bir Streamlit uygulaması oluşturulması</li>
+    <li><code>streamlit run app.py</code> komutu ile uygulamanın çalıştırılması</li>
+    <li>Uygulamanın tarayıcı üzerinden görüntülenmesi</li>
+    <li>
+        Ekrana başlık ve açıklama yazan ilk Streamlit uygulamasının geliştirilmesi
+    </li>
+    <li>
+        Kullanılan temel bileşenler:
+        <code>st.title</code>,
+        <code>st.header</code>,
+        <code>st.write</code>
+    </li>
+</ul>
 
-## 🧪 Uygulamalar
-- Streamlit kurulumu (`pip install streamlit`)
-- Basit Streamlit uygulaması oluşturma
-- `streamlit run app.py` komutu ile uygulama çalıştırma
-- Tarayıcı üzerinden uygulamayı görüntüleme
+<h3>Ödev</h3>
+<ul>
+    <li>
+        <strong>Ödev 2:</strong>
+        Basit bir Streamlit uygulaması geliştiriniz.
+        Uygulamada en az başlık, açıklama metni ve bilgilendirici içerik bulunmalıdır.
+    </li>
+</ul>
 
-## 💻 Streamlit Uygulaması
-Bu hafta geliştirilecek uygulama:
+<h3>Kısa Sınav (Quiz)</h3>
+<ul>
+    <li>Quiz 2: Streamlit Temel Kavramlar</li>
+</ul>
 
-**Amaç:**  
-Ekrana başlık ve açıklama yazan, kullanıcıya basit bir arayüz
-sunan ilk Streamlit uygulamasını geliştirmek.
-
-**Özellikler:**
-- Başlık ve metin gösterimi
-- Basit kullanıcı arayüzü
-- Streamlit uygulamasının çalıştırılması
-
-**Kullanılan Bileşenler:**
-- `st.title`
-- `st.header`
-- `st.write`
-
-## 📝 Ödev
-**Ödev 2:**  
-Basit bir Streamlit uygulaması geliştiriniz.  
-Uygulamada en az:
-- Başlık
-- Açıklama metni
-- Bilgilendirici içerik
-bulunmalıdır.
-
-## ❓ Kısa Sınav (Quiz)
-- Quiz 2: Streamlit Temel Kavramlar
-
-## 🟢 Canlı Ders
-- Canlı ders sırasında Streamlit kurulumu yapılacak
-- İlk uygulama birlikte geliştirilecektir
+<h3>Canlı Ders</h3>
+<ul>
+    <li>Canlı ders sırasında Streamlit kurulumu yapılması</li>
+    <li>İlk Streamlit uygulamasının birlikte geliştirilmesi</li>
+</ul>
