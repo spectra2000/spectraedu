@@ -82,18 +82,18 @@
     <div class="error" id="error"></div>
   </div>
 
-  <script>
-    function login() {
-      const password = document.getElementById("pw").value;
+<script>
+  function login() {
+    const password = document.getElementById("pw").value;
 
-      if (password === "1234") {
-        window.location.href = "/"; 
-        // buraya istersen: /index.md ya da /dersler/ yazabiliriz
-      } else {
-        document.getElementById("error").innerText = "❌ Şifre hatalı";
-      }
+    if (password === "1234") {
+      window.location.href = "index.md";
+    } else {
+      document.getElementById("error").innerText = "❌ Şifre hatalı";
     }
-  </script>
+  }
+</script>
+
 
 </body>
 </html>
