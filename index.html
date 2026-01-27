@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>speCtraEdu | Ders Yönetim Girişi</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0a2a43;
+      font-family: Arial, sans-serif;
+    }
+
+    .login-box {
+      background: white;
+      padding: 40px;
+      width: 360px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      margin-bottom: 5px;
+      color: #0a2a43;
+    }
+
+    h2 {
+      margin-top: 0;
+      font-size: 14px;
+      color: #555;
+      letter-spacing: 1px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 20px;
+      font-size: 16px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      font-size: 16px;
+      background: #0a2a43;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #08304f;
+    }
+
+    .error {
+      color: red;
+      margin-top: 15px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <h1>speCtraEdu</h1>
+    <h2>DERS YÖNETİM GİRİŞ PANELİ</h2>
+
+    <input type="password" id="password" placeholder="Erişim Şifresi">
+    <button onclick="login()">Giriş</button>
+
+    <div class="error" id="error">Şifre hatalı</div>
+  </div>
+
+  <script>
+    function login() {
+      const pwd = document.getElementById("password").value;
+
+      if (pwd === "1234") {
+        window.location.href = "dersler/";
+      } else {
+        document.getElementById("error").style.display = "block";
+      }
+    }
+
+    document.getElementById("password").addEventListener("keydown", function(e) {
+      if (e.key === "Enter") {
+        login();
+      }
+    });
+  </script>
+
+</body>
+</html>
