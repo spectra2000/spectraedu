@@ -1,4 +1,4 @@
-## 📅 Haftalık Ders İçeriği
+## 📅 49 PAKET PROGRAMLAR DERS PLAN VE İÇERİĞİ
 
 - [Week 01 – Paket Programlara Giriş](weeks/week01/)
 - [Week 02 – Streamlit’e Giriş](weeks/week02/)
