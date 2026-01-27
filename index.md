@@ -13,3 +13,5 @@ Bu site, Güz/Bahar/Yaz yarıyıllarında açılan derslerin planlarını içeri
 - [BZ2003-Programlama Dilleri I (Standart C)](2003/)
 - [GZ3004-Programlama Dilleri II (C++)](3004/)
 - [GZ5003-Veri Yapıları](5003/)
+- [8002-Internet Teknolojileri ve Web Programlama](8002/)
+
