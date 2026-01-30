@@ -1,16 +1,21 @@
-# 03. IP Adresleme, DNS ve Alan Adları
+# 03. HTTP, URL ve Tarayıcı Mantığı
 
 ---
 
 ## A. Dersin Amacı
-Bu haftada IP adreslerinin yapısı, DNS sistemi ve domain–hosting ilişkisi incelenecektir.
+
+Bu haftada web üzerinde istemci ve sunucu arasındaki iletişimi sağlayan
+HTTP protokolü, URL yapısı ve web tarayıcılarının çalışma mantığı ele alınacaktır.
+
+Öğrenciler, bir web sayfası açıldığında arka planda gerçekleşen teknik süreci
+adım adım kavrayacaktır.
 
 ---
 
 ## B. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 3 – IP, DNS ve Domain Yapısı](lecture-notes.md)
+- [Hafta 3 – HTTP, URL ve Tarayıcı Mantığı](lecture-notes.md)
 
 ### Dış Kaynaklar
 - 
@@ -18,7 +23,8 @@ Bu haftada IP adreslerinin yapısı, DNS sistemi ve domain–hosting ilişkisi i
 ---
 
 ## C. Uygulamalar
-- 
+- Tarayıcı geliştirici araçlarının (DevTools) incelenmesi
+- Basit HTTP istek–yanıt örneklerinin gözlemlenmesi
 
 ---
 
