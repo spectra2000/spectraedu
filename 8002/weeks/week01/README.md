@@ -1,59 +1,44 @@
-<h2>01. Giriş ve Web’e Genel Bakış</h2>
+# 01. Giriş ve Web’e Genel Bakış
 
-<h3>Dersin Amacı</h3>
-<p>
+---
+
+## A. Dersin Amacı
+
 Bu haftada, Internet Teknolojileri ve Web Programlama dersinin kapsamı tanıtılacak,
-web’in tarihsel gelişimi ve temel kavramları ele alınacaktır. Öğrenciler,
-web tabanlı sistemlerin nasıl çalıştığına dair genel bir bakış kazanacaktır.
-</p>
+web’in tarihsel gelişimi ve temel kavramları ele alınacaktır.
+Öğrenciler, web tabanlı sistemlerin nasıl çalıştığına dair genel bir bakış kazanacaktır.
 
-<h3>Ders Kaynakları</h3>
-<ul>
-    <li>Dersin Özeti</li>
-    <li>Ders Tanıtım Dokümanı</li>
-    <li>Ders Akış Planı</li>
-</ul>
+---
 
-<h3>Görsel Kaynaklar</h3>
-<ul>
-    <li>Dersin Asenkron Videosu</li>
-    <li>Web’in Gelişimini Anlatan Tanıtım Videosu</li>
-</ul>
+## B. Ders Kaynakları
 
-<h3>Dış Kaynaklar</h3>
-<ul>
-    <li>Web’in Tarihçesi</li>
-    <li>Internet ve WWW Arasındaki Farklar</li>
-</ul>
+### Ders Notları
+- [Hafta 1 – İnternet Teknolojileri ve Web’e Genel Bakış (Ders Notu)](lecture-notes.md)
 
-<h3>Ders Notları</h3>
-<ul>
-    <li>
-        <a href="lecture-notes.md">
-            Hafta 1 – İnternet Teknolojileri ve Web’e Genel Bakış (Ders Notu)
-        </a>
-    </li>
-</ul>
+### Dış Kaynaklar
+- 
 
-<h3>Uygulamalar</h3>
-<ul>
-    <li>Web Tarayıcıları ve Geliştirici Araçları İncelemesi</li>
-    <li>Basit bir HTML sayfasının tarayıcıda incelenmesi</li>
-</ul>
+---
 
-<h3>Ödev</h3>
-<ul>
-    <li>
-        <strong>Ödev 1:</strong> Web teknolojilerinin gelişimini araştıran kısa bir rapor hazırlanması
-    </li>
-</ul>
+## C. Uygulamalar
+- 
 
-<h3>Kısa Sınav (Quiz)</h3>
-<ul>
-    <li>Quiz 1: Web ve Internet Temel Kavramlar</li>
-</ul>
+---
 
-<h3>Canlı Ders</h3>
-<ul>
-    <li>Canlı Ders Katılım Linki</li>
-</ul>
+## D. Haftalık Ölçme ve Değerlendirme
+
+### Ödev
+- 
+
+### Kısa Sınav / Testler
+- 
+
+---
+
+## E. Görsel Anlatım
+
+### Canlı Ders Katılım Linki
+- 
+
+### Dersin Asenkron Videosu
+- 
