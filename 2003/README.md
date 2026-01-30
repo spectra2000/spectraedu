@@ -1,4 +1,4 @@
-## Haftalık Ders Planı
+## PROGRAMLAMA DİLLERİ I Haftalık Ders Planı
 
 - **Week 01:** Programlamaya Giriş ve Programlama Dilleri  
 - **Week 02:** C Diline Giriş ve Geliştirme Ortamı  
