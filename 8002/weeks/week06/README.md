@@ -1,16 +1,22 @@
-# 06. Web Mimarileri ve Modern Web Yaklaşımları
+# 06. Modern Web Ekosistemi
 
 ---
 
 ## A. Dersin Amacı
-Bu haftada web mimarileri ve modern web uygulamalarının genel yapısı ele alınacaktır.
+
+Bu haftada modern web uygulamalarının hangi bileşenlerden oluştuğu,
+frontend ve backend kavramları, framework ve kütüphane farkları ile
+güncel web geliştirme yaklaşımları ele alınacaktır.
+
+Öğrenciler, web geliştirme dünyasındaki teknolojilerin birbirleriyle
+nasıl ilişkilendiğini kavrayacaktır.
 
 ---
 
 ## B. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 6 – Web Mimarileri](lecture-notes.md)
+- [Hafta 6 – Modern Web Ekosistemi](lecture-notes.md)
 
 ### Dış Kaynaklar
 - 
@@ -18,7 +24,8 @@ Bu haftada web mimarileri ve modern web uygulamalarının genel yapısı ele al�
 ---
 
 ## C. Uygulamalar
-- 
+- Modern web uygulama mimarilerinin incelenmesi
+- Popüler frontend ve backend teknolojilerinin karşılaştırılması
 
 ---
 
