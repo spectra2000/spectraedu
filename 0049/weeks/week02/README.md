@@ -1,18 +1,48 @@
 # 02. Streamlit’e Giriş
 
-## A- Dersin Amacı
-Bu haftada Streamlit’in ne olduğu, neden kullanıldığı ve kurulum adımları ele alınacaktır.
+---
 
-## B- Ders Kaynakları
-- Ders Notları
-- Dış Kaynaklar
+## A. Dersin Amacı
 
-## C- Uygulamalar
+Bu haftada Streamlit framework’ünün temel yapısı,
+çalışma mantığı ve basit bir uygulamanın
+nasıl oluşturulduğu ele alınacaktır.
 
-## D- Haftalık Ölçme ve Değerlendirme
-- Ödev
-- Kısa Sınav / Testler
+Öğrenciler, kısa sürede çalışan
+arayüzlü Python uygulamaları geliştirmeye başlayacaktır.
 
-## E- Görsel Anlatım
-- Canlı Ders Katılım Linki
-- Dersin Asenkron Videosu
+---
+
+## B. Ders Kaynakları
+
+### Ders Notları
+- [Hafta 2 – Streamlit’e Giriş](lecture-notes.md)
+
+### Dış Kaynaklar
+- 
+
+---
+
+## C. Uygulamalar
+- İlk Streamlit uygulamasının çalıştırılması
+- Streamlit dosya yapısının incelenmesi
+
+---
+
+## D. Haftalık Ölçme ve Değerlendirme
+
+### Ödev
+- Basit bir Streamlit uygulamasını çalıştırıp inceleme
+
+### Kısa Sınav / Testler
+- 
+
+---
+
+## E. Görsel Anlatım
+
+### Canlı Ders Katılım Linki
+- 
+
+### Dersin Asenkron Videosu
+- 
