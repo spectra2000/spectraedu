@@ -1,16 +1,23 @@
-# 05. Web Tarayıcıları ve Geliştirici Araçları
+# 05. CSS Temelleri ve Responsive Tasarım
 
 ---
 
 ## A. Dersin Amacı
-Bu haftada modern web tarayıcılarının çalışma prensipleri ve geliştirici araçları tanıtılacaktır.
+
+Bu haftada web sayfalarının görsel tasarımını sağlayan CSS dili tanıtılacak,
+HTML ve CSS arasındaki ilişki açıklanacak ve responsive (duyarlı) tasarım
+kavramına giriş yapılacaktır.
+
+Öğrenciler, bir web sayfasının görünümünü kontrol edebilecek ve farklı
+ekran boyutlarına uyumlu tasarımlar oluşturmanın temel prensiplerini
+öğrenecektir.
 
 ---
 
 ## B. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 5 – Tarayıcılar ve DevTools](lecture-notes.md)
+- [Hafta 5 – CSS Temelleri ve Responsive Tasarım](lecture-notes.md)
 
 ### Dış Kaynaklar
 - 
@@ -18,14 +25,16 @@ Bu haftada modern web tarayıcılarının çalışma prensipleri ve geliştirici
 ---
 
 ## C. Uygulamalar
-- 
+- HTML sayfasına CSS ekleme
+- Basit stil kuralları yazma
+- Responsive tasarım örneklerinin incelenmesi
 
 ---
 
 ## D. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- 
+- Basit bir HTML sayfasını CSS ile stillendirme
 
 ### Kısa Sınav / Testler
 - 
