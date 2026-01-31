@@ -1,18 +1,48 @@
-# 08. Diziler (Arrays) ve Bellek Yapısı
+# 08. Diziler ve Stringler
 
-## A- Dersin Amacı
-Bu haftada diziler ve bellekte veri saklama mantığı ele alınacaktır.
+---
 
-## B- Ders Kaynakları
-- Ders Notları
-- Dış Kaynaklar
+## A. Dersin Amacı
 
-## C- Uygulamalar
+Bu haftada C programlama dilinde birden fazla veriyi
+bir arada tutmayı sağlayan diziler ve metin işlemlerinin
+temelini oluşturan string kavramı ele alınacaktır.
 
-## D- Haftalık Ölçme ve Değerlendirme
-- Ödev
-- Kısa Sınav / Testler
+Öğrenciler, çoklu veri yapılarıyla çalışmanın
+mantığını kavrayacaktır.
 
-## E- Görsel Anlatım
-- Canlı Ders Katılım Linki
-- Dersin Asenkron Videosu
+---
+
+## B. Ders Kaynakları
+
+### Ders Notları
+- [Hafta 8 – Diziler ve Stringler](lecture-notes.md)
+
+### Dış Kaynaklar
+- 
+
+---
+
+## C. Uygulamalar
+- Sayısal verilerin dizilerle modellenmesi
+- Metinsel verilerin string mantığıyla ele alınması
+
+---
+
+## D. Haftalık Ölçme ve Değerlendirme
+
+### Ödev
+- Bir dizi kullanarak basit veri saklama senaryosu oluşturma
+
+### Kısa Sınav / Testler
+- 
+
+---
+
+## E. Görsel Anlatım
+
+### Canlı Ders Katılım Linki
+- 
+
+### Dersin Asenkron Videosu
+- 
