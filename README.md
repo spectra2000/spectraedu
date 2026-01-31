@@ -1,3 +1,5 @@
+<!-- rebuild -->
+
 # speCtraEdu
 
 Bu repo, Güz / Bahar / Yaz yarıyıllarında açılan derslerin
