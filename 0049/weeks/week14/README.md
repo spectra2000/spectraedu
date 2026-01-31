@@ -1,16 +1,48 @@
-# 14. Final Proje ve Değerlendirme
+# 14. Final Proje
 
-## A- Dersin Amacı
-Bu haftada öğrencilerin geliştirdiği proje sunumları ve genel değerlendirme yapılacaktır.
+---
 
-## B- Ders Kaynakları
-- Ders Notları
-- Dış Kaynaklar
+## A. Dersin Amacı
 
-## C- Uygulamalar
+Bu haftada öğrenciler, dönem boyunca
+öğrendikleri tüm bilgi ve becerileri kullanarak
+kapsamlı bir Streamlit uygulaması geliştirecektir.
 
-## D- Haftalık Ölçme ve Değerlendirme
-- Final Proje / Değerlendirme
+Amaç, paket program geliştirme sürecini
+uçtan uca tamamlamaktır.
 
-## E- Görsel Anlatım
-- Canlı Ders Katılım Linki
+---
+
+## B. Ders Kaynakları
+
+### Ders Notları
+- [Hafta 14 – Final Proje](lecture-notes.md)
+
+### Dış Kaynaklar
+- 
+
+---
+
+## C. Uygulamalar
+- Final proje fikrinin netleştirilmesi
+- Projenin geliştirilmesi ve sunuma hazırlanması
+
+---
+
+## D. Haftalık Ölçme ve Değerlendirme
+
+### Final Projesi
+- Belirlenen kriterlere uygun, çalışan bir Streamlit uygulaması
+
+### Sunum / Değerlendirme
+- Proje tanıtımı ve kısa teknik açıklama
+
+---
+
+## E. Görsel Anlatım
+
+### Canlı Ders Katılım Linki
+- 
+
+### Dersin Asenkron Videosu
+- 
