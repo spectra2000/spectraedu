@@ -1,3 +1,5 @@
+<!-- TEST: Eğer bu sayfa hala mavi ise sorun CSS cache -->
+
 # Hafta 07 – Svelte’e Giriş
 **Ders:** Internet Teknolojileri ve Web Programlama  
 **Hafta:** 7  
