@@ -78,7 +78,7 @@ Bu yapı:
 ## 6. Basit Bir Svelte Bileşeni
 
 Bir Svelte bileşeni şu bölümlerden oluşur:
-''' txt
+ txt
 <script>
   let name = "Dünya";
 </script>
