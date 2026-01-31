@@ -8,27 +8,27 @@
 ## 1. Dersin Amacı
 
 Bu haftanın amacı, modern frontend geliştirmede kullanılan framework
-kavramını Svelte üzerinden tanıtmak ve bileşen tabanlı yaklaşımı
-öğrencilere kazandırmaktır.
+kavramını Svelte üzerinden tanıtmak ve bileşen (component) tabanlı
+yaklaşımı öğrencilere kazandırmaktır.
 
 Bu hafta sonunda öğrenciler:
-- Svelte’in ne olduğunu,
-- Neden bir framework kullanıldığını,
-- Bileşen (component) kavramını anlayacaktır.
+- Framework kavramının neden ortaya çıktığını,
+- Svelte’in ne olduğunu ve nasıl çalıştığını,
+- Bileşen tabanlı yapının temel mantığını anlayacaktır.
 
 ---
 
 ## 2. Neden Framework Kullanılır?
 
-Büyük web uygulamalarında:
+Basit web sayfaları büyüdükçe:
 - Kod karmaşıklaşır
+- Dosya sayısı artar
 - Yönetim zorlaşır
-- Tekrar eden yapılar artar
 
-Framework’ler:
-- Uygulama yapısını düzenler
+Framework’ler bu problemleri çözmek için kullanılır:
+- Uygulama yapısını standartlaştırır
 - Kod tekrarını azaltır
-- Ölçeklenebilirlik sağlar
+- Büyük projeleri yönetilebilir hâle getirir
 
 ---
 
@@ -39,53 +39,68 @@ Framework’ler:
 Svelte’in temel özellikleri:
 - Derleme (compile-time) yaklaşımı kullanır
 - Sanal DOM kullanmaz
-- Daha az JavaScript üretir
+- Tarayıcıya daha az JavaScript gönderir
 
-Bu özellikler performans avantajı sağlar.
+Bu sayede:
+- Performans artar
+- Uygulama daha sade olur
 
 ---
 
 ## 4. Svelte’in Diğer Framework’lerden Farkı
 
-React ve Vue gibi framework’ler:
-- Tarayıcıda çalışan runtime kullanır
+Geleneksel framework’ler (React, Vue gibi):
+- Tarayıcıda çalışan bir runtime’a sahiptir
 
 Svelte:
-- Kodları derleme aşamasında optimize eder
-- Tarayıcıya daha az yük bırakır
+- Kodları geliştirme aşamasında derler
+- Tarayıcıya optimize edilmiş JavaScript üretir
 
-Bu nedenle Svelte daha hızlı ve sade bir yapı sunar.
+Bu yaklaşım Svelte’i:
+- Daha hızlı
+- Daha az karmaşık
+- Öğrenmesi daha kolay
+
+hâle getirir.
 
 ---
 
 ## 5. Bileşen (Component) Kavramı
 
-Svelte uygulamaları **bileşenlerden** oluşur.
+Svelte uygulamaları **bileşenlerden (components)** oluşur.
 
 Bir bileşen:
-- HTML yapısı
-- JavaScript mantığı
-- CSS stilleri
+- Görünümü (HTML)
+- Davranışı (JavaScript)
+- Stili (CSS)
 
-tek bir dosyada barındırır.
+tek bir dosyada birleştirir.
 
 Bu yapı:
-- Okunabilirliği artırır
+- Kodun okunabilirliğini artırır
 - Bileşenlerin tekrar kullanılmasını sağlar
 
 ---
 
-## 6. Basit Bir Svelte Bileşeni
+## 6. Bir Svelte Bileşeninin Yapısı
 
-Bir Svelte bileşeni şu bölümlerden oluşur:
- txt
+Bir Svelte bileşeni üç ana bölümden oluşur:
+
+- Script bölümü → Mantık
+- Style bölümü → Stil
+- HTML bölümü → Görünüm
+
+Aşağıda **yalnızca yapıyı göstermek amacıyla** bir örnek verilmiştir:
+
+```txt
 <script>
   let name = "Dünya";
 </script>
 
 <style>
-  h1 { color: blue; }
+  h1 {
+    color: blue;
+  }
 </style>
 
 <h1>Merhaba {name}</h1>
-
