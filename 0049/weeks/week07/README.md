@@ -1,18 +1,49 @@
 # 07. Grafikler ve Görselleştirme
 
-## A- Dersin Amacı
-Bu haftada uygulamada grafikler ve görselleştirme yapma teknikleri ele alınacaktır.
+---
 
-## B- Ders Kaynakları
-- Ders Notları
-- Dış Kaynaklar
+## A. Dersin Amacı
 
-## C- Uygulamalar
+Bu haftada Streamlit uygulamalarında
+verilerin grafikler ve görseller aracılığıyla
+anlaşılır şekilde sunulması ele alınacaktır.
 
-## D- Haftalık Ölçme ve Değerlendirme
-- Ödev
-- Kısa Sınav / Testler
+Öğrenciler, sayısal ve kategorik verileri
+görselleştirerek kullanıcıya daha güçlü
+içgörüler sunmayı öğrenecektir.
 
-## E- Görsel Anlatım
-- Canlı Ders Katılım Linki
-- Dersin Asenkron Videosu
+---
+
+## B. Ders Kaynakları
+
+### Ders Notları
+- [Hafta 7 – Grafikler ve Görselleştirme](lecture-notes.md)
+
+### Dış Kaynaklar
+- 
+
+---
+
+## C. Uygulamalar
+- Farklı grafik türlerinin karşılaştırılması
+- Aynı verinin farklı görselleştirmelerle sunulmasının incelenmesi
+
+---
+
+## D. Haftalık Ölçme ve Değerlendirme
+
+### Ödev
+- Seçilen bir veri seti için en az iki farklı grafik türü tasarlama
+
+### Kısa Sınav / Testler
+- 
+
+---
+
+## E. Görsel Anlatım
+
+### Canlı Ders Katılım Linki
+- 
+
+### Dersin Asenkron Videosu
+- 
