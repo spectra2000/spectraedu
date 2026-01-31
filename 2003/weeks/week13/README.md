@@ -1,18 +1,48 @@
-# 13. Dosya İşlemleri (File I/O)
+# 13. Genel Tekrar ve Örnekler
 
-## A- Dersin Amacı
-Bu haftada dosya okuma ve yazma işlemleri ele alınacaktır.
+---
 
-## B- Ders Kaynakları
-- Ders Notları
-- Dış Kaynaklar
+## A. Dersin Amacı
 
-## C- Uygulamalar
+Bu haftada dönem boyunca işlenen tüm konular
+genel bir çerçevede tekrar edilecek ve
+kavramsal örnekler üzerinden pekiştirilecektir.
 
-## D- Haftalık Ölçme ve Değerlendirme
-- Ödev
-- Kısa Sınav / Testler
+Öğrenciler, final proje ve sınav öncesinde
+konular arasındaki ilişkiyi net şekilde görecektir.
 
-## E- Görsel Anlatım
-- Canlı Ders Katılım Linki
-- Dersin Asenkron Videosu
+---
+
+## B. Ders Kaynakları
+
+### Ders Notları
+- [Hafta 13 – Genel Tekrar ve Örnekler](lecture-notes.md)
+
+### Dış Kaynaklar
+- 
+
+---
+
+## C. Uygulamalar
+- Konular arası bağlantıların tartışılması
+- Örnek problem senaryolarının analiz edilmesi
+
+---
+
+## D. Haftalık Ölçme ve Değerlendirme
+
+### Ödev
+- Dönem boyunca öğrenilen kavramları özetleyen kısa bir çalışma hazırlama
+
+### Kısa Sınav / Testler
+- 
+
+---
+
+## E. Görsel Anlatım
+
+### Canlı Ders Katılım Linki
+- 
+
+### Dersin Asenkron Videosu
+- 
