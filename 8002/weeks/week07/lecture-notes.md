@@ -1,5 +1,3 @@
-<!-- TEST: Eğer bu sayfa hala mavi ise sorun CSS cache -->
-
 # Hafta 07 – Svelte’e Giriş
 **Ders:** Internet Teknolojileri ve Web Programlama  
 **Hafta:** 7  
@@ -9,100 +7,81 @@
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, modern frontend geliştirmede kullanılan framework
-kavramını Svelte üzerinden tanıtmak ve bileşen (component) tabanlı
-yaklaşımı öğrencilere kazandırmaktır.
+Bu haftanın amacı, modern web uygulamalarında neden framework
+kullanıldığını açıklamak ve bu yaklaşımı Svelte framework’ü
+üzerinden tanıtmaktır.
 
 Bu hafta sonunda öğrenciler:
 - Framework kavramının neden ortaya çıktığını,
-- Svelte’in ne olduğunu ve nasıl çalıştığını,
-- Bileşen tabanlı yapının temel mantığını anlayacaktır.
+- Svelte’in temel felsefesini,
+- Bileşen (component) tabanlı yaklaşımın mantığını kavrayacaktır.
 
 ---
 
 ## 2. Neden Framework Kullanılır?
 
-Basit web sayfaları büyüdükçe:
-- Kod karmaşıklaşır
-- Dosya sayısı artar
-- Yönetim zorlaşır
+Basit HTML ve CSS ile yazılan sayfalar büyüdükçe:
+- Kod yönetimi zorlaşır
+- Tekrar eden yapılar artar
+- Dosya organizasyonu karmaşık hâle gelir
 
-Framework’ler bu problemleri çözmek için kullanılır:
+Framework’ler:
 - Uygulama yapısını standartlaştırır
-- Kod tekrarını azaltır
-- Büyük projeleri yönetilebilir hâle getirir
+- Büyük projelerin yönetimini kolaylaştırır
+- Kodun sürdürülebilirliğini artırır
 
 ---
 
 ## 3. Svelte Nedir?
 
-**Svelte**, modern ve hafif bir frontend framework’üdür.
+Svelte, modern ve hafif bir frontend geliştirme aracıdır.
 
-Svelte’in temel özellikleri:
-- Derleme (compile-time) yaklaşımı kullanır
-- Sanal DOM kullanmaz
-- Tarayıcıya daha az JavaScript gönderir
+Diğer yaygın yaklaşımlardan farkı:
+- Kodları tarayıcıda çalıştırmak yerine
+- Geliştirme aşamasında derleyerek
+- Daha sade ve hızlı çıktı üretmesidir
 
-Bu sayede:
-- Performans artar
-- Uygulama daha sade olur
+Bu nedenle Svelte:
+- Performans odaklıdır
+- Öğrenmesi görece kolaydır
+- Eğitim amaçlı projelerde sıkça tercih edilir
 
 ---
 
-## 4. Svelte’in Diğer Framework’lerden Farkı
+## 4. Svelte’in Genel Çalışma Mantığı
 
-Geleneksel framework’ler (React, Vue gibi):
-- Tarayıcıda çalışan bir runtime’a sahiptir
+Svelte uygulamaları:
+- Küçük, bağımsız parçalardan oluşur
+- Bu parçalara **bileşen (component)** adı verilir
 
-Svelte:
-- Kodları geliştirme aşamasında derler
-- Tarayıcıya optimize edilmiş JavaScript üretir
+Her bileşen:
+- Görünümü
+- Davranışı
+- Görsel düzeni
 
-Bu yaklaşım Svelte’i:
-- Daha hızlı
-- Daha az karmaşık
-- Öğrenmesi daha kolay
-
-hâle getirir.
+tek bir yapı altında toplar.
 
 ---
 
 ## 5. Bileşen (Component) Kavramı
 
-Svelte uygulamaları **bileşenlerden (components)** oluşur.
+Bileşen yaklaşımı şu avantajları sağlar:
+- Kodun tekrar kullanılabilir olması
+- Uygulamanın parçalara ayrılması
+- Okunabilirliğin artması
 
-Bir bileşen:
-- Görünümü (HTML)
-- Davranışı (JavaScript)
-- Stili (CSS)
-
-tek bir dosyada birleştirir.
-
-Bu yapı:
-- Kodun okunabilirliğini artırır
-- Bileşenlerin tekrar kullanılmasını sağlar
+Bir sayfa, birden fazla bileşenin birleşimi olarak düşünülür.
 
 ---
 
-## 6. Bir Svelte Bileşeninin Yapısı
+## 6. Örnek Bileşen Yapısı (Kavramsal)
 
-Bir Svelte bileşeni üç ana bölümden oluşur:
-
-- Script bölümü → Mantık
-- Style bölümü → Stil
-- HTML bölümü → Görünüm
-
-Aşağıda **yalnızca yapıyı göstermek amacıyla** bir örnek verilmiştir:
+Aşağıdaki örnek **çalışan kod değildir**.  
+Sadece Svelte’te bileşen yapısının nasıl düşünüldüğünü göstermek içindir.
 
 ```txt
-<script>
-  let name = "Dünya";
-</script>
+değişken tanımı:
+  name = "Dünya"
 
-<style>
-  h1 {
-    color: blue;
-  }
-</style>
-
-<h1>Merhaba {name}</h1>
+görünüm:
+  ekrana "Merhaba {name}" yazdırılır
