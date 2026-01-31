@@ -1,16 +1,22 @@
-# 07. HTML Temelleri
+# 07. Svelte’e Giriş
 
 ---
 
 ## A. Dersin Amacı
-Bu haftada HTML dilinin temel yapısı ve sayfa iskeleti oluşturma ele alınacaktır.
+
+Bu haftada modern frontend framework’lerinden biri olan Svelte tanıtılacak,
+bileşen (component) kavramı, Svelte’in temel çalışma mantığı ve neden tercih
+edildiği ele alınacaktır.
+
+Öğrenciler, framework tabanlı geliştirmeye ilk adımı atacak ve Svelte’in
+diğer framework’lerden farkını kavrayacaktır.
 
 ---
 
 ## B. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 7 – HTML Temelleri](lecture-notes.md)
+- [Hafta 7 – Svelte’e Giriş](lecture-notes.md)
 
 ### Dış Kaynaklar
 - 
@@ -18,7 +24,8 @@ Bu haftada HTML dilinin temel yapısı ve sayfa iskeleti oluşturma ele alınaca
 ---
 
 ## C. Uygulamalar
-- 
+- Basit bir Svelte projesinin incelenmesi
+- İlk Svelte bileşeninin yapısının gözlemlenmesi
 
 ---
 
