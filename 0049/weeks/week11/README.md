@@ -1,18 +1,49 @@
 # 11. AI / LLM Entegrasyonu
 
-## A- Dersin Amacı
-Bu haftada Yapay Zekâ / Büyük Dil Modelleri ile bir Streamlit entegrasyonu gösterilecektir.
+---
 
-## B- Ders Kaynakları
-- Ders Notları
-- Dış Kaynaklar
+## A. Dersin Amacı
 
-## C- Uygulamalar
+Bu haftada Streamlit uygulamalarında
+yapay zekâ (AI) ve büyük dil modellerinin (LLM)
+genel çalışma mantığı tanıtılacak,
+bu sistemlerin uygulamalara nasıl entegre edildiği ele alınacaktır.
 
-## D- Haftalık Ölçme ve Değerlendirme
-- Ödev
-- Kısa Sınav / Testler
+Amaç, modern paket programlarda
+AI destekli özelliklerin rolünü kavratmaktır.
 
-## E- Görsel Anlatım
-- Canlı Ders Katılım Linki
-- Dersin Asenkron Videosu
+---
+
+## B. Ders Kaynakları
+
+### Ders Notları
+- [Hafta 11 – AI / LLM Entegrasyonu](lecture-notes.md)
+
+### Dış Kaynaklar
+- 
+
+---
+
+## C. Uygulamalar
+- AI destekli bir uygulama senaryosunun incelenmesi
+- LLM tabanlı sistemlerin kullanım alanlarının tartışılması
+
+---
+
+## D. Haftalık Ölçme ve Değerlendirme
+
+### Ödev
+- AI veya LLM kullanan bir uygulama fikrini yazılı olarak açıklama
+
+### Kısa Sınav / Testler
+- 
+
+---
+
+## E. Görsel Anlatım
+
+### Canlı Ders Katılım Linki
+- 
+
+### Dersin Asenkron Videosu
+- 
