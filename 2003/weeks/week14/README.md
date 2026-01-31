@@ -1,15 +1,48 @@
-# 14. Genel Tekrar, Mini Proje ve Final Hazırlık
+# 14. Final Proje
 
-## A- Dersin Amacı
-Bu haftada dersin genel tekrarı yapılacak, mini proje ve final hazırlığı ele alınacaktır.
+---
 
-## B- Ders Kaynakları
-- Ders Notları
+## A. Dersin Amacı
 
-## C- Uygulamalar
+Bu haftada dönem boyunca öğrenilen tüm temel C programlama
+kavramları bir final proje kapsamında uygulanacaktır.
 
-## D- Haftalık Ölçme ve Değerlendirme
-- Mini Proje / Genel Değerlendirme
+Öğrenciler, programlama mantığını bütüncül şekilde kullanarak
+çalışan ve anlamlı bir program ortaya koyacaktır.
 
-## E- Görsel Anlatım
-- Canlı Ders Katılım Linki
+---
+
+## B. Ders Kaynakları
+
+### Ders Notları
+- [Hafta 14 – Final Proje](lecture-notes.md)
+
+### Dış Kaynaklar
+- 
+
+---
+
+## C. Uygulamalar
+- Final proje konusunun belirlenmesi
+- Proje gereksinimlerinin analiz edilmesi
+- Çözüm yaklaşımının planlanması
+
+---
+
+## D. Haftalık Ölçme ve Değerlendirme
+
+### Final Proje
+- Belirlenen kriterlere uygun bir C programı geliştirme
+
+### Kısa Sınav / Testler
+- 
+
+---
+
+## E. Görsel Anlatım
+
+### Canlı Ders Katılım Linki
+- 
+
+### Dersin Asenkron Videosu
+- 
