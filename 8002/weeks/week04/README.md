@@ -1,16 +1,21 @@
-# 04. HTTP / HTTPS ve Web İletişimi
+# 04. HTML Temelleri
 
 ---
 
 ## A. Dersin Amacı
-Bu haftada HTTP protokolü, istek–yanıt yapısı ve HTTPS kavramı tanıtılacaktır.
+
+Bu haftada web sayfalarının temel yapı taşı olan HTML dili tanıtılacak,
+HTML doküman yapısı, temel etiketler ve sayfa iskeleti ele alınacaktır.
+
+Öğrenciler, basit bir web sayfasını sıfırdan oluşturabilecek seviyeye
+gelecektir.
 
 ---
 
 ## B. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 4 – HTTP ve HTTPS](lecture-notes.md)
+- [Hafta 4 – HTML Temelleri](lecture-notes.md)
 
 ### Dış Kaynaklar
 - 
@@ -18,14 +23,15 @@ Bu haftada HTTP protokolü, istek–yanıt yapısı ve HTTPS kavramı tanıtıla
 ---
 
 ## C. Uygulamalar
-- 
+- Basit bir HTML sayfası oluşturma
+- Temel etiketlerin kullanımı
 
 ---
 
 ## D. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- 
+- Basit bir kişisel tanıtım sayfası hazırlanması
 
 ### Kısa Sınav / Testler
 - 
