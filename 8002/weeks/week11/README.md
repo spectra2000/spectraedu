@@ -1,16 +1,21 @@
-# 11. Svelte’e Giriş
+# 11. Formlar ve Actions (SvelteKit)
 
 ---
 
 ## A. Dersin Amacı
-Bu haftada Svelte framework’üne giriş yapılacaktır.
+
+Bu haftada web uygulamalarında kullanıcıdan veri alma süreçleri,
+form kavramı ve SvelteKit’te kullanılan actions yaklaşımı ele alınacaktır.
+
+Öğrenciler, kullanıcı etkileşimi içeren sayfaların nasıl tasarlandığını
+ve gönderilen verilerin nasıl işlendiğini kavrayacaktır.
 
 ---
 
 ## B. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 11 – Svelte Temelleri](lecture-notes.md)
+- [Hafta 11 – Formlar ve Actions (SvelteKit)](lecture-notes.md)
 
 ### Dış Kaynaklar
 - 
@@ -18,14 +23,15 @@ Bu haftada Svelte framework’üne giriş yapılacaktır.
 ---
 
 ## C. Uygulamalar
-- 
+- Basit form senaryolarının incelenmesi
+- Form–sunucu etkileşimi akışının tasarlanması
 
 ---
 
 ## D. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- 
+- Kullanıcıdan veri alan basit bir form senaryosu tasarlama
 
 ### Kısa Sınav / Testler
 - 
