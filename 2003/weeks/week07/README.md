@@ -1,18 +1,48 @@
-# 07. Fonksiyonlar ve Parametre Geçişi
+# 07. Fonksiyonlar
 
-## A- Dersin Amacı
-Bu haftada fonksiyon tanımları ve parametre geçiş yöntemleri anlatılacaktır.
+---
 
-## B- Ders Kaynakları
-- Ders Notları
-- Dış Kaynaklar
+## A. Dersin Amacı
 
-## C- Uygulamalar
+Bu haftada C programlama dilinde fonksiyon kavramı,
+kodun parçalara ayrılması ve tekrar kullanılabilir
+yapıların oluşturulması ele alınacaktır.
 
-## D- Haftalık Ölçme ve Değerlendirme
-- Ödev
-- Kısa Sınav / Testler
+Öğrenciler, büyük programların daha düzenli ve
+anlaşılır hâle nasıl getirildiğini kavrayacaktır.
 
-## E- Görsel Anlatım
-- Canlı Ders Katılım Linki
-- Dersin Asenkron Videosu
+---
+
+## B. Ders Kaynakları
+
+### Ders Notları
+- [Hafta 7 – Fonksiyonlar](lecture-notes.md)
+
+### Dış Kaynaklar
+- 
+
+---
+
+## C. Uygulamalar
+- Tekrarlayan işlemlerin fonksiyon hâline getirilmesinin tartışılması
+- Programın bölümlere ayrılmasının avantajlarının incelenmesi
+
+---
+
+## D. Haftalık Ölçme ve Değerlendirme
+
+### Ödev
+- Günlük hayattan bir işlemi fonksiyon mantığıyla modelleme
+
+### Kısa Sınav / Testler
+- 
+
+---
+
+## E. Görsel Anlatım
+
+### Canlı Ders Katılım Linki
+- 
+
+### Dersin Asenkron Videosu
+- 
