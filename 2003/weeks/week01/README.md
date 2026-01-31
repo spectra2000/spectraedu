@@ -1,18 +1,48 @@
-# 01. Programlama Dillerine Giriş ve Programlama Disiplini
+# 01. Programlamaya Giriş ve Programlama Dilleri
 
-## A- Dersin Amacı
-Bu haftada programlama dillerinin temel kavramları ve programlama disiplinine giriş yapılacaktır.
+---
 
-## B- Ders Kaynakları
-- Ders Notları
-- Dış Kaynaklar
+## A. Dersin Amacı
 
-## C- Uygulamalar
+Bu haftada programlama kavramı tanıtılacak,
+programlama dillerinin ne işe yaradığı ve
+bilgisayarların verilen komutları nasıl işlediği ele alınacaktır.
 
-## D- Haftalık Ölçme ve Değerlendirme
-- Ödev
-- Kısa Sınav / Testler
+Öğrenciler, C programlama diline geçmeden önce
+temel programlama mantığını kavrayacaktır.
 
-## E- Görsel Anlatım
-- Canlı Ders Katılım Linki
-- Dersin Asenkron Videosu
+---
+
+## B. Ders Kaynakları
+
+### Ders Notları
+- [Hafta 1 – Programlamaya Giriş ve Programlama Dilleri](lecture-notes.md)
+
+### Dış Kaynaklar
+- 
+
+---
+
+## C. Uygulamalar
+- Programlama kavramı üzerine örnek senaryoların tartışılması
+- Günlük hayattaki işlemlerin algoritmik olarak düşünülmesi
+
+---
+
+## D. Haftalık Ölçme ve Değerlendirme
+
+### Ödev
+- Günlük hayattan bir işlemi adım adım algoritma şeklinde yazma
+
+### Kısa Sınav / Testler
+- 
+
+---
+
+## E. Görsel Anlatım
+
+### Canlı Ders Katılım Linki
+- 
+
+### Dersin Asenkron Videosu
+- 
