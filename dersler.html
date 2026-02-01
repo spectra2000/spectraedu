@@ -4,72 +4,73 @@
   <meta charset="UTF-8">
   <title>speCtraEdu | Dersler</title>
 
-  body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #eceff1;          /* sayfa arka planı */
-  padding: 40px;
-  color: #1f2937;
-}
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #eceff1;          /* sayfa arka planı */
+      padding: 40px;
+      color: #1f2937;
+    }
 
-h1 {
-  color: #0f172a;
-  margin-bottom: 10px;
-}
+    h1 {
+      color: #0f172a;
+      margin-bottom: 10px;
+    }
 
-p {
-  color: #374151;
-  margin-bottom: 25px;
-}
+    p {
+      color: #374151;
+      margin-bottom: 25px;
+    }
 
-ul {
-  list-style: none;
-  padding-left: 0;
-  max-width: 720px;
-}
+    ul {
+      list-style: none;
+      padding-left: 0;
+      max-width: 720px;
+    }
 
-li {
-  margin: 10px 0;
-  font-size: 16px;
-  padding: 14px 16px;
-  border-radius: 6px;
-}
+    li {
+      margin: 10px 0;
+      font-size: 16px;
+      padding: 14px 16px;
+      border-radius: 6px;
+    }
 
-/* AÇIK DERS */
-.course.open {
-  background: #ffffff;          /* net beyaz */
-  border: 1px solid #d1d5db;
-}
+    /* AÇIK DERS */
+    .course.open {
+      background: #ffffff;
+      border: 1px solid #d1d5db;
+    }
 
-.course.open a {
-  color: #0b2c4d;
-  font-weight: 600;
-  text-decoration: none;
-}
+    .course.open a {
+      color: #0b2c4d;
+      font-weight: 600;
+      text-decoration: none;
+    }
 
-.course.open:hover {
-  background: #f5f7fa;
-}
+    .course.open:hover {
+      background: #f5f7fa;
+    }
 
-/* KAPALI DERS */
-.course.closed {
-  background: #d1d5db;          /* sayfadan DAHA KOYU */
-  color: #4b5563;
-  cursor: not-allowed;
-}
+    /* KAPALI DERS */
+    .course.closed {
+      background: #d1d5db;
+      color: #4b5563;
+      cursor: not-allowed;
+    }
 
-.course.closed span {
-  font-weight: 600;
-}
+    .course.closed span {
+      font-weight: 600;
+    }
 
-.badge {
-  font-size: 11px;
-  background: #4b5563;
-  color: #ffffff;
-  padding: 2px 8px;
-  border-radius: 12px;
-  margin-left: 8px;
-}
-
+    .badge {
+      font-size: 11px;
+      background: #4b5563;
+      color: #ffffff;
+      padding: 2px 8px;
+      border-radius: 12px;
+      margin-left: 8px;
+    }
+  </style>
 </head>
 
 <body>
@@ -82,13 +83,11 @@ Bu site, Güz / Bahar / Yaz yarıyıllarında açılan derslerin planlarını i�
 </p>
 
 <ul>
-  <!-- KAPALI -->
   <li class="course closed">
     <span>BS0034 – İşletim Sistemleri</span>
     <span class="badge">2026–27 dönemi aktif olacaktır.</span>
   </li>
 
-  <!-- AÇIK -->
   <li class="course open">
     <a href="0049/">BS0049 – Paket Programlar</a>
   </li>
@@ -113,7 +112,6 @@ Bu site, Güz / Bahar / Yaz yarıyıllarında açılan derslerin planlarını i�
     <span class="badge">2026–27 dönemi aktif olacaktır.</span>
   </li>
 
-  <!-- AÇIK -->
   <li class="course open">
     <a href="2003/">BZ2003 – Programlama Dilleri I (Standart C)</a>
   </li>
@@ -128,7 +126,6 @@ Bu site, Güz / Bahar / Yaz yarıyıllarında açılan derslerin planlarını i�
     <span class="badge">2026–27 dönemi aktif olacaktır.</span>
   </li>
 
-  <!-- AÇIK -->
   <li class="course open">
     <a href="8002/">BZ8002 – Internet Teknolojileri ve Web Programlama</a>
   </li>
