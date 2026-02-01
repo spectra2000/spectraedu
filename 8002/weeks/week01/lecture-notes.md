@@ -142,7 +142,7 @@ www.ornek.com -> 108.168.1.1
 DNS sayesinde kullanıcılar sayısal adresleri ezberlemek zorunda kalmaz.
 
 ---
-📌 Sonraki haftada:
+## 11. Sonraki Haftaya Hazırlık
 - HTTP protokolü
 - URL yapısı
 - Tarayıcıların çalışma mantığı detaylı olarak ele alınacaktır.
