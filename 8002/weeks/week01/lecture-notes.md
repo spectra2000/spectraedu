@@ -137,3 +137,15 @@ IP adresleri cihazların birbirini bulmasını sağlar.
 **DNS**, alan adlarını IP adreslerine çeviren dağıtık bir sistemdir.
 
 Örnek:
+www.ornek.com -> 108.168.1.1
+
+DNS sayesinde kullanıcılar sayısal adresleri ezberlemek zorunda kalmaz.
+
+---
+
+📌 **Sonraki haftada**:
+- HTTP protokolü
+- URL yapısı
+- Tarayıcıların çalışma mantığı  
+detaylı olarak ele alınacaktır.
+
