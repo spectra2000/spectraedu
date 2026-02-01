@@ -1,5 +1,6 @@
 # Hafta 1 – İnternet Teknolojileri ve Web’e Genel Bakış
-**Ders:** Internet Teknolojileri ve Web Programlama  
+
+**Ders:** İnternet Teknolojileri ve Web Programlama  
 **Hafta:** 1  
 **Kapsam:** Temel Kavramlar ve Web’in Çalışma Mantığı  
 
@@ -7,42 +8,45 @@
 
 ## 1. Dersin Amacı
 
-Bu dersin amacı, Internet Teknolojileri ve Web Programlama dersinin kapsamını tanıtmak ve
-öğrencilere web tabanlı sistemlerin nasıl çalıştığına dair sağlam bir temel kazandırmaktır.
+Bu dersin amacı, öğrencileri web tabanlı sistemlere hazırlamak ve
+Internet Teknolojileri ve Web Programlama dersinin genel çerçevesini
+tanıtmaktır.
 
 Bu hafta boyunca:
 - Internet ve Web kavramları netleştirilecek,
 - Web’in tarihsel gelişimi incelenecek,
 - Web tabanlı sistemlerin temel bileşenleri tanıtılacaktır.
 
-Bu derste **herhangi bir programlama dili veya framework** kullanılmaz.
-Amaç, ilerleyen haftalarda ele alınacak teknolojilerin altyapısını anlamaktır.
+📌 Bu haftada **herhangi bir programlama dili veya framework kullanılmaz**.  
+Amaç, sağlam bir kavramsal altyapı oluşturmaktır.
 
 ---
 
 ## 2. Internet Nedir?
 
-**Internet**, dünya genelinde birbirine bağlı bilgisayar ağlarının oluşturduğu küresel bir iletişim altyapısıdır.
+**Internet**, dünya genelinde birbirine bağlı bilgisayar ağlarının oluşturduğu
+küresel bir iletişim altyapısıdır.
 
 Internet’in temel özellikleri:
 - Merkezi bir yapısı yoktur
 - TCP/IP protokol ailesi üzerine kuruludur
 - Bilgi paylaşımı ve iletişim amacıyla kullanılır
 
-Internet bir uygulama değil, **altyapıdır**.  
+Internet bir uygulama değildir;  
 Web, e-posta, FTP gibi servisler Internet üzerinde çalışır.
 
 ---
 
 ## 3. World Wide Web (WWW) Nedir?
 
-**World Wide Web (WWW)**, Internet üzerinde çalışan ve bilgiye erişimi kolaylaştıran bir sistemdir.
+**World Wide Web (WWW)**, Internet üzerinde çalışan ve bilgiye erişimi
+kolaylaştıran bir sistemdir.
 
 - 1991 yılında **Tim Berners-Lee** tarafından geliştirilmiştir
 - HTML, HTTP ve URL kavramlarına dayanır
 - Web tarayıcıları aracılığıyla kullanılır
 
-> Önemli: Internet ve Web aynı şey değildir.
+📌 **Internet ve Web aynı şey değildir.**
 
 ---
 
@@ -50,7 +54,7 @@ Web, e-posta, FTP gibi servisler Internet üzerinde çalışır.
 
 | Internet | World Wide Web |
 |--------|----------------|
-| Küresel ağ altyapısı | Internet üzerinde çalışan servis |
+| Küresel ağ altyapısı | Internet üzerinde çalışan bir servis |
 | Fiziksel ve mantıksal yapı | Bilgi paylaşım sistemi |
 | TCP/IP kullanır | HTTP, HTML, URL kullanır |
 
@@ -58,7 +62,7 @@ Web, e-posta, FTP gibi servisler Internet üzerinde çalışır.
 
 ## 5. Web’in Tarihsel Gelişimi
 
-### 5.1 1960–1990: Internet’in Temelleri
+### 5.1 Internet’in Temelleri (1960–1990)
 
 - 1969: ARPANET projesi
 - Paket anahtarlama fikri
@@ -68,7 +72,7 @@ Bu dönemde Internet, geniş kitlelere açık değildir.
 
 ---
 
-### 5.2 1991: World Wide Web’in Doğuşu
+### 5.2 World Wide Web’in Doğuşu (1991)
 
 - İlk web sunucusu ve tarayıcı geliştirildi
 - Statik HTML sayfalar kullanıldı
@@ -118,7 +122,8 @@ Web tabanlı sistemler **istemci–sunucu mimarisi** ile çalışır.
 
 ## 9. IP Adresi Kavramı
 
-IP adresi, Internet üzerindeki her cihazın sahip olduğu benzersiz sayısal kimliktir.
+IP adresi, Internet üzerindeki her cihazın sahip olduğu
+benzersiz sayısal kimliktir.
 
 - **IPv4:** 32 bit adresleme
 - **IPv6:** 128 bit adresleme
@@ -132,4 +137,3 @@ IP adresleri cihazların birbirini bulmasını sağlar.
 **DNS**, alan adlarını IP adreslerine çeviren dağıtık bir sistemdir.
 
 Örnek:
-
