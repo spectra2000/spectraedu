@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #eceff1;          /* sayfa arka planı */
+      background: #eceff1;
       padding: 40px;
       color: #1f2937;
     }
@@ -55,20 +55,37 @@
     .course.closed {
       background: #d1d5db;
       color: #4b5563;
-      cursor: not-allowed;
+      cursor: default;
     }
 
     .course.closed span {
       font-weight: 600;
     }
 
-    .badge {
-      font-size: 11px;
-      background: #4b5563;
-      color: #ffffff;
-      padding: 2px 8px;
-      border-radius: 12px;
-      margin-left: 8px;
+    /* YILDIZ */
+    .star {
+      display: inline-block;
+      margin-left: 6px;
+      color: #b91c1c;
+      font-weight: bold;
+      animation: floatStar 1.8s ease-in-out infinite;
+      cursor: help;
+    }
+
+    @keyframes floatStar {
+      0%   { transform: translateY(0); opacity: 0.6; }
+      50%  { transform: translateY(-4px); opacity: 1; }
+      100% { transform: translateY(0); opacity: 0.6; }
+    }
+
+    /* DİPNOT */
+    .footnote {
+      margin-top: 40px;
+      font-size: 13px;
+      color: #374151;
+      max-width: 720px;
+      border-top: 1px solid #d1d5db;
+      padding-top: 15px;
     }
   </style>
 </head>
@@ -84,8 +101,9 @@ Bu site, Güz / Bahar / Yaz yarıyıllarında açılan derslerin planlarını i�
 
 <ul>
   <li class="course closed">
-    <span>BS0034 – İşletim Sistemleri</span>
-    <span class="badge">2026–27 dönemi aktif olacaktır.</span>
+    <span>BS0034 – İşletim Sistemleri
+      <span class="star" title="2026–2027 akademik yılında aktif olacaktır">*</span>
+    </span>
   </li>
 
   <li class="course open">
@@ -93,23 +111,27 @@ Bu site, Güz / Bahar / Yaz yarıyıllarında açılan derslerin planlarını i�
   </li>
 
   <li class="course closed">
-    <span>GS0061 – Yazılım Geliştirme</span>
-    <span class="badge">2026–27 dönemi aktif olacaktır.</span>
+    <span>GS0061 – Yazılım Geliştirme
+      <span class="star" title="2026–2027 akademik yılında aktif olacaktır">*</span>
+    </span>
   </li>
 
   <li class="course closed">
-    <span>GS0072 – Nesne Yönelimli Programlama</span>
-    <span class="badge">2026–27 dönemi aktif olacaktır.</span>
+    <span>GS0072 – Nesne Yönelimli Programlama
+      <span class="star" title="2026–2027 akademik yılında aktif olacaktır">*</span>
+    </span>
   </li>
 
   <li class="course closed">
-    <span>GS0074 – Mobil Programlama Temelleri</span>
-    <span class="badge">2026–27 dönemi aktif olacaktır.</span>
+    <span>GS0074 – Mobil Programlama Temelleri
+      <span class="star" title="2026–2027 akademik yılında aktif olacaktır">*</span>
+    </span>
   </li>
 
   <li class="course closed">
-    <span>BS0075 – Gelişmiş Mobil Programlama Teknikleri</span>
-    <span class="badge">2026–27 dönemi aktif olacaktır.</span>
+    <span>BS0075 – Gelişmiş Mobil Programlama Teknikleri
+      <span class="star" title="2026–2027 akademik yılında aktif olacaktır">*</span>
+    </span>
   </li>
 
   <li class="course open">
@@ -117,13 +139,15 @@ Bu site, Güz / Bahar / Yaz yarıyıllarında açılan derslerin planlarını i�
   </li>
 
   <li class="course closed">
-    <span>GZ3004 – Programlama Dilleri II (C++)</span>
-    <span class="badge">2026–27 dönemi aktif olacaktır.</span>
+    <span>GZ3004 – Programlama Dilleri II (C++)
+      <span class="star" title="2026–2027 akademik yılında aktif olacaktır">*</span>
+    </span>
   </li>
 
   <li class="course closed">
-    <span>GZ5003 – Veri Yapıları</span>
-    <span class="badge">2026–27 dönemi aktif olacaktır.</span>
+    <span>GZ5003 – Veri Yapıları
+      <span class="star" title="2026–2027 akademik yılında aktif olacaktır">*</span>
+    </span>
   </li>
 
   <li class="course open">
@@ -131,5 +155,5 @@ Bu site, Güz / Bahar / Yaz yarıyıllarında açılan derslerin planlarını i�
   </li>
 </ul>
 
-</body>
-</html>
+<div class="footnote">
+  <
