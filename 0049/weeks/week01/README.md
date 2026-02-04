@@ -1,48 +1,15 @@
 # 01. Paket Programlara Giriş
 
----
-
 ## A. Dersin Amacı
-
-Bu haftada paket program kavramı tanıtılacak,
-paket programların yazılım dünyasındaki yeri
-ve kullanım amaçları ele alınacaktır.
-
-Öğrenciler, bu ders kapsamında geliştirilecek
-uygulamaların genel çerçevesini tanıyacaktır.
-
----
+Paket program kavramını tanıtmak ve R dilinin bu ders kapsamında
+neden tercih edildiğini açıklamak.
 
 ## B. Ders Kaynakları
-
-### Ders Notları
-- [Hafta 1 – Paket Programlara Giriş](lecture-notes.md)
-
-### Dış Kaynaklar
-- 
-
----
+- [Hafta 01 – Ders Notları](lecture-notes.md)
 
 ## C. Uygulamalar
-- Günlük hayatta kullanılan paket programların incelenmesi
-- Paket program ve özel yazılım farkının tartışılması
+- Günlük hayatta kullanılan paket program örnekleri
+- R ile yapılan yazılımların incelenmesi
 
----
-
-## D. Haftalık Ölçme ve Değerlendirme
-
-### Ödev
-- Kullanılan bir paket programı tanıtan kısa bir açıklama hazırlama
-
-### Kısa Sınav / Testler
-- 
-
----
-
-## E. Görsel Anlatım
-
-### Canlı Ders Katılım Linki
-- 
-
-### Dersin Asenkron Videosu
-- 
+## D. Ölçme – Değerlendirme
+**Ödev:** Bir paket program örneğini kısa rapor halinde tanımlayınız.
