@@ -4,7 +4,7 @@ Ders: Paket Programlar
 Programlama Dili: R
 Hafta: 3
 
-1. Bu Haftanın Amacı
+1. Dersin Amacı
 
 Bu haftanın amacı, R programlama dilinde fonksiyon kavramını öğretmek ve
 paket program geliştirme sürecinde neden modüler ve fonksiyonel bir
@@ -13,21 +13,21 @@ yaklaşımın gerekli olduğunu açıklamaktır.
 Bu hafta öğrenilen konular, ilerleyen haftalarda geliştirilecek Shiny
 uygulamalarının arka planında çalışan temel mantığı oluşturacaktır.
 
-2. Fonksiyon Nedir?
+2. Fonksiyon Kavramı
 
 Fonksiyon, belirli bir görevi yerine getiren, girdi alabilen ve çıktı
 üretebilen kod bloklarıdır.
 
-Fonksiyonların temel amaçları:
+Fonksiyonlar:
 
-Kod tekrarını azaltmak
+Kod tekrarını azaltır
 
-Okunabilirliği artırmak
+Okunabilirliği artırır
 
-Bakımı ve genişletmeyi kolaylaştırmak
+Bakımı ve genişletmeyi kolaylaştırır
 
-Bir paket programın iç yapısı, genellikle çok sayıda küçük fonksiyondan
-oluşur.
+Bir paket programın iç yapısı, çok sayıda küçük fonksiyonun
+bir araya gelmesiyle oluşur.
 
 3. R’de Fonksiyon Tanımlama
 
@@ -39,9 +39,7 @@ topla <- function(a, b) {
 }
 
 
-Bu fonksiyon iki sayıyı toplar ve sonucu geri döndürür.
-
-Fonksiyon çağrımı şu şekildedir:
+Fonksiyon çağrımı:
 
 topla(3, 5)
 
@@ -50,19 +48,18 @@ Fonksiyon çağrıldığında, tanım içinde yazılan işlemler sırayla çalı
 
 4. Parametreler ve Varsayılan Değerler
 
-Fonksiyonlar parametre alabilir. Ayrıca parametrelere varsayılan
-değerler atanabilir.
+Fonksiyonlar parametre alabilir.
+Ayrıca parametrelere varsayılan değerler atanabilir.
 
 carp <- function(a, b = 1) {
   a * b
 }
 
-
-Bu yapı sayesinde kullanıcı ikinci parametreyi girmese bile fonksiyon
-çalışmaya devam eder.
-
 carp(5)
 carp(5, 3)
+
+
+Bu yapı, fonksiyonların daha esnek kullanılmasını sağlar.
 
 5. Fonksiyonların Paket Programlardaki Rolü
 
@@ -74,21 +71,12 @@ Kullanıcıdan gelen verileri işler
 
 Sonuçları düzenler
 
-Örneğin:
-
-Ortalama hesaplama
-
-Veri filtreleme
-
-Grafik üretme
-
-Bu işlemler arayüzden bağımsız olarak fonksiyonlar içinde tanımlanır.
+Arayüz (Shiny) bu fonksiyonları yalnızca çağırır.
 
 6. Fonksiyonlar ve Veri Yapıları
 
-Fonksiyonlar farklı veri yapılarıyla birlikte çalışabilir.
-
-Örnek olarak, bir vektörün ortalamasını hesaplayan fonksiyon:
+Fonksiyonlar vektör, liste ve data frame gibi veri yapılarıyla birlikte
+çalışabilir.
 
 ortalama_hesapla <- function(degerler) {
   mean(degerler)
@@ -96,50 +84,33 @@ ortalama_hesapla <- function(degerler) {
 
 ortalama_hesapla(c(70, 80, 90))
 
+7. Modüler Kod Yapısı
 
-Bu yapı, kullanıcıdan gelen çoklu verilerin arka planda işlenmesini
-sağlar.
+Modüler yapı, büyük bir problemi küçük ve bağımsız parçalara ayırmayı
+ifade eder.
 
-7. Modüler Kod Yapısı Nedir?
+Her fonksiyon:
 
-Modüler kod yapısı, büyük bir problemi küçük ve bağımsız parçalara
-ayırmayı ifade eder.
+Tek bir sorumluluğa sahip olmalıdır
 
-Her fonksiyonun:
+Başka fonksiyonlara minimum bağımlılık içermelidir
 
-Tek bir sorumluluğu olmalı
+Bu yaklaşım büyük projelerde zorunludur.
 
-Başka fonksiyonlara minimum bağımlılığı bulunmalıdır
+8. Fonksiyonların Dosya Bazlı Kullanımı
 
-Bu yaklaşım:
+Fonksiyonlar ayrı dosyalarda tutulabilir.
 
-Kodun okunmasını kolaylaştırır
-
-Hata ayıklamayı hızlandırır
-
-Projelerin büyümesini yönetilebilir kılar
-
-8. Fonksiyonları Dosya Bazlı Ayırma
-
-Büyük projelerde fonksiyonlar tek bir dosyada tutulmaz.
-Bunun yerine mantıksal olarak ayrılmış dosyalar kullanılır.
-
-Örnek bir yapı:
+Örnek yapı:
 
 functions/
   calculations.R
   helpers.R
 
 
-Bu dosyalar ana dosya içinde şu şekilde çağrılır:
+Dosyalar ana script içinde source() ile çağrılır.
 
-source("functions/calculations.R")
-source("functions/helpers.R")
-
-
-Bu yapı, paket program mantığına uygundur.
-
-9. Basit Hata Kontrolleri
+9. Hata Kontrolü
 
 Fonksiyonlar içinde basit hata kontrolleri yapılabilir.
 
@@ -151,38 +122,36 @@ bol <- function(a, b) {
 }
 
 
-Bu tür kontroller, kullanıcıdan kaynaklanan hataların
-kontrollü şekilde yönetilmesini sağlar.
+Bu yaklaşım kullanıcı hatalarını kontrollü şekilde yönetir.
 
-10. Shiny ile İlişkisi
+10. Shiny ile Bağlantı
 
 Shiny uygulamalarında:
 
-Arayüz (UI) ayrı
+Arayüz (UI)
 
-İş mantığı (fonksiyonlar) ayrı
+İş mantığı (fonksiyonlar)
 
-Sunucu (server) ayrı
+Sunucu (server)
 
-şekilde tasarlanır.
+birbirinden ayrıdır.
 
-Bu hafta öğrenilen fonksiyon kavramı, Shiny server tarafının temelini
-oluşturur.
+Bu hafta öğrenilen fonksiyon kavramı, Shiny server tarafının temelidir.
 
 11. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
 
-R’de fonksiyon tanımlayabilir
+R’de fonksiyon yazabilir
 
-Parametreli fonksiyonlar yazabilir
+Parametreli fonksiyonları kullanabilir
 
 Modüler kod yapısının önemini kavrar
 
-Paket program altyapısını anlayabilir
+Paket program mantığını anlayabilir
 
 12. Sonraki Haftaya Hazırlık
 
-R’de dosya okuma ve yazma işlemleri araştırılmalıdır
+Dosya okuma ve yazma işlemleri araştırılmalıdır
 
 Veri setleriyle çalışmaya hazırlık yapılmalıdır
