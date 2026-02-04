@@ -4,7 +4,7 @@ Ders: Paket Programlar
 Programlama Dili: R
 Hafta: 2
 
-1. Dersin Amacı
+#1. Dersin Amacı
 
 Bu haftanın amacı, R programlama diline temel seviyede giriş yapmak ve
 paket program geliştirme sürecinde kullanılacak temel yapı taşlarını
