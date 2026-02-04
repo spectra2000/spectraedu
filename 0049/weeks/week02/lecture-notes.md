@@ -1,118 +1,48 @@
-# Hafta 02 – Streamlit’e Giriş
-**Ders:** Paket Programlar (Python / Streamlit Framework)  
+# Hafta 02 – R Temelleri ve Veri Yapıları
+
+**Ders:** Paket Programlar  
+**Programlama Dili:** R  
 **Hafta:** 2  
-**Kapsam:** Streamlit’in kurulumu ve temel çalışma mantığı  
 
 ---
 
-## 1. Dersin Amacı
+## 1. Bu Haftanın Amacı
 
-Bu haftanın amacı, Streamlit framework’ünü tanıtmak
-ve bir Streamlit uygulamasının
-nasıl çalıştığını kavramsal olarak açıklamaktır.
+Bu haftanın amacı, R programlama diline
+temel seviyede giriş yapmak ve
+paket program geliştirme sürecinde
+kullanılacak temel yapı taşlarını tanıtmaktır.
 
-Bu hafta sonunda öğrenciler:
-- Streamlit nedir açıklar
-- Bir Streamlit uygulamasının temel yapısını tanır
-- Streamlit ile neler yapılabileceğini kavrar
-
----
-
-## 2. Streamlit Nedir?
-
-**Streamlit**, Python ile
-hızlı ve etkileşimli web uygulamaları
-geliştirmeyi sağlayan bir framework’tür.
-
-Özellikle:
-- Veri analizi
-- Görselleştirme
-- Basit kullanıcı arayüzleri
-
-için tercih edilir.
+Bu hafta, ilerleyen haftalarda yazılacak
+fonksiyonlar ve Shiny uygulamaları için
+altyapı niteliğindedir.
 
 ---
 
-## 3. Streamlit’in Temel Özellikleri
+## 2. R ve RStudio Ortamı
 
-Streamlit:
-- HTML, CSS veya JavaScript bilgisi gerektirmez
-- Kod yazıldıkça uygulamayı otomatik günceller
-- Basit ve okunabilir bir yapı sunar
+R:
+- Programlama dili
+- Komut satırı mantığıyla çalışır
 
-Bu özellikler, öğrenme sürecini hızlandırır.
+RStudio:
+- R için geliştirilmiş entegre geliştirme ortamıdır (IDE)
+- Kod, çıktı, grafik ve dosya yönetimini tek ekranda sunar
 
----
+RStudio arayüzü genel olarak:
+- Script Editor
+- Console
+- Environment
+- Files / Plots / Packages
 
-## 4. Streamlit Uygulamasının Çalışma Mantığı
-
-Bir Streamlit uygulaması:
-- Python dosyası olarak yazılır
-- Tarayıcı üzerinden görüntülenir
-- Kod yukarıdan aşağıya doğru çalışır
-
-Bu mantık, klasik web uygulamalarından farklıdır.
+bölümlerinden oluşur.
 
 ---
 
-## 5. İlk Streamlit Uygulaması (Kavramsal)
+## 3. Değişken Kavramı
 
-En basit Streamlit uygulaması:
-- Bir Python dosyası içerir
-- İçerik tarayıcıda otomatik görüntülenir
+R’de değişkenler `<-` operatörü ile tanımlanır.
 
-Amaç:
-- Hızlı sonuç almak
-- Karmaşık yapıdan kaçınmaktır
-
----
-
-## 6. Streamlit ve Paket Program İlişkisi
-
-Streamlit:
-- Arayüzlü uygulamalar geliştirmeyi kolaylaştırır
-- Paket program mantığına uygundur
-- Kullanıcıya hazır bir deneyim sunar
-
-Bu nedenle bu ders için uygun bir tercihtir.
-
----
-
-## 7. Streamlit Dosya Yapısı
-
-Bir Streamlit projesi genellikle:
-- Ana Python dosyası
-- Yardımcı dosyalar
-- Veri dosyaları
-
-şeklinde düzenlenir.
-
-Bu yapı, ilerleyen haftalarda detaylandırılacaktır.
-
----
-
-## 8. Streamlit Kullanım Alanları
-
-Streamlit ile:
-- Hesaplama araçları
-- Veri analiz panelleri
-- Eğitim amaçlı uygulamalar
-
-geliştirilebilir.
-
----
-
-## 9. Haftanın Kazanımları
-
-Bu haftanın sonunda öğrenci:
-- Streamlit framework’ünü tanır
-- Temel çalışma mantığını kavrar
-- İlk uygulamayı çalıştırabilir
-
----
-
-## 10. Sonraki Haftaya Hazırlık
-
-- Arayüz yerleşimi kavramını inceleyiniz.
-- Streamlit bileşenlerine göz atınız.
-
+```r
+x <- 10
+y <- 5
