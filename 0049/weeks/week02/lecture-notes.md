@@ -1,4 +1,4 @@
-# TESTHafta 02 – R Temelleri ve Veri Yapıları
+# Hafta 02 – R Temelleri ve Veri Yapıları
 
 Ders: Paket Programlar
 Programlama Dili: R
