@@ -1,122 +1,151 @@
-# Hafta 01 – Paket Programlara Giriş
-**Ders:** Paket Programlar (Python / Streamlit Framework)  
+# Hafta 01 – Paket Programlara Giriş ve R Ekosistemi
+
+**Ders:** Paket Programlar  
+**Programlama Dili:** R  
 **Hafta:** 1  
-**Kapsam:** Paket program kavramı ve dersin genel yapısı  
 
 ---
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, paket program kavramını tanıtmak
-ve bu dersin neden Streamlit framework’ü ile
-işleneceğini açıklamaktır.
+Bu haftanın amacı, “paket program” kavramını
+teorik ve pratik yönleriyle tanıtmak ve
+bu ders kapsamında neden **R programlama dilinin**
+tercih edildiğini açıklamaktır.
 
-Bu hafta sonunda öğrenciler:
-- Paket program nedir açıklar
-- Paket programların neden tercih edildiğini kavrar
-- Dersin genel işleyişini öğrenir
+Bu ders, bir programlama dili öğretmekten çok,
+**paket program mantığını** kazandırmayı hedefler.
 
 ---
 
 ## 2. Paket Program Nedir?
 
-**Paket program**, belirli bir ihtiyacı karşılamak üzere
-önceden geliştirilmiş ve kullanıcıya hazır olarak sunulan
-yazılımlardır.
+**Paket program**, belirli bir problemi çözmek üzere
+önceden geliştirilmiş, son kullanıcıya hazır olarak
+sunulan yazılımlardır.
 
-Bu programlar:
-- Geniş kullanıcı kitlesine hitap eder
-- Kurulumdan sonra doğrudan kullanılabilir
-- Genellikle grafik arayüz içerir
-
----
-
-## 3. Paket Programlara Örnekler
-
-Günlük hayatta kullanılan paket programlara örnekler:
-- Ofis yazılımları
-- Muhasebe programları
-- Veri analiz araçları
-- Görsel düzenleme yazılımları
-
-Bu yazılımlar, kullanıcıdan programlama bilgisi beklemez.
+Paket programların temel özellikleri:
+- Kurulum sonrası doğrudan çalışır
+- Programlama bilgisi gerektirmez
+- Tekrarlanabilir ve standart çözümler sunar
+- Grafik arayüz (GUI) içerir
 
 ---
 
-## 4. Paket Program ve Özel Yazılım Farkı
+## 3. Paket Program – Özel Yazılım Karşılaştırması
 
-Paket programlar:
-- Genel ihtiyaçlara yöneliktir
-- Çok sayıda kullanıcı tarafından kullanılır
+| Paket Program | Özel Yazılım |
+|--------------|-------------|
+| Genel ihtiyaçlara yöneliktir | Tek bir ihtiyaca yöneliktir |
+| Çok sayıda kullanıcıya hitap eder | Belirli kullanıcı için geliştirilir |
+| Hazır çözümler sunar | Baştan tasarlanır |
+| Esneklik sınırlıdır | Esneklik yüksektir |
 
-Özel yazılımlar ise:
-- Belirli bir kurum veya ihtiyaç için geliştirilir
-- Daha özelleştirilmiş çözümler sunar
-
-Her iki yaklaşımın da avantajları vardır.
-
----
-
-## 5. Bu Derste Ne Yapacağız?
-
-Bu ders kapsamında:
-- Python programlama dili kullanılacaktır
-- Streamlit framework’ü ile arayüzlü uygulamalar geliştirilecektir
-- Küçük ama işlevsel paket programlar hazırlanacaktır
-
-Amaç, teoriden çok **uygulama odaklı** ilerlemektir.
+Bu ders kapsamında geliştirilecek uygulamalar,
+**paket program mantığına** uygun olacaktır.
 
 ---
 
-## 6. Streamlit Nedir? (Genel Bakış)
+## 4. Paket Programlarda Kullanılan Teknolojiler
 
-Streamlit:
-- Python tabanlı bir uygulama framework’üdür
-- Hızlı şekilde arayüzlü uygulamalar geliştirmeyi sağlar
-- Özellikle veri odaklı projelerde tercih edilir
+Paket programlar farklı teknolojilerle geliştirilebilir:
+- Masaüstü uygulamaları
+- Web tabanlı uygulamalar
+- Hibrit çözümler
+
+Bu derste:
+- **R programlama dili**
+- **Shiny framework’ü**
+kullanılacaktır.
+
+---
+
+## 5. R Programlama Dili Nedir?
+
+R, özellikle:
+- İstatistik
+- Veri analizi
+- Modelleme
+- Görselleştirme
+
+alanlarında kullanılan bir programlama dilidir.
+
+R’nin güçlü olduğu noktalar:
+- Geniş paket ekosistemi (CRAN)
+- Matematiksel işlemlere uygun yapı
+- Akademik ve endüstriyel kullanım
+
+---
+
+## 6. Neden Bu Derste R Kullanıyoruz?
+
+Bu ders için R’nin seçilme nedenleri:
+- Hazır fonksiyonlarla hızlı çözüm üretme
+- Veri odaklı paket program geliştirme
+- Görselleştirme ve analiz gücü
+- Shiny ile arayüzlü uygulama geliştirme imkânı
+
+Amaç:
+> Analizi, kullanıcı etkileşimi olan
+> bir **paket programa dönüştürmek**
+
+---
+
+## 7. Shiny’e Kısa Bir Ön Bakış
+
+Shiny, R ile:
+- Web tabanlı
+- Etkileşimli
+- Grafik arayüzlü
+
+uygulamalar geliştirmeyi sağlayan bir framework’tür.
+
+Shiny sayesinde:
+- Kullanıcıdan veri alınabilir
+- Analizler anlık çalıştırılabilir
+- Sonuçlar görsel olarak sunulabilir
 
 Detaylar ilerleyen haftalarda ele alınacaktır.
 
 ---
 
-## 7. Dersin Genel Akışı
+## 8. Bu Derste Ne Yapacağız?
 
-Ders sürecinde:
-- Arayüz tasarımı
-- Kullanıcı girdileri
-- Veri işleme
-- Görselleştirme
-- Basit AI entegrasyonları
+Ders boyunca:
+- R ile veri işleme
+- Fonksiyon yazımı
+- Analiz ve görselleştirme
+- Shiny ile arayüz geliştirme
+- Küçük ölçekli paket programlar
 
-adım adım işlenecektir.
+adım adım geliştirilecektir.
 
 ---
 
-## 8. Beklentiler ve Değerlendirme
+## 9. Beklentiler ve Çalışma Disiplini
 
-Bu derste öğrenciden:
-- Aktif katılım
-- Uygulama yapma
+Bu derste öğrenciden beklenenler:
+- Düzenli kod yazımı
+- Uygulama odaklı çalışma
 - Deneme–yanılma yoluyla öğrenme
+- GitHub üzerinden içerik takibi
 
-beklenmektedir.
-
-Değerlendirme, ağırlıklı olarak
-uygulamalar ve final proje üzerinden yapılacaktır.
+Ezberden çok **mantık kavrama** ön plandadır.
 
 ---
 
-## 9. Haftanın Kazanımları
+## 10. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
 - Paket program kavramını açıklar
-- Dersin kapsamını ve hedefini kavrar
-- Streamlit’in neden seçildiğini anlar
+- R’nin ders içindeki rolünü kavrar
+- Dersin genel yapısını anlar
+- Shiny’nin ne amaçla kullanılacağını bilir
 
 ---
 
-## 10. Sonraki Haftaya Hazırlık
+## 11. Sonraki Haftaya Hazırlık
 
-- Python’un paket ekosistemi hakkında araştırma yapınız.
-- Streamlit framework’ünün kullanım alanlarını inceleyiniz.
-
+- R’nin kullanım alanlarını araştırınız.
+- Temel R komutlarını inceleyiniz.
+- RStudio arayüzünü tanıyınız.
