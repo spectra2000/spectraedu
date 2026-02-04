@@ -1,48 +1,43 @@
-# 02. Streamlit’e Giriş
+# 02. R Temelleri ve Veri Yapıları
 
 ---
 
 ## A. Dersin Amacı
 
-Bu haftada Streamlit framework’ünün temel yapısı,
-çalışma mantığı ve basit bir uygulamanın
-nasıl oluşturulduğu ele alınacaktır.
+Bu haftada öğrencilerin R programlama diline
+temel seviyede hâkim olması hedeflenmektedir.
 
-Öğrenciler, kısa sürede çalışan
-arayüzlü Python uygulamaları geliştirmeye başlayacaktır.
+Öğrenciler, R’nin temel sözdizimini,
+veri yapıları ve değişken kavramlarını öğrenerek
+ilerleyen haftalarda geliştirilecek paket programlar
+için sağlam bir temel oluşturacaktır.
 
 ---
 
 ## B. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 2 – Streamlit’e Giriş](lecture-notes.md)
+- [Hafta 02 – R Temelleri ve Veri Yapıları](lecture-notes.md)
 
 ### Dış Kaynaklar
-- 
+- https://cran.r-project.org/manuals.html
+- https://r4ds.had.co.nz/
 
 ---
 
 ## C. Uygulamalar
-- İlk Streamlit uygulamasının çalıştırılması
-- Streamlit dosya yapısının incelenmesi
+
+- RStudio arayüzünün tanıtılması
+- Temel R komutlarının çalıştırılması
+- Farklı veri tipleri ile örnekler
 
 ---
 
 ## D. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Basit bir Streamlit uygulamasını çalıştırıp inceleme
+- R’de farklı veri yapıları kullanılarak
+  basit bir veri kümesi oluşturulması
 
-### Kısa Sınav / Testler
-- 
-
----
-
-## E. Görsel Anlatım
-
-### Canlı Ders Katılım Linki
-- 
-
-### Dersin Asenkron Videosu
-- 
+### Kısa Sınav / Test
+- Temel R kavramları
