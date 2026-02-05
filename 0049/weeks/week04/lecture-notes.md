@@ -8,36 +8,46 @@
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, R programlama dili kullanılarak
-dosyalardan veri okuma ve dosyalara veri yazma
-işlemlerini öğretmektir.
+Bu haftanın amacı, paket programlarda en sık kullanılan
+işlemlerden biri olan **dosya tabanlı veri alışverişini**
+öğretmektir.
 
-Paket programlar genellikle dış kaynaklardan
-veri alır ve üretilen sonuçları dosya olarak
-kullanıcıya sunar.
+Öğrenciler bu hafta sonunda:
+- Harici dosyalardan veri okuyabilecek
+- Okunan veriyi kontrol edip anlayabilecek
+- Analiz sonuçlarını dosya olarak dışarı aktarabilecektir
+
+Bu beceriler, gerçek hayattaki paket programların
+neredeyse tamamında kullanılan temel yeteneklerdir.
 
 ---
 
-## 2. Dosya Kavramı
+## 2. Dosya Kavramı ve Paket Programlar
 
-Dosya, bilgilerin kalıcı olarak saklandığı
-veri yapılarıdır.
+Dosya, verilerin kalıcı olarak saklandığı
+ve programlar arasında paylaşılmasını sağlayan yapılardır.
 
-Paket programlarda dosyalar:
-- Veri girişi
-- Veri saklama
-- Sonuç paylaşımı
+Paket programlarda dosyalar genellikle:
+- Kullanıcıdan veri almak
+- Program çıktısını saklamak
+- Analiz sonuçlarını paylaşmak
 
-amaçlarıyla kullanılır.
+amacıyla kullanılır.
+
+Bir paket program, çoğu zaman
+dosya olmadan işlevini yerine getiremez.
 
 ---
 
 ## 3. Çalışma Dizini (Working Directory)
 
-R’de dosya işlemleri yapılırken çalışma dizini
-kavramı önemlidir.
+R’de dosya işlemleri yapılırken
+**çalışma dizini (working directory)** kavramı kritik öneme sahiptir.
 
-Mevcut çalışma dizinini öğrenmek için:
+R, dosya işlemlerini varsayılan olarak
+çalışma dizini üzerinden gerçekleştirir.
+
+Mevcut çalışma dizinini görmek için:
 
     getwd()
 
@@ -45,70 +55,119 @@ Mevcut çalışma dizinini öğrenmek için:
 
     setwd("klasor/yolu/buraya")
 
+Yanlış dizinde çalışmak,
+dosya bulunamaması hatalarının
+en yaygın nedenidir.
+
 ---
 
-## 4. CSV Dosyası Okuma
+## 4. CSV Dosya Formatı
 
-CSV dosyaları, tablo yapısında veri saklayan
-yaygın bir dosya formatıdır.
+CSV (Comma Separated Values),
+verilerin satır ve sütunlar hâlinde
+saklandığı metin tabanlı bir dosya formatıdır.
 
-R’de CSV dosyası okumak için:
+CSV dosyaları:
+- Basittir
+- Birçok yazılım tarafından desteklenir
+- Paket programlarda standart veri formatı olarak kullanılır
+
+Bu nedenle R ile çalışırken
+en sık karşılaşılan dosya türüdür.
+
+---
+
+## 5. CSV Dosyasından Veri Okuma
+
+R’de CSV dosyası okumak için
+`read.csv()` fonksiyonu kullanılır.
 
     data <- read.csv("veri.csv")
 
-Bu işlem sonucunda veri bir **data frame**
-olarak belleğe alınır.
+Bu komut sonucunda:
+- Dosya belleğe alınır
+- Veri bir **data frame** yapısına dönüştürülür
+
+Dosya adı veya yolu yanlışsa
+R hata verecektir.
 
 ---
 
-## 5. Okunan Veriyi İnceleme
+## 6. Okunan Verinin Kontrol Edilmesi
 
-Dosya okunduktan sonra verinin doğru
-okunup okunmadığı kontrol edilmelidir.
+Veri okunduktan sonra,
+okuma işleminin doğru yapıldığından
+emin olunmalıdır.
 
-Sık kullanılan inceleme fonksiyonları:
+En sık kullanılan kontrol fonksiyonları:
 
     head(data)
     str(data)
     summary(data)
 
+Bu fonksiyonlar sayesinde:
+- Veri tipi hataları fark edilir
+- Eksik veya beklenmeyen değerler görülür
+- Analize uygunluk değerlendirilir
+
 ---
 
-## 6. Dosyaya Veri Yazma
+## 7. Dosyaya Veri Yazma
 
-R’de oluşturulan veya işlenen veriler
-dosyaya kaydedilebilir.
+Paket programlar genellikle
+sadece veri okumaz,
+aynı zamanda çıktı üretir.
 
 Bir data frame’i CSV dosyasına yazmak için:
 
     write.csv(data, "sonuc.csv", row.names = FALSE)
 
----
-
-## 7. Dosya İşlemlerinin Paket Programlardaki Yeri
-
-Dosya işlemleri:
-- Programın veri ile çalışmasını sağlar
-- Analiz sonuçlarını saklar
-- Programın tekrar kullanılabilir olmasını sağlar
-
-Bu nedenle dosya okuma ve yazma işlemleri,
-paket programların temel bileşenlerindendir.
+Bu işlem:
+- Analiz sonuçlarının saklanmasını sağlar
+- Program çıktısının tekrar kullanılmasına imkân tanır
 
 ---
 
-## 8. Haftanın Kazanımları
+## 8. Dosya İşlemlerinde Sık Yapılan Hatalar
+
+Dosya işlemleri sırasında en sık karşılaşılan hatalar:
+- Yanlış çalışma dizini
+- Dosya adının yanlış yazılması
+- Dosya uzantısının eksik olması
+
+Bu nedenle her zaman:
+- Dosya yolu
+- Dosya adı
+- Çalışma dizini
+
+kontrol edilmelidir.
+
+---
+
+## 9. Dosya İşlemlerinin Paket Programlardaki Önemi
+
+Bu haftada öğrenilen dosya işlemleri sayesinde:
+- Paket program dış dünyayla veri alışverişi yapabilir
+- Kullanıcıdan alınan veriler işlenebilir
+- Sonuçlar kalıcı ve paylaşılabilir hâle gelir
+
+Bu yapı, paket programların
+temel çalışma mantığını oluşturur.
+
+---
+
+## 10. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Çalışma dizini kavramını bilir
-- CSV dosyası okuyabilir
-- Veriyi dosyaya yazabilir
-- Paket programlarda dosya işlemlerinin
-  rolünü kavrar
+- Çalışma dizini kavramını açıklar
+- CSV dosyasından veri okuyabilir
+- Okunan veriyi kontrol edebilir
+- Analiz sonuçlarını dosya olarak kaydedebilir
+- Dosya işlemlerinin paket programlardaki rolünü kavrar
 
 ---
 
-## 9. Sonraki Haftaya Hazırlık
+## 11. Sonraki Haftaya Hazırlık
 
-- Veri temizleme kavramını araştırınız
-- Okunan verilerin analize nasıl hazırlanacağını düşününüz
+- Eksik veri (NA) kavramını araştırınız
+- Verinin neden temizlenmesi gerektiğini inceleyiniz
