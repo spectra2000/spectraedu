@@ -1,46 +1,62 @@
-# 06. Dosya İşlemleri
+# Week 06 – Veri Özetleme ve Gruplama
 
 ---
 
 ## A. Dersin Amacı
 
-Bu haftada Streamlit uygulamalarında
-verilerin dosyalar aracılığıyla
-kalıcı olarak saklanması ve
-yeniden kullanılması ele alınacaktır.
+Bu haftada öğrenciler, veri setleri üzerinde
+özetleme ve gruplama işlemlerini öğrenerek
+paket programların anlamlı çıktılar üretmesini
+sağlayan temel analiz adımlarını kavrayacaktır.
 
-Öğrenciler, uygulama verilerini
-dosya tabanlı olarak yönetmeyi öğrenecektir.
+Veri özetleme, kullanıcıya sunulacak bilgilerin
+basitleştirilmesi ve yorumlanabilir hâle
+getirilmesi açısından önemlidir.
 
 ---
 
-## B. Ders Kaynakları
+## B. Ders İçeriği
+
+- Veri özetleme kavramı
+- Temel istatistiksel özetler
+- Gruplama (group by) mantığı
+- Gruplara göre hesaplama
+- Özet sonuçların yorumlanması
+
+---
+
+## C. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 6 – Dosya İşlemleri](lecture-notes.md)
+- Hafta 06 – Veri Özetleme ve Gruplama (lecture-notes.md)
 
 ### Dış Kaynaklar
-- 
+- R Documentation – aggregate
+- R Documentation – summary
 
 ---
 
-## C. Uygulamalar
-- Dosyadan veri okuma ve dosyaya veri yazma senaryolarının incelenmesi
-- Kullanıcı girdilerinin dosyada saklanmasının tartışılması
+## D. Uygulamalar
+
+- Veri seti üzerinde temel istatistiklerin hesaplanması
+- Gruplara göre ortalama ve toplam değerlerin bulunması
+- Özet tabloların oluşturulması
 
 ---
 
-## D. Haftalık Ölçme ve Değerlendirme
+## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Dosya işlemleri kullanan basit bir uygulama senaryosu tasarlama
+- Verilen bir veri setinde
+  gruplara göre özet istatistikler üreten
+  bir R script’i hazırlama
 
 ### Kısa Sınav / Testler
-- 
+- Veri özetleme ve gruplama mantığına yönelik sorular
 
 ---
 
-## E. Görsel Anlatım
+## F. Görsel ve Ek İçerikler
 
 ### Canlı Ders Katılım Linki
 - 
