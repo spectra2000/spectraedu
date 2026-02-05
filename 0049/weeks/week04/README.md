@@ -8,8 +8,9 @@ Bu haftada öğrenciler, R programlama dili kullanarak
 dosyalardan veri okuma ve dosyalara veri yazma
 işlemlerini öğrenecektir.
 
-Bu konular, paket programların veri ile
-nasıl çalıştığını anlamak için temel oluşturur.
+Bu konu, paket programların dış kaynaklardan
+veri alabilmesi ve üretilen sonuçları
+kalıcı hâle getirebilmesi açısından temel öneme sahiptir.
 
 ---
 
@@ -18,8 +19,8 @@ nasıl çalıştığını anlamak için temel oluşturur.
 - Dosya kavramı
 - Çalışma dizini (working directory)
 - CSV dosyası okuma
-- Dosyaya veri yazma
 - Okunan verinin incelenmesi
+- Dosyaya veri yazma
 
 ---
 
@@ -36,9 +37,9 @@ nasıl çalıştığını anlamak için temel oluşturur.
 
 ## D. Uygulamalar
 
-- CSV dosyası okuyarak veri inceleme
-- Basit bir veri setini dosyaya kaydetme
-- Okunan ve yazılan verileri karşılaştırma
+- CSV dosyasından veri okuma
+- Okunan veriyi inceleme
+- Basit bir veri setini CSV dosyası olarak kaydetme
 
 ---
 
@@ -46,10 +47,11 @@ nasıl çalıştığını anlamak için temel oluşturur.
 
 ### Ödev
 - Verilen bir CSV dosyasını okuyup
-  temel inceleme fonksiyonlarını kullanma
+  temel inceleme fonksiyonlarını kullanarak
+  kısa bir rapor hazırlama
 
 ### Kısa Sınav / Testler
-- Dosya okuma ve yazma mantığına yönelik kısa sorular
+- Dosya okuma ve yazma mantığına yönelik sorular
 
 ---
 
