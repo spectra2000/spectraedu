@@ -1,56 +1,54 @@
-# Week 08 – Mini Uygulama (R ile Paket Program Mantığı)
+# Week 08 – Shiny UI Bileşenleri
 
 ---
 
 ## A. Dersin Amacı
 
-Bu haftada öğrenciler, önceki haftalarda öğrenilen
-R temelleri, veri okuma, temizleme, özetleme ve
-görselleştirme konularını bir araya getirerek
-mini bir paket program geliştirecektir.
+Bu haftada öğrenciler,
+Shiny uygulamalarında kullanılan
+kullanıcı arayüzü (UI) bileşenlerini
+öğrenecektir.
 
-Amaç, tek tek öğrenilen becerilerin
-bütüncül bir akış içinde uygulanmasını sağlamaktır.
+Amaç, kullanıcı ile
+uygulama arasındaki etkileşimi
+kontrol edebilmektir.
 
 ---
 
 ## B. Ders İçeriği
 
-- Mini uygulama kavramı
-- Uygulama senaryosu oluşturma
-- Veri okuma ve hazırlama
-- Özetleme ve görselleştirme
-- Çıktı üretme
+- UI kavramı
+- Layout yapıları
+- Input bileşenleri
+- Output bileşenleri
 
 ---
 
 ## C. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 08 – Mini Uygulama (R ile Paket Program Mantığı)](lecture-notes.md)
+- [Hafta 08 – Shiny UI Bileşenleri](lecture-notes.md)
 
 ### Dış Kaynaklar
-- R Documentation – read.csv
-- R Documentation – write.csv
+- Shiny UI Documentation
 
 ---
 
 ## D. Uygulamalar
 
-- Basit bir veri analizi uygulaması geliştirme
-- Uygulama çıktılarının yorumlanması
-- Kodun modüler hâle getirilmesi
+- Farklı input bileşenleri kullanma
+- Basit UI tasarımı oluşturma
 
 ---
 
 ## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Verilen bir senaryoya uygun
-  mini bir analiz uygulaması hazırlama
+- En az üç farklı UI bileşeni içeren
+  basit bir Shiny arayüzü oluşturma
 
 ### Kısa Sınav / Testler
-- Paket program mantığına yönelik kısa sorular
+- UI bileşenleri
 
 ---
 
