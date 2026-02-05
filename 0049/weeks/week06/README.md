@@ -1,57 +1,58 @@
-# Week 06 – Veri Özetleme ve Gruplama
+# Week 06 – Veri Görselleştirme (ggplot2)
 
 ---
 
 ## A. Dersin Amacı
 
-Bu haftada öğrenciler, veri setleri üzerinde
-özetleme ve gruplama işlemlerini öğrenerek
-paket programların anlamlı çıktılar üretmesini
-sağlayacaktır.
+Bu haftada öğrenciler, veri setlerinden elde edilen
+bilgilerin **ggplot2 paketi** kullanılarak
+etkili ve anlaşılır grafikler hâlinde
+nasıl görselleştirileceğini öğrenecektir.
 
-Ham verinin tek başına yeterli olmadığı,
-verinin özetlenerek yorumlanmasının
-neden gerekli olduğu ele alınacaktır.
+ggplot2, R ekosisteminde
+en yaygın kullanılan görselleştirme aracıdır
+ve paket programlarda profesyonel çıktı üretmek için
+temel bir bileşendir.
 
 ---
 
 ## B. Ders İçeriği
 
-- Veri özetleme kavramı
-- Temel istatistiksel özetler
-- Gruplama mantığı
-- Gruplara göre hesaplama
-- Özet tablolar oluşturma
+- Veri görselleştirmenin amacı
+- ggplot2 paketine giriş
+- Temel ggplot yapısı
+- Grafik türleri
+- Grafiklerin yorumlanması
 
 ---
 
 ## C. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 06 – Veri Özetleme ve Gruplama](lecture-notes.md)
+- [Hafta 06 – Veri Görselleştirme (ggplot2)](lecture-notes.md)
 
 ### Dış Kaynaklar
-- R Documentation – summary
-- R Documentation – aggregate
+- ggplot2 Documentation
+- R Graphics Cookbook
 
 ---
 
 ## D. Uygulamalar
 
-- Veri seti için temel özet istatistikler çıkarma
-- Gruplara göre ortalama ve toplam hesaplama
-- Özet sonuçları tablo hâline getirme
+- Sayısal veriler için grafik üretme
+- Farklı grafik türlerini karşılaştırma
+- Grafik çıktılarının yorumlanması
 
 ---
 
 ## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Verilen bir veri setini gruplandırarak
-  özet istatistikler üreten bir R script’i yazma
+- Verilen bir veri seti için
+  en az iki farklı ggplot grafiği üretme
 
 ### Kısa Sınav / Testler
-- Veri özetleme ve gruplama kavramları
+- Grafik türleri ve kullanım amaçları
 
 ---
 
