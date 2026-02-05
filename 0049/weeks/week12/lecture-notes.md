@@ -1,114 +1,127 @@
-# Hafta 12 – Paketleme ve Proje Yapısı
-**Ders:** Paket Programlar (Python / Streamlit Framework)  
+# Hafta 12 – R Paket Mantığı
+
+**Ders:** Paket Programlar  
+**Programlama Dili:** R  
 **Hafta:** 12  
-**Kapsam:** Proje düzeni, paketleme ve sürdürülebilir kod  
 
 ---
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, Streamlit uygulamalarını
-tek dosyalık denemelerden çıkarıp
-daha düzenli ve yönetilebilir projeler hâline
-getirmenin temel prensiplerini açıklamaktır.
+Bu haftanın amacı, R programlama dilinde
+paket kavramını tanıtmak ve
+kodların neden paket hâline getirildiğini
+açıklamaktır.
 
-Bu hafta sonunda öğrenciler:
-- Proje yapısının neden önemli olduğunu anlar
-- Kodun dosyalara bölünmesini kavrar
-- Paket program bakış açısı geliştirir
+Bu yapı, geliştirilen uygulamaların
+daha profesyonel ve sürdürülebilir olmasını sağlar.
 
 ---
 
-## 2. Proje Yapısı Nedir?
+## 2. R Paketi Nedir?
 
-Proje yapısı:
-- Dosyaların ve klasörlerin düzenidir
-- Kodun okunabilirliğini ve bakımını etkiler
+R paketi:
+- Fonksiyonları
+- Verileri
+- Dokümantasyonu
 
-Düzgün bir yapı:
-- Hataları azaltır
-- Geliştirmeyi hızlandırır
+tek bir yapı altında toplayan
+düzenli bir yazılım birimidir.
 
----
-
-## 3. Neden Paketleme Yapılır?
-
-Paketleme:
-- Kodun tekrar kullanılmasını sağlar
-- Projeyi başkalarıyla paylaşmayı kolaylaştırır
-- Uygulamanın büyümesini mümkün kılar
-
-Bu yaklaşım, profesyonel yazılım geliştirme için temeldir.
+CRAN üzerindeki her paket,
+bu mantıkla oluşturulmuştur.
 
 ---
 
-## 4. Basit Bir Streamlit Proje Yapısı
+## 3. Neden Paket Kullanırız?
 
-Tipik bir Streamlit projesinde:
-- Ana uygulama dosyası
-- Yardımcı fonksiyonlar
-- Veri veya kaynak dosyaları
+Paket kullanmanın avantajları:
+- Kod tekrarını azaltır
+- Düzenli bir yapı sağlar
+- Kolay paylaşım ve dağıtım imkânı sunar
+- Bakımı kolaylaştırır
 
-ayrı klasörlerde tutulur.
-
-Bu ayrım, kodun karmaşasını azaltır.
-
----
-
-## 5. Kodun Modülerleştirilmesi
-
-Modüler kod:
-- Küçük, anlaşılır parçalardan oluşur
-- Tek bir sorumluluğa odaklanır
-
-Bu yapı:
-- Test etmeyi kolaylaştırır
-- Hata ayıklamayı hızlandırır
+Bu özellikler,
+paket program mantığıyla birebir örtüşür.
 
 ---
 
-## 6. Bağımlılıkların Tanımlanması
+## 4. Temel Paket Yapısı
 
-Projede kullanılan kütüphaneler:
-- Açık şekilde belirtilmelidir
-- Projenin tekrar çalıştırılabilirliğini sağlar
+Basit bir R paketinde
+şu klasörler bulunur:
 
-Bu adım, deployment sürecinin de temelidir.
+- R/
+- man/
+- DESCRIPTION
+- NAMESPACE
 
----
-
-## 7. Paket Program Mantığıyla Proje Düzeni
-
-Paket programlarda:
-- Kod uzun süre yaşar
-- Farklı kişiler tarafından geliştirilebilir
-
-Bu nedenle proje yapısı,
-ilk günden doğru kurulmalıdır.
+Bu yapı,
+paketin nasıl çalışacağını belirler.
 
 ---
 
-## 8. Sık Yapılan Hatalar
+## 5. R Klasörü
 
-Yeni başlayanlar genellikle:
-- Tüm kodu tek dosyada toplar
-- Dosya ve klasör isimlendirmesine dikkat etmez
+`R/` klasörü:
+- Fonksiyonların yazıldığı yerdir
+- Her fonksiyon ayrı dosyada bulunabilir
 
-Bu durum, projenin büyümesini zorlaştırır.
+Örnek:
+
+    R/
+      toplama.R
+      carpma.R
+
+---
+
+## 6. DESCRIPTION Dosyası
+
+DESCRIPTION dosyası:
+- Paket hakkında genel bilgileri içerir
+- Paket adı
+- Sürüm
+- Yazar bilgileri
+
+gibi bilgileri barındırır.
+
+---
+
+## 7. NAMESPACE Dosyası
+
+NAMESPACE dosyası:
+- Hangi fonksiyonların dışarı açılacağını belirler
+- Paket içi erişimi kontrol eder
+
+Bu dosya,
+paketin güvenliğini ve düzenini sağlar.
+
+---
+
+## 8. Paket Mantığının Paket Programlarla İlişkisi
+
+Paket yapısı sayesinde:
+- Kodlar modüler hâle gelir
+- Büyük projeler yönetilebilir olur
+- Paket programlar daha profesyonel görünür
+
+Bu yapı,
+final projede geliştirilecek
+Shiny uygulamalarının da temelini oluşturur.
 
 ---
 
 ## 9. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Proje yapısının önemini kavrar
-- Streamlit projelerini düzenli hâle getirir
-- Paketleme mantığını açıklar
+- R paket kavramını açıklar
+- Temel paket yapısını tanır
+- Fonksiyonları paket içine alabilir
+- Paket program mantığını kavrar
 
 ---
 
 ## 10. Sonraki Haftaya Hazırlık
 
-- Uygulamaların nasıl yayınlandığını araştırınız.
-- Deployment kavramının ne anlama geldiğini düşününüz.
-
+- Shiny uygulamalarının nasıl yayınlandığını araştırınız
+- Shiny Server ve shinyapps.io kavramlarını inceleyiniz
