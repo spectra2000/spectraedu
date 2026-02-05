@@ -1,47 +1,61 @@
-# 08. Mini Uygulama
+# Week 08 – Mini Uygulama (R ile Paket Program Mantığı)
 
 ---
 
 ## A. Dersin Amacı
 
 Bu haftada öğrenciler, önceki haftalarda öğrenilen
-arayüz tasarımı, input bileşenleri, state, dosya işlemleri
-ve görselleştirme konularını bir araya getirerek
-küçük ölçekli bir Streamlit uygulaması geliştirecektir.
+R temelleri, veri işlemleri ve görselleştirme
+konularını bir araya getirerek
+küçük ölçekli bir paket program mantığıyla
+mini bir uygulama geliştirecektir.
 
-Amaç, paket program geliştirme sürecini
-uçtan uca deneyimlemektir.
+Amaç, teorik bilgilerin
+tek bir akış içinde uygulanmasını sağlamaktır.
 
 ---
 
-## B. Ders Kaynakları
+## B. Ders İçeriği
+
+- Mini uygulama kavramı
+- Uygulama senaryosu oluşturma
+- Veri okuma ve temizleme
+- Özetleme ve görselleştirme
+- Çıktı üretme
+
+---
+
+## C. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 8 – Mini Uygulama](lecture-notes.md)
+- Hafta 08 – Mini Uygulama (lecture-notes.md)
 
 ### Dış Kaynaklar
-- 
+- R Documentation – read.csv
+- R Documentation – plot
 
 ---
 
-## C. Uygulamalar
-- Mini uygulama fikrinin belirlenmesi
-- Uygulama akışının planlanması
-- Basit ama çalışan bir Streamlit uygulamasının oluşturulması
+## D. Uygulamalar
+
+- Basit bir veri analizi uygulaması geliştirme
+- Uygulama çıktılarının yorumlanması
+- Kodun modüler hâle getirilmesi
 
 ---
 
-## D. Haftalık Ölçme ve Değerlendirme
+## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Belirlenen kriterlere uygun bir mini Streamlit uygulaması geliştirme
+- Verilen bir veri seti için
+  mini bir analiz uygulaması hazırlama
 
 ### Kısa Sınav / Testler
-- 
+- Paket program mantığına yönelik kısa sorular
 
 ---
 
-## E. Görsel Anlatım
+## F. Görsel ve Ek İçerikler
 
 ### Canlı Ders Katılım Linki
 - 
