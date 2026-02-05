@@ -1,47 +1,62 @@
-# 13. Deployment
+# Week 13 – Shiny Uygulama Yayınlama
 
 ---
 
 ## A. Dersin Amacı
 
-Bu haftada Streamlit uygulamalarının
-yerel ortamdan çıkarılarak
-başkaları tarafından erişilebilir hâle getirilmesi,
-yani deployment (yayınlama) kavramı ele alınacaktır.
+Bu haftada öğrenciler, geliştirdikleri Shiny
+uygulamalarını başkalarının erişebileceği
+şekilde **yayınlamayı** öğrenecektir.
 
-Öğrenciler, geliştirdikleri uygulamaları
-gerçek kullanıcılarla buluşturmanın
-temel prensiplerini öğrenecektir.
+Amaç, geliştirilen paket programın
+yalnızca yerelde değil,
+paylaşılabilir ve erişilebilir
+bir hâle getirilmesidir.
 
 ---
 
-## B. Ders Kaynakları
+## B. Ders İçeriği
+
+- Yayınlama (deployment) kavramı
+- Yerel (local) çalıştırma vs yayınlama
+- shinyapps.io platformu
+- Hesap oluşturma ve bağlantı ayarları
+- Shiny uygulamasını yayına alma adımları
+
+---
+
+## C. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 13 – Deployment](lecture-notes.md)
+- [Hafta 13 – Shiny Uygulama Yayınlama](lecture-notes.md)
 
 ### Dış Kaynaklar
-- 
+- shinyapps.io Documentation
+- Shiny Deployment Guide
 
 ---
 
-## C. Uygulamalar
-- Bir Streamlit uygulamasının yayınlanma sürecinin incelenmesi
-- Yerel çalıştırma ile yayınlanmış uygulamanın karşılaştırılması
+## D. Uygulamalar
+
+- Shiny uygulamasını yerel ortamda test etme
+- shinyapps.io hesabı oluşturma
+- Uygulamayı çevrim içi yayınlama
 
 ---
 
-## D. Haftalık Ölçme ve Değerlendirme
+## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Bir Streamlit uygulamasının nasıl deploy edileceğini adım adım açıklayan kısa bir doküman hazırlama
+- Geliştirilen mini Shiny uygulamasını
+  çevrim içi olarak yayınlama
+  ve bağlantıyı paylaşma
 
 ### Kısa Sınav / Testler
-- 
+- Yayınlama kavramları ve adımlar
 
 ---
 
-## E. Görsel Anlatım
+## F. Görsel Anlatım
 
 ### Canlı Ders Katılım Linki
 - 
