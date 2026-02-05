@@ -8,138 +8,164 @@
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, R programlama dili kullanılarak
-veri setlerinin temizlenmesi ve analize uygun hâle
-getirilmesini öğretmektir.
+Bu haftanın amacı, paket programlarda kullanılan
+verilerin neden ve nasıl temizlenmesi gerektiğini
+öğretmektir.
 
-Paket programlar, doğru ve temiz veri ile
-çalıştığında güvenilir sonuçlar üretir.
+Gerçek hayatta kullanılan veriler çoğu zaman:
+- Eksik
+- Hatalı
+- Tutarsız
+
+olabilir. Bu nedenle analizden önce
+verinin hazırlanması zorunludur.
 
 ---
 
 ## 2. Veri Temizleme Nedir?
 
-Veri temizleme, veri seti içindeki:
-- Eksik değerlerin
-- Hatalı girişlerin
-- Tutarsız kayıtların
+Veri temizleme, ham verinin
+analiz ve işleme uygun hâle getirilmesi sürecidir.
 
-tespit edilmesi ve düzeltilmesi sürecidir.
-
-Gerçek hayatta veriler çoğu zaman
-doğrudan analize uygun değildir.
+Paket programlarda veri temizleme:
+- Hatalı sonuçların önüne geçer
+- Programın güvenilirliğini artırır
+- Kullanıcıya doğru çıktılar sunulmasını sağlar
 
 ---
 
-## 3. Eksik Veriler (NA)
+## 3. Eksik Veri (NA) Kavramı
 
-R’de eksik veriler `NA` ile gösterilir.
+R’de eksik veriler **NA** ile temsil edilir.
 
-Bir veri setinde eksik değer olup olmadığını
-kontrol etmek için:
+Eksik veriler:
+- Ölçüm hatalarından
+- Veri giriş eksikliklerinden
+- Dosya okuma sorunlarından
 
-    is.na(data)
+kaynaklanabilir.
 
-Eksik değerlerin sayısını görmek için:
+Bir veri setinde NA olup olmadığını görmek için:
 
-    sum(is.na(data))
+    any(is.na(data))
 
 ---
 
-## 4. Eksik Verilerin Kaldırılması
+## 4. Eksik Verilerin Tespiti
 
-Eksik veriler bazı durumlarda veri setinden
-çıkarılabilir.
+Eksik verilerin hangi sütunlarda
+bulunduğu kontrol edilmelidir.
 
-Eksik değer içeren satırları silmek için:
+Bir veri setindeki NA sayısını görmek için:
+
+    colSums(is.na(data))
+
+Bu adım, veri temizleme sürecinin
+ilk ve en önemli aşamasıdır.
+
+---
+
+## 5. Eksik Verilerin Temizlenmesi
+
+Eksik veriler farklı şekillerde ele alınabilir.
+
+Tüm eksik satırları silmek için:
 
     clean_data <- na.omit(data)
 
-Bu yöntem, veri kaybına yol açabileceği için
-dikkatli kullanılmalıdır.
+Bu yöntem:
+- Basittir
+- Ancak veri kaybına yol açabilir
+
+Bu nedenle dikkatli kullanılmalıdır.
 
 ---
 
-## 5. Veri Filtreleme
+## 6. Veri Filtreleme
 
-Belirli koşullara göre veri seçmek,
-paket programlarda sık kullanılan bir işlemdir.
+Bazı durumlarda,
+veri setinin yalnızca belirli bir kısmı
+analize dahil edilmek istenir.
 
-Örneğin belirli bir değerden büyük olan
-kayıtları seçmek için:
+Örneğin, belirli bir koşulu sağlayan
+satırları seçmek için:
 
-    filtered_data <- data[data$age > 18, ]
+    filtered_data <- data[data$yas > 18, ]
 
----
-
-## 6. Veri Dönüştürme
-
-Veri dönüştürme, mevcut verilerden
-yeni değişkenler üretmeyi ifade eder.
-
-Örnek:
-
-    data$age_group <- ifelse(data$age < 30, "Genç", "Yetişkin")
-
-Bu işlem, paket programın kullanıcıya
-daha anlamlı sonuçlar sunmasını sağlar.
+Veri filtreleme,
+paket programlarda kullanıcıya
+özelleştirilmiş sonuçlar sunmayı sağlar.
 
 ---
 
-## 7. Veri Tipi Dönüşümleri
+## 7. Veri Dönüştürme
 
-Veri tipleri gerektiğinde dönüştürülebilir.
+Veri dönüştürme, mevcut verinin
+başka bir forma çevrilmesidir.
 
-Örnek dönüşümler:
+Örnek işlemler:
+- Sütun adlarını değiştirme
+- Yeni sütunlar oluşturma
+- Mevcut değerleri yeniden hesaplama
 
-    as.numeric(data$score)
-    as.character(data$name)
+Yeni bir sütun eklemek için:
 
-Yanlış veri tipi, analiz ve görselleştirme
-hatalarına yol açabilir.
+    data$ortalama <- (data$vize + data$final) / 2
 
 ---
 
 ## 8. Temizlenmiş Verinin Kontrolü
 
-Veri temizlendikten sonra tekrar
-kontrol edilmesi gerekir.
+Temizleme ve dönüştürme işlemlerinden sonra
+veri tekrar kontrol edilmelidir.
 
     str(clean_data)
     summary(clean_data)
 
-Bu adım, paket programın doğru
-veriyle çalıştığından emin olmak için önemlidir.
+Bu adım, yapılan işlemlerin
+doğru sonuç verdiğinden
+emin olmak için gereklidir.
 
 ---
 
-## 9. Veri Temizlemenin Paket Programlardaki Rolü
+## 9. Temizlenmiş Verinin Kaydedilmesi
 
-Paket programlar genellikle:
-- Kullanıcıdan gelen verilerle
-- Dosyalardan okunan verilerle
+Temizlenmiş ve düzenlenmiş veri,
+dosya olarak saklanabilir.
 
-çalışır.
+    write.csv(clean_data, "temiz_veri.csv", row.names = FALSE)
 
-Bu nedenle veri temizleme,
-paket programların arka planında
-vazgeçilmez bir adımdır.
+Bu işlem, paket programın
+çıktı üretme ve tekrar kullanılabilirlik
+özelliğini destekler.
 
 ---
 
-## 10. Haftanın Kazanımları
+## 10. Veri Temizlemenin Paket Programlardaki Önemi
+
+Bu haftada öğrenilen işlemler sayesinde:
+- Paket program hatalı verilerle çalışmaz
+- Analiz sonuçları daha güvenilir olur
+- Kullanıcıya doğru bilgi sunulur
+
+Veri temizleme,
+iyi bir paket programın
+vazgeçilmez bir adımıdır.
+
+---
+
+## 11. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Eksik verileri tespit edebilir
-- Veriyi temizleyebilir
-- Veriyi dönüştürebilir
-- Paket programlarda veri kalitesinin
-  önemini kavrar
+- Eksik veri kavramını açıklar
+- NA değerlerini tespit edebilir
+- Veriyi filtreleyebilir
+- Veri dönüştürme işlemleri yapabilir
+- Temizlenmiş veriyi dosya olarak kaydedebilir
 
 ---
 
-## 11. Sonraki Haftaya Hazırlık
+## 12. Sonraki Haftaya Hazırlık
 
-- Veri özetleme ve gruplama kavramlarını araştırınız
-- Temizlenmiş verilerle yapılabilecek
-  analizleri düşününüz
+- Veri özetleme kavramını araştırınız
+- Gruplama işlemlerinin ne işe yaradığını inceleyiniz
