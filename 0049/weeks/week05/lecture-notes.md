@@ -1,136 +1,145 @@
-# Hafta 05 – State ve Akış Kontrolü
-**Ders:** Paket Programlar (Python / Streamlit Framework)  
+# Hafta 05 – Veri Temizleme ve Dönüştürme
+
+**Ders:** Paket Programlar  
+**Programlama Dili:** R  
 **Hafta:** 5  
-**Kapsam:** Uygulama durumu ve etkileşimli akış yönetimi  
 
 ---
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, Streamlit uygulamalarında
-kullanıcı etkileşimleri sırasında
-verilerin nasıl korunduğunu ve
-uygulama akışının nasıl yönetildiğini açıklamaktır.
+Bu haftanın amacı, R programlama dili kullanılarak
+veri setlerinin temizlenmesi ve analize uygun hâle
+getirilmesini öğretmektir.
 
-Bu hafta sonunda öğrenciler:
-- State kavramını tanımlar
-- Akış kontrolünün neden gerekli olduğunu anlar
-- Etkileşimli uygulama davranışları geliştirir
+Paket programlar, doğru ve temiz veri ile
+çalıştığında güvenilir sonuçlar üretir.
 
 ---
 
-## 2. State (Durum) Nedir?
+## 2. Veri Temizleme Nedir?
 
-**State**, uygulama çalışırken
-tutulması gereken geçici verileri ifade eder.
+Veri temizleme, veri seti içindeki:
+- Eksik değerlerin
+- Hatalı girişlerin
+- Tutarsız kayıtların
 
-Bu veriler:
-- Kullanıcı seçimleri
-- Ara sonuçlar
-- Uygulama adımları
+tespit edilmesi ve düzeltilmesi sürecidir.
 
-olabilir.
-
-State sayesinde uygulama,
-kullanıcıyla tutarlı bir iletişim kurar.
+Gerçek hayatta veriler çoğu zaman
+doğrudan analize uygun değildir.
 
 ---
 
-## 3. Streamlit’te Çalışma Mantığı ve State İhtiyacı
+## 3. Eksik Veriler (NA)
 
-Streamlit’te:
-- Her kullanıcı etkileşiminde uygulama yeniden çalışır
-- State kullanılmazsa önceki bilgiler kaybolur
+R’de eksik veriler `NA` ile gösterilir.
 
-Bu nedenle state,
-dinamik uygulamalar için kritiktir.
+Bir veri setinde eksik değer olup olmadığını
+kontrol etmek için:
 
----
+    is.na(data)
 
-## 4. Akış Kontrolü Nedir?
+Eksik değerlerin sayısını görmek için:
 
-Akış kontrolü:
-- Uygulamanın hangi adımda olduğunu
-- Hangi içeriğin gösterileceğini
-
-belirleyen mantıktır.
-
-Bu yapı sayesinde:
-- Çok adımlı uygulamalar oluşturulabilir
-- Kullanıcı yönlendirilir
+    sum(is.na(data))
 
 ---
 
-## 5. Koşullarla Akış Yönetimi
+## 4. Eksik Verilerin Kaldırılması
 
-Akış kontrolü genellikle:
-- Koşullar
-- Kullanıcı seçimleri
+Eksik veriler bazı durumlarda veri setinden
+çıkarılabilir.
 
-üzerine kurulur.
+Eksik değer içeren satırları silmek için:
 
-Bu yaklaşım:
-- Gereksiz ekran karmaşasını önler
-- Kullanıcıyı doğru adımlara yönlendirir
+    clean_data <- na.omit(data)
 
----
-
-## 6. State Kullanım Senaryoları
-
-State genellikle:
-- Form adımları
-- Hesaplama sonuçları
-- Kullanıcı tercihleri
-
-gibi durumlarda kullanılır.
-
-Bu senaryolar,
-paket program mantığının temelini oluşturur.
+Bu yöntem, veri kaybına yol açabileceği için
+dikkatli kullanılmalıdır.
 
 ---
 
-## 7. Tutarlı Kullanıcı Deneyimi
+## 5. Veri Filtreleme
 
-State ve akış kontrolü:
-- Kullanıcı deneyimini iyileştirir
-- Uygulamanın profesyonel görünmesini sağlar
+Belirli koşullara göre veri seçmek,
+paket programlarda sık kullanılan bir işlemdir.
 
-Kullanıcı, yaptığı işlemlerin
-boşa gitmediğini hisseder.
+Örneğin belirli bir değerden büyük olan
+kayıtları seçmek için:
 
----
-
-## 8. Sık Yapılan Hatalar
-
-Yeni başlayanlar genellikle:
-- State kullanmadan karmaşık akışlar kurar
-- Uygulamanın her seferinde sıfırlanmasına neden olur
-
-Bu hatalar, kullanıcıyı olumsuz etkiler.
+    filtered_data <- data[data$age > 18, ]
 
 ---
 
-## 9. Paket Programlarda State’in Önemi
+## 6. Veri Dönüştürme
 
-Paket programlarda:
-- Kullanıcı süreklilik bekler
-- Seçimlerin korunmasını ister
+Veri dönüştürme, mevcut verilerden
+yeni değişkenler üretmeyi ifade eder.
 
-State, bu beklentinin karşılanmasını sağlar.
+Örnek:
+
+    data$age_group <- ifelse(data$age < 30, "Genç", "Yetişkin")
+
+Bu işlem, paket programın kullanıcıya
+daha anlamlı sonuçlar sunmasını sağlar.
+
+---
+
+## 7. Veri Tipi Dönüşümleri
+
+Veri tipleri gerektiğinde dönüştürülebilir.
+
+Örnek dönüşümler:
+
+    as.numeric(data$score)
+    as.character(data$name)
+
+Yanlış veri tipi, analiz ve görselleştirme
+hatalarına yol açabilir.
+
+---
+
+## 8. Temizlenmiş Verinin Kontrolü
+
+Veri temizlendikten sonra tekrar
+kontrol edilmesi gerekir.
+
+    str(clean_data)
+    summary(clean_data)
+
+Bu adım, paket programın doğru
+veriyle çalıştığından emin olmak için önemlidir.
+
+---
+
+## 9. Veri Temizlemenin Paket Programlardaki Rolü
+
+Paket programlar genellikle:
+- Kullanıcıdan gelen verilerle
+- Dosyalardan okunan verilerle
+
+çalışır.
+
+Bu nedenle veri temizleme,
+paket programların arka planında
+vazgeçilmez bir adımdır.
 
 ---
 
 ## 10. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- State kavramını açıklar
-- Akış kontrolünü uygular
-- Etkileşimli uygulamalar geliştirir
+- Eksik verileri tespit edebilir
+- Veriyi temizleyebilir
+- Veriyi dönüştürebilir
+- Paket programlarda veri kalitesinin
+  önemini kavrar
 
 ---
 
 ## 11. Sonraki Haftaya Hazırlık
 
-- Dosya okuma ve yazma kavramlarını inceleyiniz.
-- Uygulamalarda verinin nasıl saklandığını düşününüz.
-
+- Veri özetleme ve gruplama kavramlarını araştırınız
+- Temizlenmiş verilerle yapılabilecek
+  analizleri düşününüz
