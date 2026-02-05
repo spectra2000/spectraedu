@@ -1,4 +1,4 @@
-# Hafta 06 – Veri Özetleme ve Gruplama
+# Hafta 06 – Veri Görselleştirme (ggplot2)
 
 **Ders:** Paket Programlar  
 **Programlama Dili:** R  
@@ -8,146 +8,126 @@
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, veri setlerinden
-anlamlı bilgiler elde etmek için
-özetleme ve gruplama işlemlerinin
-nasıl yapıldığını öğretmektir.
+Bu haftanın amacı, veri setlerinden elde edilen
+bilgilerin **ggplot2** paketi kullanılarak
+görsel hâle getirilmesini öğretmektir.
 
-Paket programlar çoğu zaman
-ham veriyi değil,
-özetlenmiş ve yorumlanabilir
-bilgileri kullanıcıya sunar.
+Paket programlar, kullanıcıya çoğu zaman
+sayısal tablolar yerine
+grafiklerle desteklenmiş sonuçlar sunar.
 
 ---
 
-## 2. Veri Özetleme Nedir?
+## 2. Veri Görselleştirme Nedir?
 
-Veri özetleme, büyük veri setlerini
-daha küçük ve anlaşılır hâle
-getirme sürecidir.
+Veri görselleştirme,
+sayısal verilerin grafikler yardımıyla
+anlamlı ve yorumlanabilir hâle getirilmesidir.
 
-Bu işlem sayesinde:
-- Genel eğilimler görülür
-- Aykırı değerler fark edilir
-- Verinin yapısı anlaşılır
-
----
-
-## 3. Temel Özet Fonksiyonları
-
-R’de en sık kullanılan
-özetleme fonksiyonları şunlardır:
-
-    summary(data)
-
-Bu fonksiyon:
-- Minimum
-- Maksimum
-- Ortalama
-- Medyan
-
-gibi temel istatistikleri verir.
+Bu sayede:
+- Eğilimler daha hızlı fark edilir
+- Karşılaştırmalar kolaylaşır
+- Sonuçlar daha etkili sunulur
 
 ---
 
-## 4. Tek Değişken Üzerinde Özetleme
+## 3. ggplot2 Paketi
 
-Belirli bir sütun için
-özet istatistikler hesaplanabilir.
+ggplot2, R’de kullanılan
+en güçlü görselleştirme paketlerinden biridir.
 
-Örneğin:
+ggplot2’nin avantajları:
+- Katmanlı yapı
+- Esnek grafik üretimi
+- Profesyonel görsel çıktı
 
-    mean(data$not)
-    median(data$not)
-    min(data$not)
-    max(data$not)
+Paketi yüklemek için:
 
-Bu işlemler,
-paket programlarda
-tek bir ölçümün hızlıca
-analiz edilmesini sağlar.
+    install.packages("ggplot2")
 
----
+Kullanmak için:
 
-## 5. Gruplama Kavramı
-
-Gruplama, verilerin
-belirli bir değişkene göre
-alt kümelere ayrılmasıdır.
-
-Örneğin:
-- Bölgelere göre satış
-- Sınıflara göre notlar
-- Kategorilere göre maliyetler
+    library(ggplot2)
 
 ---
 
-## 6. Gruplara Göre Hesaplama
+## 4. ggplot Yapısı
 
-R’de gruplama işlemleri
-`aggregate()` fonksiyonu ile yapılabilir.
+Bir ggplot grafiği temel olarak üç bileşenden oluşur:
+- Veri (data)
+- Estetikler (aes)
+- Grafik türü (geom)
+
+Temel yapı:
+
+    ggplot(data, aes(x = degisken1, y = degisken2)) +
+      geom_point()
+
+---
+
+## 5. Nokta Grafiği (Scatter Plot)
+
+Nokta grafikleri,
+iki sayısal değişken arasındaki
+ilişkiyi göstermek için kullanılır.
 
 Örnek:
 
-    aggregate(not ~ sinif, data = data, mean)
-
-Bu komut,
-her sınıf için
-ortalama notu hesaplar.
+    ggplot(data, aes(x = yas, y = not)) +
+      geom_point()
 
 ---
 
-## 7. Birden Fazla Özet Hesaplama
+## 6. Çubuk Grafik (Bar Plot)
 
-Gruplar için
-farklı özetler de alınabilir.
+Çubuk grafikler,
+kategorik verilerin
+karşılaştırılması için uygundur.
 
-Örneğin:
+Örnek:
 
-    aggregate(not ~ sinif, data = data, summary)
-
-Bu sayede her grup için
-detaylı özet istatistikler elde edilir.
-
----
-
-## 8. Özet Tabloların Paket Programlardaki Rolü
-
-Özet tablolar:
-- Karmaşık verileri sadeleştirir
-- Karar verme sürecini kolaylaştırır
-- Kullanıcıya net bilgi sunar
-
-Bu nedenle paket programlarda
-en sık üretilen çıktılardan biridir.
+    ggplot(data, aes(x = sinif)) +
+      geom_bar()
 
 ---
 
-## 9. Veri Özetlemenin Paket Program Mantığı
+## 7. Grafik Başlıkları ve Etiketler
 
-Bu haftada öğrenilen işlemler sayesinde:
-- Ham veri anlamlı bilgiye dönüşür
-- Kullanıcı sonuçları hızlıca yorumlar
-- Program daha işlevsel hâle gelir
+Grafiklerin anlaşılır olması için
+başlık ve eksen etiketleri eklenmelidir.
 
-Veri özetleme,
-paket programların
-en kritik adımlarından biridir.
+    ggplot(data, aes(x = yas, y = not)) +
+      geom_point() +
+      labs(
+        title = "Yaş ve Not İlişkisi",
+        x = "Yaş",
+        y = "Not"
+      )
 
 ---
 
-## 10. Haftanın Kazanımları
+## 8. Grafiklerin Paket Programlardaki Rolü
+
+Paket programlarda grafikler:
+- Analiz sonuçlarını özetler
+- Kullanıcıya hızlı içgörü sağlar
+- Karar verme sürecini destekler
+
+Bu nedenle görselleştirme,
+paket programların vazgeçilmez bir parçasıdır.
+
+---
+
+## 9. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Veri özetleme kavramını açıklar
-- Temel istatistikleri hesaplayabilir
-- Gruplama işlemleri yapabilir
-- Gruplara göre özet tablolar oluşturabilir
+- ggplot2 paketini kullanabilir
+- Temel grafik türleri oluşturabilir
+- Grafik çıktılarının anlamını yorumlayabilir
 
 ---
 
-## 11. Sonraki Haftaya Hazırlık
+## 10. Sonraki Haftaya Hazırlık
 
-- Grafik türlerini araştırınız
-- Verinin görselleştirilmesinin
-  neden önemli olduğunu düşününüz
+- Etkileşimli uygulama kavramını araştırınız
+- Shiny framework’ünün ne işe yaradığını inceleyiniz
