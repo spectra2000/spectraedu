@@ -1,45 +1,65 @@
-# 14. Final Proje
+# Week 14 – Final Proje
 
 ---
 
 ## A. Dersin Amacı
 
 Bu haftada öğrenciler, dönem boyunca
-öğrendikleri tüm bilgi ve becerileri kullanarak
-kapsamlı bir Streamlit uygulaması geliştirecektir.
+öğrendikleri R, Shiny ve paket program
+kavramlarını kullanarak
+kapsamlı bir **final projesi** geliştirecektir.
 
-Amaç, paket program geliştirme sürecini
-uçtan uca tamamlamaktır.
+Amaç, öğrencinin
+bir paket programı
+baştan sona tasarlayıp
+uygulayabildiğini göstermesidir.
 
 ---
 
-## B. Ders Kaynakları
+## B. Ders İçeriği
+
+- Final proje kapsamının belirlenmesi
+- Proje senaryosu oluşturma
+- Uygulama mimarisinin planlanması
+- Shiny uygulamasının geliştirilmesi
+- Son değerlendirme ve sunum
+
+---
+
+## C. Ders Kaynakları
 
 ### Ders Notları
 - [Hafta 14 – Final Proje](lecture-notes.md)
 
 ### Dış Kaynaklar
-- 
+- Önceki haftaların ders notları
+- Shiny Gallery (örnek uygulamalar)
 
 ---
 
-## C. Uygulamalar
-- Final proje fikrinin netleştirilmesi
-- Projenin geliştirilmesi ve sunuma hazırlanması
+## D. Uygulamalar
+
+- Final proje uygulamasının geliştirilmesi
+- UI, server ve reaktif yapıların birlikte kullanılması
+- Uygulamanın test edilmesi
 
 ---
 
-## D. Haftalık Ölçme ve Değerlendirme
+## E. Haftalık Ölçme ve Değerlendirme
 
-### Final Projesi
-- Belirlenen kriterlere uygun, çalışan bir Streamlit uygulaması
+### Proje
+- Belirlenen kriterlere uygun
+  çalışan bir Shiny paket program geliştirme
 
-### Sunum / Değerlendirme
-- Proje tanıtımı ve kısa teknik açıklama
+### Değerlendirme Kriterleri
+- Uygulamanın çalışırlığı
+- Kod düzeni ve okunabilirliği
+- Paket program mantığına uygunluk
+- Kullanıcı etkileşimi
 
 ---
 
-## E. Görsel Anlatım
+## F. Görsel Anlatım
 
 ### Canlı Ders Katılım Linki
 - 
