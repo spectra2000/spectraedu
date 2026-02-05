@@ -1,115 +1,135 @@
-# Hafta 08 – Mini Uygulama
-**Ders:** Paket Programlar (Python / Streamlit Framework)  
+# Hafta 08 – Mini Uygulama (R ile Paket Program Mantığı)
+
+**Ders:** Paket Programlar  
+**Programlama Dili:** R  
 **Hafta:** 8  
-**Kapsam:** Temel bileşenlerle bütünleşik uygulama geliştirme  
 
 ---
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, Streamlit ile
-basit ama işlevsel bir paket programın
-nasıl geliştirildiğini uygulamalı olarak göstermektir.
+Bu haftanın amacı, önceki haftalarda
+öğrenilen tüm konuları bir araya getirerek
+mini bir paket program mantığıyla
+uygulama geliştirmektir.
 
-Bu hafta sonunda öğrenciler:
-- Küçük bir uygulama fikrini somutlaştırır
-- Öğrendikleri bileşenleri birlikte kullanır
-- Uygulama geliştirme sürecini deneyimler
+Bu çalışma, öğrencinin
+konuları bütüncül şekilde
+kavramasını hedefler.
 
 ---
 
 ## 2. Mini Uygulama Nedir?
 
-Mini uygulama:
-- Sınırlı kapsamlı
-- Tek bir amaca odaklanan
-- Çalışan bir Streamlit uygulamasıdır
+Mini uygulama, belirli bir problemi
+çözmeye odaklanan,
+küçük ölçekli bir yazılım parçasıdır.
 
-Amaç, karmaşık değil **tamamlanabilir** bir proje üretmektir.
-
----
-
-## 3. Mini Uygulama İçin Örnek Fikirler
-
-Örnek mini uygulamalar:
-- Basit hesaplama aracı
-- Not tutma uygulaması
-- Küçük veri analiz ekranı
-- Kullanıcı girdisine göre grafik üreten araç
-
-Bu fikirler, paket program mantığına uygundur.
+Bu uygulamalar:
+- Belirli bir girdi alır
+- Veriyi işler
+- Anlamlı çıktı üretir
 
 ---
 
-## 4. Uygulama Akışının Planlanması
+## 3. Uygulama Senaryosu
 
-Uygulama geliştirmeden önce:
-- Girdi ve çıktılar belirlenmelidir
-- Hangi bileşenlerin kullanılacağı planlanmalıdır
-- Kullanıcı akışı netleştirilmelidir
+Bu hafta için örnek senaryo:
 
-Bu planlama, geliştirme sürecini kolaylaştırır.
-
----
-
-## 5. Kullanılması Beklenen Bileşenler
-
-Mini uygulamada mümkün olduğunca:
-- Input bileşenleri
-- State kullanımı
-- Basit dosya işlemleri
-- En az bir grafik
-
-yer almalıdır.
+Bir CSV dosyasından
+öğrenci notlarını okuyarak:
+- Temel istatistikleri hesaplayan
+- Grafik üreten
+- Sonuçları kullanıcıya sunan
+bir uygulama geliştirmek
 
 ---
 
-## 6. Basitlik ve Tamamlanabilirlik
+## 4. Veri Okuma
 
-Mini uygulama:
-- Kısa sürede tamamlanabilir olmalıdır
-- Aşırı karmaşık tasarımdan kaçınılmalıdır
+Uygulama, dosyadan veri okuyarak başlar.
 
-Önemli olan:
-- Çalışması
-- Anlaşılır olması
-- Mantıklı bir akış sunmasıdır
+    data <- read.csv("ogrenci_notlari.csv")
 
----
+Okunan verinin yapısı
+kontrol edilmelidir.
 
-## 7. Sık Yapılan Hatalar
-
-Öğrenciler genellikle:
-- Çok fazla özellik eklemeye çalışır
-- Akış planlamasını atlar
-- Uygulamayı yarım bırakır
-
-Bu hafta, **bitirmenin** önemi vurgulanır.
+    str(data)
 
 ---
 
-## 8. Paket Program Mantığı ile Değerlendirme
+## 5. Veri Temizleme ve Hazırlık
 
-Mini uygulama:
-- Bir kullanıcıya sunulacakmış gibi düşünülmelidir
-- Kullanılabilirlik ön planda tutulmalıdır
+Eksik veya hatalı veriler
+uygulama sonuçlarını etkileyebilir.
 
-Bu bakış açısı,
-final projeye hazırlık sağlar.
+    clean_data <- na.omit(data)
+
+Bu adım, uygulamanın
+daha güvenilir çalışmasını sağlar.
 
 ---
 
-## 9. Haftanın Kazanımları
+## 6. Veri Özetleme
+
+Temel özet istatistikler hesaplanır.
+
+    summary(clean_data)
+
+Gerekirse belirli sütunlar
+üzerinde özel hesaplamalar yapılır.
+
+---
+
+## 7. Görselleştirme
+
+Uygulama sonuçları
+grafiklerle desteklenir.
+
+    hist(clean_data$not)
+
+Grafikler, sonuçların
+daha anlaşılır olmasını sağlar.
+
+---
+
+## 8. Çıktı Üretme
+
+Uygulama çıktıları
+dosya olarak kaydedilebilir.
+
+    write.csv(clean_data, "temiz_veri.csv", row.names = FALSE)
+
+Bu işlem, paket programın
+üretilebilir sonuçlar sunmasını sağlar.
+
+---
+
+## 9. Mini Uygulamanın Paket Program Mantığı
+
+Bu mini uygulama:
+- Girdi alır
+- İşlem yapar
+- Çıktı üretir
+
+Bu yapı, gerçek hayattaki
+paket programların
+temel çalışma mantığını yansıtır.
+
+---
+
+## 10. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Küçük bir Streamlit uygulaması geliştirir
-- Öğrenilen konuları bütünleştirir
-- Paket program geliştirme sürecini kavrar
+- Mini bir R uygulaması geliştirebilir
+- Öğrenilen konuları birlikte kullanabilir
+- Paket program mantığını
+  uygulamalı olarak kavrar
 
 ---
 
-## 10. Sonraki Haftaya Hazırlık
+## 11. Sonraki Haftaya Hazırlık
 
-- Harici Python kütüphanelerini inceleyiniz.
-- Streamlit uygulamalarında dış bağımlılıkların rolünü düşününüz.
-
+- Harici R paketlerini araştırınız
+- Paketlerin nasıl yüklendiğini ve
+  kullanıldığını inceleyiniz
