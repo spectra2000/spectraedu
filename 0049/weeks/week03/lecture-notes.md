@@ -1,158 +1,129 @@
 # Hafta 03 – Fonksiyonlar ve Modüler Yapı
-Hafta 03 – Fonksiyonlar ve Modüler Yapı
 
-Ders: Paket Programlar
-Programlama Dili: R
-Hafta: 3
+**Ders:** Paket Programlar  
+**Programlama Dili:** R  
+**Hafta:** 3  
 
-1. Dersin Amacı
+---
+
+## 1. Dersin Amacı
 
 Bu haftanın amacı, R programlama dilinde fonksiyon kavramını öğretmek ve
-paket program geliştirme sürecinde neden modüler ve fonksiyonel bir
-yaklaşımın gerekli olduğunu açıklamaktır.
+paket program geliştirme sürecinde neden modüler bir yapıya ihtiyaç
+duyulduğunu açıklamaktır.
 
-Bu hafta öğrenilen konular, ilerleyen haftalarda geliştirilecek Shiny
-uygulamalarının arka planında çalışan temel mantığı oluşturacaktır.
+---
 
-2. Fonksiyon Kavramı
+## 2. Fonksiyon Nedir?
 
-Fonksiyon, belirli bir görevi yerine getiren, girdi alabilen ve çıktı
-üretebilen kod bloklarıdır.
+Fonksiyon, belirli bir görevi yerine getiren ve gerektiğinde girdi alıp
+çıktı üretebilen kod bloklarıdır.
 
-Fonksiyonlar:
+Fonksiyonlar sayesinde:
+- Kod tekrarları azaltılır
+- Okunabilirlik artar
+- Bakım ve geliştirme kolaylaşır
 
-Kod tekrarını azaltır
+---
 
-Okunabilirliği artırır
+## 3. R’de Fonksiyon Tanımlama
 
-Bakımı ve genişletmeyi kolaylaştırır
+R’de fonksiyonlar `function()` yapısı ile tanımlanır.
 
-Bir paket programın iç yapısı, çok sayıda küçük fonksiyonun
-bir araya gelmesiyle oluşur.
-
-3. R’de Fonksiyon Tanımlama
-
-R’de fonksiyonlar function() yapısı kullanılarak tanımlanır.
-
-topla <- function(a, b) {
-  sonuc <- a + b
-  return(sonuc)
-}
-
+    topla <- function(a, b) {
+      sonuc <- a + b
+      return(sonuc)
+    }
 
 Fonksiyon çağrımı:
 
-topla(3, 5)
+    topla(3, 5)
 
+---
 
-Fonksiyon çağrıldığında, tanım içinde yazılan işlemler sırayla çalışır.
+## 4. Parametreler ve Varsayılan Değerler
 
-4. Parametreler ve Varsayılan Değerler
+Fonksiyonlar parametre alabilir ve bu parametrelere varsayılan değerler
+atanabilir.
 
-Fonksiyonlar parametre alabilir.
-Ayrıca parametrelere varsayılan değerler atanabilir.
+    carp <- function(a, b = 1) {
+      a * b
+    }
 
-carp <- function(a, b = 1) {
-  a * b
-}
+    carp(5)
+    carp(5, 3)
 
-carp(5)
-carp(5, 3)
+---
 
+## 5. Fonksiyonların Paket Programlardaki Rolü
 
-Bu yapı, fonksiyonların daha esnek kullanılmasını sağlar.
+Paket programlarda fonksiyonlar:
+- Hesaplama yapar
+- Kullanıcıdan gelen verileri işler
+- Sonuç üretir
 
-5. Fonksiyonların Paket Programlardaki Rolü
+Arayüzler bu fonksiyonları yalnızca çağırır.
 
-Paket programlarda fonksiyonlar genellikle:
+---
 
-Hesaplama işlemlerini yapar
+## 6. Modüler Kod Yapısı
 
-Kullanıcıdan gelen verileri işler
+Modüler yapı, büyük problemleri küçük ve bağımsız parçalara ayırmayı
+amaçlar.
 
-Sonuçları düzenler
+Her fonksiyonun tek bir sorumluluğu olmalıdır.
 
-Arayüz (Shiny) bu fonksiyonları yalnızca çağırır.
+---
 
-6. Fonksiyonlar ve Veri Yapıları
+## 7. Fonksiyonların Dosya Bazlı Kullanımı
 
-Fonksiyonlar vektör, liste ve data frame gibi veri yapılarıyla birlikte
-çalışabilir.
+Büyük projelerde fonksiyonlar ayrı dosyalarda tutulur.
 
-ortalama_hesapla <- function(degerler) {
-  mean(degerler)
-}
+Örnek bir yapı:
 
-ortalama_hesapla(c(70, 80, 90))
+    functions/
+      calculations.R
+      helpers.R
 
-7. Modüler Kod Yapısı
+Bu dosyalar ana dosya içinde `source()` ile çağrılır.
 
-Modüler yapı, büyük bir problemi küçük ve bağımsız parçalara ayırmayı
-ifade eder.
+---
 
-Her fonksiyon:
+## 8. Basit Hata Kontrolleri
 
-Tek bir sorumluluğa sahip olmalıdır
+Fonksiyonlar içinde kullanıcı hatalarını önlemek için kontroller
+yapılabilir.
 
-Başka fonksiyonlara minimum bağımlılık içermelidir
+    bol <- function(a, b) {
+      if (b == 0) {
+        stop("Bölen sıfır olamaz")
+      }
+      a / b
+    }
 
-Bu yaklaşım büyük projelerde zorunludur.
+---
 
-8. Fonksiyonların Dosya Bazlı Kullanımı
+## 9. Shiny ile İlişkisi
 
-Fonksiyonlar ayrı dosyalarda tutulabilir.
+Shiny uygulamalarında arayüzden bağımsız olarak iş mantığı fonksiyonlar
+içinde tanımlanır.
 
-Örnek yapı:
+Bu hafta öğrenilen fonksiyon kavramı, Shiny server yapısının temelini
+oluşturur.
 
-functions/
-  calculations.R
-  helpers.R
+---
 
-
-Dosyalar ana script içinde source() ile çağrılır.
-
-9. Hata Kontrolü
-
-Fonksiyonlar içinde basit hata kontrolleri yapılabilir.
-
-bol <- function(a, b) {
-  if (b == 0) {
-    stop("Bölen sıfır olamaz")
-  }
-  a / b
-}
-
-
-Bu yaklaşım kullanıcı hatalarını kontrollü şekilde yönetir.
-
-10. Shiny ile Bağlantı
-
-Shiny uygulamalarında:
-
-Arayüz (UI)
-
-İş mantığı (fonksiyonlar)
-
-Sunucu (server)
-
-birbirinden ayrıdır.
-
-Bu hafta öğrenilen fonksiyon kavramı, Shiny server tarafının temelidir.
-
-11. Haftanın Kazanımları
+## 10. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
+- Fonksiyon yazabilir
+- Parametreli fonksiyonları kullanabilir
+- Modüler kod yapısını kavrar
+- Paket program mantığını anlayabilir
 
-R’de fonksiyon yazabilir
+---
 
-Parametreli fonksiyonları kullanabilir
+## 11. Sonraki Haftaya Hazırlık
 
-Modüler kod yapısının önemini kavrar
-
-Paket program mantığını anlayabilir
-
-12. Sonraki Haftaya Hazırlık
-
-Dosya okuma ve yazma işlemleri araştırılmalıdır
-
-Veri setleriyle çalışmaya hazırlık yapılmalıdır
+- Dosya okuma ve yazma işlemlerini araştırınız
+- Veri setleriyle çalışmaya hazırlık yapınız
