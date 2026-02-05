@@ -1,46 +1,63 @@
-# 09. Harici Kütüphaneler
+# Week 09 – Shiny Server Mantığı
 
 ---
 
 ## A. Dersin Amacı
 
-Bu haftada Streamlit uygulamalarında
-harici Python kütüphanelerinin kullanımı,
-bu kütüphanelerin projelere nasıl entegre edildiği
-ve neden gerekli oldukları ele alınacaktır.
+Bu haftada öğrenciler, Shiny uygulamalarında
+sunucu tarafının (server) nasıl çalıştığını
+ve kullanıcı arayüzü (UI) ile
+nasıl etkileşim kurduğunu öğrenecektir.
 
-Öğrenciler, Python ekosisteminin gücünü
-uygulamalarına dahil etmeyi öğrenecektir.
+Server mantığı, Shiny uygulamalarında
+analizlerin çalıştığı ve çıktının üretildiği
+çekirdek yapıdır.
 
 ---
 
-## B. Ders Kaynakları
+## B. Ders İçeriği
+
+- Server kavramı
+- server fonksiyonunun yapısı
+- input ve output nesneleri
+- UI ile server arasındaki bağlantı
+- Basit server örnekleri
+
+---
+
+## C. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 9 – Harici Kütüphaneler](lecture-notes.md)
+- [Hafta 09 – Shiny Server Mantığı](lecture-notes.md)
 
 ### Dış Kaynaklar
-- 
+- Shiny Server Documentation
+- Shiny Reactive Basics
 
 ---
 
-## C. Uygulamalar
-- Bir harici kütüphanenin projeye eklenme sürecinin incelenmesi
-- Aynı problemin kütüphane kullanarak ve kullanmadan çözümünün karşılaştırılması
+## D. Uygulamalar
+
+- UI bileşenlerinden gelen input verilerini kullanma
+- Server tarafında basit hesaplamalar yapma
+- Sonuçları UI üzerinde gösterme
 
 ---
 
-## D. Haftalık Ölçme ve Değerlendirme
+## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Seçilen bir Python kütüphanesinin ne işe yaradığını açıklayan kısa bir doküman hazırlama
+- Kullanıcıdan bir değer alıp
+  server tarafında işleyerek
+  sonucu ekranda gösteren
+  basit bir Shiny uygulaması geliştirme
 
 ### Kısa Sınav / Testler
-- 
+- Server ve UI etkileşimi
 
 ---
 
-## E. Görsel Anlatım
+## F. Görsel Anlatım
 
 ### Canlı Ders Katılım Linki
 - 
