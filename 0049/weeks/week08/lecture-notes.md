@@ -8,10 +8,9 @@
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, önceki haftalarda
-öğrenilen tüm konuları bir araya getirerek
-mini bir paket program mantığıyla
-uygulama geliştirmektir.
+Bu haftanın amacı, önceki haftalarda öğrenilen
+tüm R becerilerini bir araya getirerek
+mini bir paket program geliştirmektir.
 
 Bu çalışma, öğrencinin
 konuları bütüncül şekilde
@@ -25,8 +24,8 @@ Mini uygulama, belirli bir problemi
 çözmeye odaklanan,
 küçük ölçekli bir yazılım parçasıdır.
 
-Bu uygulamalar:
-- Belirli bir girdi alır
+Bir mini uygulama genellikle:
+- Veri alır
 - Veriyi işler
 - Anlamlı çıktı üretir
 
@@ -41,13 +40,28 @@ Bir CSV dosyasından
 - Temel istatistikleri hesaplayan
 - Grafik üreten
 - Sonuçları kullanıcıya sunan
-bir uygulama geliştirmek
+bir mini uygulama geliştirmek
 
 ---
 
-## 4. Veri Okuma
+## 4. Uygulama Akışı
 
-Uygulama, dosyadan veri okuyarak başlar.
+Mini uygulamanın genel akışı şu şekildedir:
+1. Veri dosyasını okuma
+2. Veriyi temizleme
+3. Veriyi özetleme
+4. Grafik oluşturma
+5. Çıktıları kaydetme
+
+Bu akış, gerçek hayattaki
+paket programların çalışma mantığını yansıtır.
+
+---
+
+## 5. Veri Okuma
+
+Uygulama, harici bir dosyadan
+veri okuyarak başlar.
 
     data <- read.csv("ogrenci_notlari.csv")
 
@@ -58,10 +72,12 @@ kontrol edilmelidir.
 
 ---
 
-## 5. Veri Temizleme ve Hazırlık
+## 6. Veri Temizleme
 
-Eksik veya hatalı veriler
+Eksik veya hatalı veriler,
 uygulama sonuçlarını etkileyebilir.
+
+Eksik satırları temizlemek için:
 
     clean_data <- na.omit(data)
 
@@ -70,9 +86,10 @@ daha güvenilir çalışmasını sağlar.
 
 ---
 
-## 6. Veri Özetleme
+## 7. Veri Özetleme
 
-Temel özet istatistikler hesaplanır.
+Temel özet istatistikler
+hesaplanabilir.
 
     summary(clean_data)
 
@@ -81,7 +98,7 @@ Gerekirse belirli sütunlar
 
 ---
 
-## 7. Görselleştirme
+## 8. Görselleştirme
 
 Uygulama sonuçları
 grafiklerle desteklenir.
@@ -93,7 +110,7 @@ daha anlaşılır olmasını sağlar.
 
 ---
 
-## 8. Çıktı Üretme
+## 9. Çıktı Üretme
 
 Uygulama çıktıları
 dosya olarak kaydedilebilir.
@@ -101,11 +118,11 @@ dosya olarak kaydedilebilir.
     write.csv(clean_data, "temiz_veri.csv", row.names = FALSE)
 
 Bu işlem, paket programın
-üretilebilir sonuçlar sunmasını sağlar.
+kullanıcıya kalıcı çıktı sunmasını sağlar.
 
 ---
 
-## 9. Mini Uygulamanın Paket Program Mantığı
+## 10. Mini Uygulamanın Paket Program Mantığı
 
 Bu mini uygulama:
 - Girdi alır
@@ -114,11 +131,11 @@ Bu mini uygulama:
 
 Bu yapı, gerçek hayattaki
 paket programların
-temel çalışma mantığını yansıtır.
+temel çalışma mantığını temsil eder.
 
 ---
 
-## 10. Haftanın Kazanımları
+## 11. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
 - Mini bir R uygulaması geliştirebilir
@@ -128,8 +145,7 @@ Bu haftanın sonunda öğrenci:
 
 ---
 
-## 11. Sonraki Haftaya Hazırlık
+## 12. Sonraki Haftaya Hazırlık
 
-- Harici R paketlerini araştırınız
-- Paketlerin nasıl yüklendiğini ve
-  kullanıldığını inceleyiniz
+- Etkileşimli uygulama kavramını araştırınız
+- Shiny framework’ünün temel amacını inceleyiniz
