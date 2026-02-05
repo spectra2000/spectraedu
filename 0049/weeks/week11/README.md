@@ -1,46 +1,61 @@
-# 11. AI / LLM Entegrasyonu
+# Week 11 – Mini Shiny Uygulaması
 
 ---
 
 ## A. Dersin Amacı
 
-Bu haftada Streamlit uygulamalarında
-yapay zekâ (AI) ve büyük dil modellerinin (LLM)
-genel çalışma mantığı tanıtılacak,
-bu sistemlerin uygulamalara nasıl entegre edildiği ele alınacaktır.
+Bu haftada öğrenciler, önceki haftalarda öğrenilen
+Shiny UI, server ve reaktif yapı bilgilerini
+bir araya getirerek
+çalışan bir **mini Shiny uygulaması** geliştirecektir.
 
-Amaç, modern paket programlarda
-AI destekli özelliklerin rolünü kavratmaktır.
+Amaç, tek tek öğrenilen kavramların
+gerçek bir paket program akışı içinde
+nasıl birleştiğini göstermektir.
 
 ---
 
-## B. Ders Kaynakları
+## B. Ders İçeriği
+
+- Mini Shiny uygulaması kavramı
+- Uygulama senaryosu oluşturma
+- UI ve server entegrasyonu
+- Reaktif yapıların birlikte kullanımı
+- Çıktı üretme ve yorumlama
+
+---
+
+## C. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 11 – AI / LLM Entegrasyonu](lecture-notes.md)
+- [Hafta 11 – Mini Shiny Uygulaması](lecture-notes.md)
 
 ### Dış Kaynaklar
-- 
+- Shiny Gallery
+- Shiny Tutorials
 
 ---
 
-## C. Uygulamalar
-- AI destekli bir uygulama senaryosunun incelenmesi
-- LLM tabanlı sistemlerin kullanım alanlarının tartışılması
+## D. Uygulamalar
+
+- Basit bir Shiny uygulaması geliştirme
+- Kullanıcı girdilerine göre hesaplama yapma
+- Sonuçları arayüzde gösterme
 
 ---
 
-## D. Haftalık Ölçme ve Değerlendirme
+## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- AI veya LLM kullanan bir uygulama fikrini yazılı olarak açıklama
+- Belirlenen senaryoya uygun
+  çalışan bir mini Shiny uygulaması geliştirme
 
 ### Kısa Sınav / Testler
-- 
+- UI, server ve reaktif yapı ilişkisi
 
 ---
 
-## E. Görsel Anlatım
+## F. Görsel Anlatım
 
 ### Canlı Ders Katılım Linki
 - 
