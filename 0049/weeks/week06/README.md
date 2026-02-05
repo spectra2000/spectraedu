@@ -7,11 +7,11 @@
 Bu haftada öğrenciler, veri setleri üzerinde
 özetleme ve gruplama işlemlerini öğrenerek
 paket programların anlamlı çıktılar üretmesini
-sağlayan temel analiz adımlarını kavrayacaktır.
+sağlayacaktır.
 
-Veri özetleme, kullanıcıya sunulacak bilgilerin
-basitleştirilmesi ve yorumlanabilir hâle
-getirilmesi açısından önemlidir.
+Ham verinin tek başına yeterli olmadığı,
+verinin özetlenerek yorumlanmasının
+neden gerekli olduğu ele alınacaktır.
 
 ---
 
@@ -19,44 +19,43 @@ getirilmesi açısından önemlidir.
 
 - Veri özetleme kavramı
 - Temel istatistiksel özetler
-- Gruplama (group by) mantığı
+- Gruplama mantığı
 - Gruplara göre hesaplama
-- Özet sonuçların yorumlanması
+- Özet tablolar oluşturma
 
 ---
 
 ## C. Ders Kaynakları
 
 ### Ders Notları
-- Hafta 06 – Veri Özetleme ve Gruplama (lecture-notes.md)
+- [Hafta 06 – Veri Özetleme ve Gruplama](lecture-notes.md)
 
 ### Dış Kaynaklar
-- R Documentation – aggregate
 - R Documentation – summary
+- R Documentation – aggregate
 
 ---
 
 ## D. Uygulamalar
 
-- Veri seti üzerinde temel istatistiklerin hesaplanması
-- Gruplara göre ortalama ve toplam değerlerin bulunması
-- Özet tabloların oluşturulması
+- Veri seti için temel özet istatistikler çıkarma
+- Gruplara göre ortalama ve toplam hesaplama
+- Özet sonuçları tablo hâline getirme
 
 ---
 
 ## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Verilen bir veri setinde
-  gruplara göre özet istatistikler üreten
-  bir R script’i hazırlama
+- Verilen bir veri setini gruplandırarak
+  özet istatistikler üreten bir R script’i yazma
 
 ### Kısa Sınav / Testler
-- Veri özetleme ve gruplama mantığına yönelik sorular
+- Veri özetleme ve gruplama kavramları
 
 ---
 
-## F. Görsel ve Ek İçerikler
+## F. Görsel Anlatım
 
 ### Canlı Ders Katılım Linki
 - 
