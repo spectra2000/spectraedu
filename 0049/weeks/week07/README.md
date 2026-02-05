@@ -5,39 +5,39 @@
 ## A. Dersin Amacı
 
 Bu haftada öğrenciler, veri setlerinden elde edilen
-bilgilerin grafikler aracılığıyla nasıl
-görselleştirileceğini öğrenecektir.
+bilgilerin grafikler yardımıyla
+nasıl görselleştirileceğini öğrenecektir.
 
-Görselleştirme, paket programların kullanıcıya
-anlaşılır ve etkili sonuçlar sunabilmesi için
-önemli bir bileşendir.
+Veri görselleştirme, paket programlarda
+sonuçların kullanıcıya
+anlaşılır ve etkili biçimde
+sunulmasını sağlar.
 
 ---
 
 ## B. Ders İçeriği
 
-- Veri görselleştirme kavramı
-- Temel grafik türleri
-- Grafik okuma ve yorumlama
-- R’de grafik oluşturma
-- Grafiklerin paket programlarda kullanımı
+- Veri görselleştirmenin amacı
+- Grafik türleri
+- R ile temel grafikler
+- Grafik yorumlama
 
 ---
 
 ## C. Ders Kaynakları
 
 ### Ders Notları
-- Hafta 07 – Veri Görselleştirme (lecture-notes.md)
+- [Hafta 07 – Veri Görselleştirme](lecture-notes.md)
 
 ### Dış Kaynaklar
 - R Documentation – plot
-- R Documentation – graphics
+- R Documentation – hist
 
 ---
 
 ## D. Uygulamalar
 
-- Basit grafikler oluşturma
+- Sayısal veriler için grafik oluşturma
 - Farklı grafik türlerini karşılaştırma
 - Grafik çıktılarının yorumlanması
 
@@ -46,17 +46,16 @@ anlaşılır ve etkili sonuçlar sunabilmesi için
 ## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Verilen bir veri seti için
-  en az iki farklı grafik türü oluşturarak
-  kısa bir yorum yazma
+- Aynı veri seti için
+  en az iki farklı grafik üretme
+  ve kısa yorum yazma
 
 ### Kısa Sınav / Testler
-- Grafik türleri ve kullanım amaçlarına
-  yönelik kısa sorular
+- Grafik türleri ve kullanım amaçları
 
 ---
 
-## F. Görsel ve Ek İçerikler
+## F. Görsel Anlatım
 
 ### Canlı Ders Katılım Linki
 - 
