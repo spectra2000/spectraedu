@@ -1,127 +1,148 @@
-# Hafta 06 – Dosya İşlemleri
-**Ders:** Paket Programlar (Python / Streamlit Framework)  
+# Hafta 06 – Veri Özetleme ve Gruplama
+
+**Ders:** Paket Programlar  
+**Programlama Dili:** R  
 **Hafta:** 6  
-**Kapsam:** Kalıcı veri, dosya okuma ve yazma mantığı  
 
 ---
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, Streamlit uygulamalarında
-verilerin yalnızca uygulama çalışırken değil,
-sonrasında da nasıl saklandığını açıklamaktır.
+Bu haftanın amacı, veri setleri üzerinde
+özetleme ve gruplama işlemlerini öğretmek ve
+paket programların kullanıcıya anlamlı bilgiler
+sunabilmesini sağlamaktır.
 
-Bu hafta sonunda öğrenciler:
-- Kalıcı veri kavramını açıklar
-- Dosya işlemlerinin neden gerekli olduğunu anlar
-- Dosya tabanlı veri yönetimini kavrar
-
----
-
-## 2. Kalıcı Veri Nedir?
-
-Kalıcı veri:
-- Uygulama kapatılsa bile
-- Saklanmaya devam eden veridir
-
-Dosyalar, kalıcı veri saklamanın
-en temel yöntemlerinden biridir.
+Ham veriler çoğu zaman doğrudan yorumlanamaz.
+Bu nedenle özetleme ve gruplama işlemleri
+kritik öneme sahiptir.
 
 ---
 
-## 3. Dosyalarla Çalışmanın Temel Mantığı
+## 2. Veri Özetleme Nedir?
 
-Dosya işlemleri genel olarak:
-- Dosya açma
-- Dosya ile işlem yapma
-- Dosyayı kapatma
+Veri özetleme, bir veri setindeki bilgilerin
+temel istatistikler kullanılarak
+daha anlaşılır hâle getirilmesidir.
 
-adımlarından oluşur.
+Özetleme işlemleri genellikle:
+- Ortalama
+- Medyan
+- Minimum
+- Maksimum
+- Toplam
 
-Bu sıra, veri kaybını önlemek için önemlidir.
-
----
-
-## 4. Dosyadan Veri Okuma
-
-Dosyadan veri okuma:
-- Daha önce kaydedilmiş bilgilerin
-- Uygulama içine alınmasını sağlar
-
-Bu sayede uygulama:
-- Önceki verilerle çalışmaya devam edebilir
+gibi ölçütleri içerir.
 
 ---
 
-## 5. Dosyaya Veri Yazma
+## 3. summary Fonksiyonu
 
-Dosyaya veri yazma işlemi:
-- Uygulamada üretilen bilgilerin
-- Kalıcı olarak saklanmasını sağlar
+R’de bir veri setinin hızlı özetini almak için
+`summary()` fonksiyonu kullanılır.
 
-Bu işlem:
-- Yeni dosya oluşturabilir
-- Var olan dosyayı güncelleyebilir
+    summary(data)
 
----
-
-## 6. Dosya Formatları (Genel Bakış)
-
-Streamlit uygulamalarında genellikle:
-- Metin dosyaları
-- CSV dosyaları
-- Basit veri formatları
-
-kullanılır.
-
-Bu formatlar:
-- Okunabilir
-- Taşınabilir
-- Yönetimi kolaydır
+Bu fonksiyon, her değişken için temel
+istatistiksel bilgileri gösterir.
 
 ---
 
-## 7. Dosya İşlemleri ve Kullanıcı Deneyimi
+## 4. Temel İstatistiksel Fonksiyonlar
 
-Dosya işlemleri:
-- Kullanıcının verilerinin kaybolmasını önler
-- Uygulamayı daha güvenilir hâle getirir
+Tek tek değişkenler üzerinde
+özetleme yapmak mümkündür.
 
-Bu durum, paket program mantığı için kritiktir.
+Örnekler:
 
----
+    mean(data$score)
+    median(data$score)
+    min(data$score)
+    max(data$score)
+    sum(data$score)
 
-## 8. Dosya İşlemlerinde Dikkat Edilmesi Gerekenler
-
-Dosya işlemleri sırasında:
-- Dosyanın varlığı kontrol edilmelidir
-- Hatalı okuma/yazma durumları ele alınmalıdır
-
-Aksi hâlde uygulama beklenmedik şekilde davranabilir.
+Bu fonksiyonlar paket programların
+arka planında sıkça kullanılır.
 
 ---
 
-## 9. Paket Programlarda Kalıcı Verinin Önemi
+## 5. Gruplama Kavramı
 
-Paket programlar:
-- Uzun süreli kullanım hedefler
-- Kullanıcı verisinin korunmasını bekler
+Gruplama, verinin belirli bir değişkene göre
+parçalara ayrılarak analiz edilmesini ifade eder.
 
-Dosya işlemleri, bu beklentiyi karşılar.
+Örneğin:
+- Bölgeye göre satışlar
+- Sınıfa göre not ortalamaları
+- Kategoriye göre ürün sayıları
+
+---
+
+## 6. aggregate Fonksiyonu
+
+R’de gruplama yaparak özet hesaplamak için
+`aggregate()` fonksiyonu kullanılır.
+
+Örnek:
+
+    aggregate(score ~ class, data = data, FUN = mean)
+
+Bu kod, her sınıf için
+ortalama puanı hesaplar.
+
+---
+
+## 7. Birden Fazla Özet Hesabı
+
+Gruplara göre farklı özetler de alınabilir.
+
+    aggregate(score ~ class, data = data, FUN = sum)
+
+Fonksiyon parametresi değiştirilerek
+istenen özet değeri elde edilir.
+
+---
+
+## 8. Gruplanmış Verilerin Yorumlanması
+
+Gruplanmış veriler:
+- Karşılaştırma yapmayı kolaylaştırır
+- Eğilimleri ortaya çıkarır
+- Paket program çıktılarının
+  kullanıcı tarafından anlaşılmasını sağlar
+
+Bu nedenle gruplama,
+raporlama ve karar destek sistemlerinde
+yaygın olarak kullanılır.
+
+---
+
+## 9. Veri Özetlemenin Paket Programlardaki Rolü
+
+Paket programlar genellikle:
+- Büyük veri setlerini alır
+- Özetler üretir
+- Kullanıcıya sade sonuçlar sunar
+
+Bu hafta öğrenilen kavramlar,
+paket programların temel işlevlerini
+oluşturur.
 
 ---
 
 ## 10. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Kalıcı veri kavramını açıklar
-- Dosya işlemlerinin mantığını kavrar
-- Dosya tabanlı veri saklama uygular
+- Veri özetleme işlemlerini yapabilir
+- Temel istatistikleri hesaplayabilir
+- Gruplama mantığını kavrar
+- Paket programlarda özet bilginin
+  önemini anlar
 
 ---
 
 ## 11. Sonraki Haftaya Hazırlık
 
-- Veri görselleştirme kavramını inceleyiniz.
-- Grafiklerin uygulamalardaki rolünü düşününüz.
-
+- Veri görselleştirme kavramını araştırınız
+- Özetlenen verilerin grafikle
+  nasıl sunulabileceğini düşününüz
