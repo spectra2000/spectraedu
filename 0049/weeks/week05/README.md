@@ -1,46 +1,59 @@
-# 05. State ve Akış Kontrolü
+# Week 05 – Veri Temizleme ve Dönüştürme
 
 ---
 
 ## A. Dersin Amacı
 
-Bu haftada Streamlit uygulamalarında
-uygulama durumu (state) kavramı ve
-kullanıcı etkileşimlerine göre akışın
-nasıl kontrol edildiği ele alınacaktır.
+Bu haftada öğrenciler, paket program geliştirme sürecinde
+verinin neden ve nasıl temizlenmesi gerektiğini öğrenecektir.
 
-Öğrenciler, dinamik ve tutarlı
-uygulama davranışları geliştirmeyi öğrenecektir.
+Gerçek hayatta kullanılan veriler çoğu zaman eksik,
+hatalı veya düzensizdir. Bu nedenle veri temizleme,
+paket programların güvenilir çalışması için kritik öneme sahiptir.
 
 ---
 
-## B. Ders Kaynakları
+## B. Ders İçeriği
+
+- Veri temizleme kavramı
+- Eksik veriler (NA) ile çalışma
+- Veri filtreleme
+- Veri dönüştürme
+- Temel veri manipülasyonu
+
+---
+
+## C. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 5 – State ve Akış Kontrolü](lecture-notes.md)
+- Hafta 05 – Veri Temizleme ve Dönüştürme (lecture-notes.md)
 
 ### Dış Kaynaklar
-- 
+- R Documentation – NA Handling
+- R Documentation – Data Manipulation
 
 ---
 
-## C. Uygulamalar
-- Kullanıcı girdilerine göre değişen ekran akışlarının incelenmesi
-- State kullanımıyla verinin korunmasının tartışılması
+## D. Uygulamalar
+
+- Eksik verilerin tespit edilmesi
+- Veriden istenmeyen satırların çıkarılması
+- Temizlenmiş verinin analize hazır hâle getirilmesi
 
 ---
 
-## D. Haftalık Ölçme ve Değerlendirme
+## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- State kullanarak çok adımlı basit bir uygulama senaryosu tasarlama
+- Eksik veriler içeren bir veri setini temizleyerek
+  yeni bir CSV dosyası oluşturma
 
 ### Kısa Sınav / Testler
-- 
+- Veri temizleme kavramlarına yönelik kısa sorular
 
 ---
 
-## E. Görsel Anlatım
+## F. Görsel ve Ek İçerikler
 
 ### Canlı Ders Katılım Linki
 - 
