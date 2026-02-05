@@ -1,136 +1,127 @@
-# Hafta 07 – Grafikler ve Görselleştirme
-**Ders:** Paket Programlar (Python / Streamlit Framework)  
+# Hafta 07 – Veri Görselleştirme
+
+**Ders:** Paket Programlar  
+**Programlama Dili:** R  
 **Hafta:** 7  
-**Kapsam:** Veri görselleştirme ve grafik kullanımı  
 
 ---
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, verilerin yalnızca
-tablo hâlinde değil,
-grafiksel olarak da sunulmasının
-neden önemli olduğunu açıklamaktır.
+Bu haftanın amacı, veri setlerinden elde edilen
+bilgilerin grafikler yardımıyla
+görselleştirilmesini öğretmektir.
 
-Bu hafta sonunda öğrenciler:
-- Veri görselleştirmenin amacını açıklar
-- Farklı grafik türlerini ayırt eder
-- Streamlit’te grafik kullanımını kavrar
+Grafikler, sayısal bilgilerin
+daha hızlı ve anlaşılır şekilde
+yorumlanmasını sağlar.
 
 ---
 
 ## 2. Veri Görselleştirme Nedir?
 
-**Veri görselleştirme**, sayısal veya kategorik
-verilerin grafikler aracılığıyla
-anlaşılır hâle getirilmesidir.
+Veri görselleştirme, verilerin grafiksel
+temsiller kullanılarak sunulmasıdır.
 
-Grafikler sayesinde:
-- Eğilimler fark edilir
-- Karşılaştırmalar kolaylaşır
-- Karmaşık veriler sadeleşir
-
----
-
-## 3. Grafik Kullanmanın Avantajları
-
-Grafik kullanımı:
-- Bilgiyi hızlı iletir
-- Kullanıcının dikkatini çeker
-- Yorum yapmayı kolaylaştırır
-
-Bu nedenle paket programlarda
-grafikler sıkça tercih edilir.
+Görselleştirme sayesinde:
+- Eğilimler daha kolay fark edilir
+- Karşılaştırmalar yapılabilir
+- Karmaşık bilgiler sadeleştirilir
 
 ---
 
-## 4. Temel Grafik Türleri (Genel Bakış)
+## 3. R’de Grafik Oluşturma
 
-Yaygın grafik türleri:
-- Çizgi grafikleri
-- Sütun / çubuk grafikleri
-- Pasta grafikleri
-- Dağılım grafikleri
+R’de temel grafikler
+`plot()` fonksiyonu ile oluşturulur.
 
-Her grafik türü,
-farklı veri yapıları için uygundur.
+    plot(data$age, data$score)
 
----
-
-## 5. Grafik Türü Seçimi
-
-Doğru grafik seçimi:
-- Verinin türüne
-- Gösterilmek istenen mesaja
-
-bağlıdır.
-
-Yanlış grafik seçimi,
-verinin yanlış anlaşılmasına neden olabilir.
+Bu grafik, iki değişken arasındaki
+ilişkiyi görsel olarak gösterir.
 
 ---
 
-## 6. Streamlit’te Grafik Mantığı
+## 4. Temel Grafik Türleri
 
-Streamlit:
-- Python grafik kütüphaneleriyle uyumludur
-- Grafiklerin hızlı şekilde ekrana basılmasını sağlar
+R’de sık kullanılan grafik türleri şunlardır:
+- Çizgi grafik
+- Nokta grafik
+- Sütun grafik
+- Histogram
 
-Bu yapı:
-- Hızlı prototipleme
-- Kolay görselleştirme
-
-imkânı sunar.
-
----
-
-## 7. Görselleştirme ve Kullanıcı Deneyimi
-
-Grafikler:
-- Arayüzü zenginleştirir
-- Kullanıcının veriyi anlamasını hızlandırır
-
-Ancak:
-- Aşırı grafik kullanımı
-- Karmaşık tasarımlar
-
-kullanıcıyı yorabilir.
+Her grafik türü farklı
+veri yapıları için uygundur.
 
 ---
 
-## 8. Sık Yapılan Hatalar
+## 5. Histogram
 
-Yeni başlayanlar genellikle:
-- Her veri için grafik kullanır
-- Uygun olmayan grafik türünü seçer
-- Etiket ve açıklamaları ihmal eder
+Histogram, sayısal verilerin
+dağılımını göstermek için kullanılır.
 
-Bu hatalar, görselleştirmenin etkisini azaltır.
+    hist(data$score)
+
+Histogramlar, veri yoğunluğunu
+anlamak için önemlidir.
 
 ---
 
-## 9. Paket Programlarda Görselleştirmenin Önemi
+## 6. Sütun Grafik (Bar Plot)
 
-Paket programlarda:
-- Kullanıcı hızlı sonuç görmek ister
-- Grafikler karar sürecini destekler
+Sütun grafikler, kategorik
+verilerin karşılaştırılması için kullanılır.
+
+    barplot(table(data$class))
+
+Bu grafik, her sınıftaki
+gözlem sayısını gösterir.
+
+---
+
+## 7. Grafiklere Başlık ve Etiket Ekleme
+
+Grafiklerin anlaşılır olması için
+başlık ve eksen etiketleri eklenmelidir.
+
+    plot(
+      data$age,
+      data$score,
+      main = "Yaş ve Puan İlişkisi",
+      xlab = "Yaş",
+      ylab = "Puan"
+    )
+
+---
+
+## 8. Grafiklerin Paket Programlardaki Rolü
+
+Paket programlarda grafikler:
+- Sonuçları görsel hâle getirir
+- Kullanıcıya hızlı geri bildirim sağlar
+- Karar destek süreçlerini güçlendirir
 
 Bu nedenle görselleştirme,
-uygulamanın değerini artırır.
+paket programların vazgeçilmez
+bir bileşenidir.
 
 ---
 
-## 10. Haftanın Kazanımları
+## 9. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Veri görselleştirmenin amacını açıklar
-- Farklı grafik türlerini ayırt eder
-- Streamlit’te grafik kullanımını kavrar
+- Temel grafik türlerini bilir
+- R ile grafik oluşturabilir
+- Grafiklerin ne zaman
+  kullanılacağını kavrar
+- Paket programlarda
+  görselleştirmenin önemini anlar
 
 ---
 
-## 11. Sonraki Haftaya Hazırlık
+## 10. Sonraki Haftaya Hazırlık
 
-- Küçük bir uygulama fikri belirleyiniz.
-- Mini uygulama için hangi bileşenlerin gerekli olduğunu düşününüz.
-
+- Birden fazla grafiğin
+  birlikte nasıl kullanılacağını araştırınız
+- Grafiklerin Shiny içinde
+  nasıl gösterileceğini düşününüz
