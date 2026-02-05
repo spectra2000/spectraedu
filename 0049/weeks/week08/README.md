@@ -5,13 +5,12 @@
 ## A. Dersin Amacı
 
 Bu haftada öğrenciler, önceki haftalarda öğrenilen
-R temelleri, veri işlemleri ve görselleştirme
-konularını bir araya getirerek
-küçük ölçekli bir paket program mantığıyla
-mini bir uygulama geliştirecektir.
+R temelleri, veri okuma, temizleme, özetleme ve
+görselleştirme konularını bir araya getirerek
+mini bir paket program geliştirecektir.
 
-Amaç, teorik bilgilerin
-tek bir akış içinde uygulanmasını sağlamaktır.
+Amaç, tek tek öğrenilen becerilerin
+bütüncül bir akış içinde uygulanmasını sağlamaktır.
 
 ---
 
@@ -19,7 +18,7 @@ tek bir akış içinde uygulanmasını sağlamaktır.
 
 - Mini uygulama kavramı
 - Uygulama senaryosu oluşturma
-- Veri okuma ve temizleme
+- Veri okuma ve hazırlama
 - Özetleme ve görselleştirme
 - Çıktı üretme
 
@@ -28,11 +27,11 @@ tek bir akış içinde uygulanmasını sağlamaktır.
 ## C. Ders Kaynakları
 
 ### Ders Notları
-- Hafta 08 – Mini Uygulama (lecture-notes.md)
+- [Hafta 08 – Mini Uygulama (R ile Paket Program Mantığı)](lecture-notes.md)
 
 ### Dış Kaynaklar
 - R Documentation – read.csv
-- R Documentation – plot
+- R Documentation – write.csv
 
 ---
 
@@ -47,7 +46,7 @@ tek bir akış içinde uygulanmasını sağlamaktır.
 ## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Verilen bir veri seti için
+- Verilen bir senaryoya uygun
   mini bir analiz uygulaması hazırlama
 
 ### Kısa Sınav / Testler
@@ -55,7 +54,7 @@ tek bir akış içinde uygulanmasını sağlamaktır.
 
 ---
 
-## F. Görsel ve Ek İçerikler
+## F. Görsel Anlatım
 
 ### Canlı Ders Katılım Linki
 - 
