@@ -1,4 +1,4 @@
-# Hafta 07 – Veri Görselleştirme
+# Hafta 07 – Shiny’ye Giriş
 
 **Ders:** Paket Programlar  
 **Programlama Dili:** R  
@@ -8,132 +8,99 @@
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, veri setlerinden
-elde edilen bilgilerin
-grafikler aracılığıyla
-nasıl görselleştirileceğini öğretmektir.
-
-Paket programlar,
-kullanıcıya çoğu zaman
-sayısal tablolar yerine
-görsel çıktılar sunar.
+Bu haftanın amacı, R ile
+etkileşimli paket programlar
+geliştirmeyi sağlayan
+Shiny framework’ünü tanıtmaktır.
 
 ---
 
-## 2. Veri Görselleştirme Nedir?
+## 2. Shiny Nedir?
 
-Veri görselleştirme,
-sayısal verilerin grafikler yardımıyla
-görsel forma dönüştürülmesidir.
+Shiny, R ile
+web tabanlı ve etkileşimli
+uygulamalar geliştirmeyi sağlayan
+bir framework’tür.
 
-Bu sayede:
-- Veriler daha hızlı anlaşılır
-- Eğilimler kolayca fark edilir
-- Sonuçlar daha etkili sunulur
-
----
-
-## 3. Grafik Türleri
-
-En sık kullanılan grafik türleri:
-- Çizgi grafik (line plot)
-- Çubuk grafik (bar plot)
-- Histogram
-- Nokta grafiği (scatter plot)
-
-Her grafik türü,
-farklı veri yapıları için uygundur.
+Shiny sayesinde:
+- Kullanıcıdan girdi alınabilir
+- Analizler anlık çalıştırılabilir
+- Sonuçlar arayüz üzerinden sunulabilir
 
 ---
 
-## 4. R ile Grafik Oluşturma
+## 3. Shiny Nerelerde Kullanılır?
 
-R’de temel grafikler
-`plot()` fonksiyonu ile oluşturulabilir.
+Shiny uygulamaları:
+- Veri analiz araçları
+- Raporlama panelleri
+- Akademik projeler
+- Kurumsal analiz uygulamaları
 
-Örnek:
-
-    plot(data$yas, data$not)
-
-Bu grafik,
-iki sayısal değişken arasındaki
-ilişkiyi gösterir.
+gibi birçok alanda kullanılır.
 
 ---
 
-## 5. Histogram
+## 4. Shiny Uygulama Yapısı
 
-Histogramlar,
-bir değişkenin dağılımını
-görselleştirmek için kullanılır.
+Bir Shiny uygulaması iki ana bölümden oluşur:
+- Kullanıcı arayüzü (UI)
+- Sunucu tarafı (Server)
 
-Örnek:
-
-    hist(data$not)
-
-Bu grafik sayesinde:
-- Verinin yoğunlaştığı aralıklar
-- Aykırı değerler
-
-daha kolay fark edilir.
+Basit bir Shiny uygulaması
+`app.R` dosyası içinde yazılabilir.
 
 ---
 
-## 6. Grafik Başlıkları ve Etiketler
+## 5. İlk Shiny Uygulaması
 
-Grafiklerin anlaşılır olması için
-başlık ve eksen etiketleri eklenmelidir.
+Örnek en basit Shiny uygulaması:
 
-Örnek:
+    library(shiny)
 
-    plot(
-      data$yas,
-      data$not,
-      main = "Yaş ve Not İlişkisi",
-      xlab = "Yaş",
-      ylab = "Not"
+    ui <- fluidPage(
+      "Merhaba Shiny"
     )
 
----
+    server <- function(input, output) {}
 
-## 7. Grafiklerin Paket Programlardaki Rolü
-
-Paket programlarda grafikler:
-- Analiz sonuçlarını özetler
-- Kullanıcıya hızlı içgörü sağlar
-- Karar verme sürecini destekler
-
-Bu nedenle grafikler,
-paket programların
-en önemli çıktılarındandır.
+    shinyApp(ui, server)
 
 ---
 
-## 8. Grafik Yorumlama
+## 6. Shiny Uygulamasını Çalıştırma
 
-Bir grafik oluşturmak kadar,
-grafiği doğru yorumlamak da önemlidir.
+Shiny uygulaması,
+RStudio üzerinden
+`Run App` butonu ile çalıştırılabilir.
 
-Grafik yorumlarken:
-- Genel eğilimlere
-- Aykırı değerlere
-- Dağılım yapısına
-
-dikkat edilmelidir.
+Bu işlem sonucunda
+uygulama tarayıcıda açılır.
 
 ---
 
-## 9. Haftanın Kazanımları
+## 7. Shiny’nin Paket Program Mantığı
+
+Shiny ile:
+- Analiz → arayüz → çıktı
+tek bir uygulama içinde birleşir.
+
+Bu yapı, Shiny’yi
+paket program geliştirme için
+çok güçlü bir araç hâline getirir.
+
+---
+
+## 8. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Temel grafik türlerini tanır
-- R ile grafik oluşturabilir
-- Grafik başlık ve etiketlerini düzenleyebilir
-- Grafiklerin paket programlardaki önemini kavrar
+- Shiny’nin ne olduğunu açıklar
+- Temel bir Shiny uygulamasını çalıştırabilir
+- Shiny’nin paket programlardaki rolünü kavrar
 
 ---
 
-## 10. Sonraki Haftaya Hazırlık
+## 9. Sonraki Haftaya Hazırlık
 
-- Etkileşimli uygulama kavramını araştırınız
-- Shiny framework’ünün ne amaçla kullanıldığını inceleyiniz
+- UI kavramını araştırınız
+- Shiny arayüz bileşenlerini inceleyiniz
