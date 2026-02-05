@@ -1,118 +1,126 @@
-# Hafta 13 – Deployment
-**Ders:** Paket Programlar (Python / Streamlit Framework)  
+# Hafta 13 – Shiny Uygulama Yayınlama
+
+**Ders:** Paket Programlar  
+**Programlama Dili:** R  
 **Hafta:** 13  
-**Kapsam:** Uygulamaların yayınlanması ve erişilebilir hâle getirilmesi  
 
 ---
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, Streamlit ile geliştirilen
-uygulamaların yalnızca geliştirici bilgisayarında değil,
-başkaları tarafından da kullanılabilir hâle
-nasıl getirildiğini açıklamaktır.
+Bu haftanın amacı, Shiny ile geliştirilen
+uygulamaların nasıl yayınlanacağını
+ve başkaları tarafından nasıl erişilebilir
+hâle getirileceğini öğretmektir.
 
-Bu hafta sonunda öğrenciler:
-- Deployment kavramını açıklar
-- Yayınlama sürecinin mantığını kavrar
-- Uygulamaların paylaşılabilirliğini anlar
+Bu adım, paket program geliştirme sürecinin
+son ve kritik aşamalarından biridir.
 
 ---
 
-## 2. Deployment Nedir?
+## 2. Yayınlama (Deployment) Nedir?
 
-**Deployment**, bir yazılımın:
-- Çalışır hâlde
-- Kullanıcıların erişimine açılması
+Yayınlama:
+- Uygulamanın yerel bilgisayardan çıkarılması
+- İnternet üzerinden erişilebilir hâle getirilmesi
 
-sürecidir.
+anlamına gelir.
 
-Bu süreç, yazılım geliştirme döngüsünün
-son ama en kritik adımlarından biridir.
-
----
-
-## 3. Neden Deployment Yapılır?
-
-Deployment sayesinde:
-- Uygulama başkaları tarafından kullanılabilir
-- Geri bildirim toplanabilir
-- Proje gerçek bir ürüne dönüşür
-
-Bu adım, paket program mantığının tamamlandığı noktadır.
+Bu sayede kullanıcılar,
+uygulamayı kendi bilgisayarlarına
+kurmadan kullanabilir.
 
 ---
 
-## 4. Yerel Çalışma ve Yayınlanmış Uygulama Farkı
+## 3. Yerel Çalıştırma ve Yayınlama Arasındaki Fark
 
-Yerel uygulama:
-- Sadece geliştirici bilgisayarında çalışır
+Yerel çalıştırma:
+- Sadece geliştiricinin bilgisayarında çalışır
+- Paylaşım sınırlıdır
 
-Yayınlanmış uygulama:
-- İnternet üzerinden erişilebilir
-- Farklı kullanıcılar tarafından kullanılabilir
-
-Bu fark, deployment’ın önemini gösterir.
-
----
-
-## 5. Deployment Sürecinin Genel Adımları
-
-Genel olarak deployment:
-- Projenin hazırlanması
-- Bağımlılıkların tanımlanması
-- Uygun bir ortamda çalıştırılması
-
-adımlarını içerir.
-
-Bu süreç, her platformda benzer mantıkla ilerler.
+Yayınlama:
+- Herkes tarafından erişilebilir
+- Gerçek paket program deneyimi sunar
 
 ---
 
-## 6. Streamlit Uygulamalarında Deployment Mantığı
+## 4. shinyapps.io Nedir?
 
-Streamlit uygulamaları:
-- Python ortamında çalışır
-- Bağımlılıkların doğru tanımlanmasını gerektirir
-
-Bu nedenle proje düzeni ve paketleme,
-deployment öncesi çok önemlidir.
-
----
-
-## 7. Yayınlama Sürecinde Dikkat Edilmesi Gerekenler
-
-Deployment sırasında:
-- Uygulamanın hatasız çalışması
-- Gerekli tüm dosyaların bulunması
-- Ortam uyumluluğu
-
-kontrol edilmelidir.
+shinyapps.io:
+- RStudio tarafından sunulan
+  bir Shiny uygulama yayınlama platformudur
+- Kod yazmadan sunucu yönetimi sağlar
+- Küçük ve orta ölçekli projeler için uygundur
 
 ---
 
-## 8. Paket Program Perspektifi
+## 5. shinyapps.io Hesabı Oluşturma
 
-Paket programlar:
-- Uzun süreli kullanım hedefler
-- Kullanıcıya sorunsuz deneyim sunmalıdır
+Yayınlama için:
+- shinyapps.io üzerinde hesap oluşturulur
+- RStudio ile hesap bağlantısı yapılır
+- Gerekli yetkilendirmeler tanımlanır
 
-Deployment, bu hedefin
-gerçek hayattaki karşılığıdır.
+Bu işlem genellikle tek seferliktir.
 
 ---
 
-## 9. Haftanın Kazanımları
+## 6. Uygulamanın Yayına Hazırlanması
+
+Yayınlama öncesinde:
+- Kodun hatasız çalıştığından emin olunmalıdır
+- UI ve server dosyaları düzenli olmalıdır
+- Gerekli paketler kontrol edilmelidir
+
+Bu adım, yayın sırasında hata oluşmasını önler.
+
+---
+
+## 7. Uygulamayı Yayınlama
+
+RStudio üzerinden:
+- “Publish” seçeneği kullanılır
+- Hedef platform olarak shinyapps.io seçilir
+- Uygulama birkaç adımda yayına alınır
+
+Yayınlama tamamlandığında
+bir bağlantı (URL) oluşturulur.
+
+---
+
+## 8. Yayınlanan Uygulamanın Test Edilmesi
+
+Yayın sonrası:
+- Uygulama tarayıcıdan test edilmelidir
+- Farklı cihazlardan erişim kontrol edilmelidir
+- Kullanıcı etkileşimleri gözlemlenmelidir
+
+---
+
+## 9. Yayınlamanın Paket Program Açısından Önemi
+
+Yayınlama sayesinde:
+- Uygulama gerçek kullanıcılarla buluşur
+- Geri bildirim alınabilir
+- Paket program mantığı tamamlanır
+
+Bu aşama, öğrencinin
+bir ürünü baştan sona
+geliştirdiğini gösterir.
+
+---
+
+## 10. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Deployment kavramını açıklar
-- Streamlit uygulamalarının yayınlanma mantığını kavrar
-- Geliştirdiği projeleri paylaşmanın önemini anlar
+- Shiny uygulamasını yayınlayabilir
+- Yayınlama kavramını açıklar
+- Yerel ve çevrim içi çalışma farkını bilir
+- Paket program sürecini tamamlar
 
 ---
 
-## 10. Sonraki Haftaya Hazırlık
+## 11. Sonraki Haftaya Hazırlık
 
-- Final proje fikrinizi netleştiriniz.
-- Geliştirdiğiniz uygulamayı bir ürün gibi düşününüz.
-
+- Final proje fikrini netleştiriniz
+- Proje kapsamını ve hedeflerini belirleyiniz
