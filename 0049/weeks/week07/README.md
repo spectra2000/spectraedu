@@ -1,46 +1,62 @@
-# 07. Grafikler ve Görselleştirme
+# Week 07 – Veri Görselleştirme
 
 ---
 
 ## A. Dersin Amacı
 
-Bu haftada Streamlit uygulamalarında
-verilerin grafikler ve görseller aracılığıyla
-anlaşılır şekilde sunulması ele alınacaktır.
+Bu haftada öğrenciler, veri setlerinden elde edilen
+bilgilerin grafikler aracılığıyla nasıl
+görselleştirileceğini öğrenecektir.
 
-Öğrenciler, sayısal ve kategorik verileri
-görselleştirerek kullanıcıya daha güçlü
-içgörüler sunmayı öğrenecektir.
+Görselleştirme, paket programların kullanıcıya
+anlaşılır ve etkili sonuçlar sunabilmesi için
+önemli bir bileşendir.
 
 ---
 
-## B. Ders Kaynakları
+## B. Ders İçeriği
+
+- Veri görselleştirme kavramı
+- Temel grafik türleri
+- Grafik okuma ve yorumlama
+- R’de grafik oluşturma
+- Grafiklerin paket programlarda kullanımı
+
+---
+
+## C. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 7 – Grafikler ve Görselleştirme](lecture-notes.md)
+- Hafta 07 – Veri Görselleştirme (lecture-notes.md)
 
 ### Dış Kaynaklar
-- 
+- R Documentation – plot
+- R Documentation – graphics
 
 ---
 
-## C. Uygulamalar
-- Farklı grafik türlerinin karşılaştırılması
-- Aynı verinin farklı görselleştirmelerle sunulmasının incelenmesi
+## D. Uygulamalar
+
+- Basit grafikler oluşturma
+- Farklı grafik türlerini karşılaştırma
+- Grafik çıktılarının yorumlanması
 
 ---
 
-## D. Haftalık Ölçme ve Değerlendirme
+## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Seçilen bir veri seti için en az iki farklı grafik türü tasarlama
+- Verilen bir veri seti için
+  en az iki farklı grafik türü oluşturarak
+  kısa bir yorum yazma
 
 ### Kısa Sınav / Testler
-- 
+- Grafik türleri ve kullanım amaçlarına
+  yönelik kısa sorular
 
 ---
 
-## E. Görsel Anlatım
+## F. Görsel ve Ek İçerikler
 
 ### Canlı Ders Katılım Linki
 - 
