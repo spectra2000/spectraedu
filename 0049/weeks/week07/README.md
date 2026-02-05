@@ -1,57 +1,53 @@
-# Week 07 – Veri Görselleştirme
+# Week 07 – Shiny’ye Giriş
 
 ---
 
 ## A. Dersin Amacı
 
-Bu haftada öğrenciler, veri setlerinden elde edilen
-bilgilerin grafikler yardımıyla
-nasıl görselleştirileceğini öğrenecektir.
+Bu haftada öğrenciler,
+R ile etkileşimli ve arayüzlü
+uygulamalar geliştirmeyi sağlayan
+**Shiny framework’ü** ile tanışacaktır.
 
-Veri görselleştirme, paket programlarda
-sonuçların kullanıcıya
-anlaşılır ve etkili biçimde
-sunulmasını sağlar.
+Shiny, analizleri bir paket programa
+dönüştürmenin en pratik yollarından biridir.
 
 ---
 
 ## B. Ders İçeriği
 
-- Veri görselleştirmenin amacı
-- Grafik türleri
-- R ile temel grafikler
-- Grafik yorumlama
+- Shiny nedir?
+- Shiny’nin kullanım alanları
+- Temel Shiny uygulama yapısı
+- app.R dosyası
 
 ---
 
 ## C. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 07 – Veri Görselleştirme](lecture-notes.md)
+- [Hafta 07 – Shiny’ye Giriş](lecture-notes.md)
 
 ### Dış Kaynaklar
-- R Documentation – plot
-- R Documentation – hist
+- Shiny Official Documentation
 
 ---
 
 ## D. Uygulamalar
 
-- Sayısal veriler için grafik oluşturma
-- Farklı grafik türlerini karşılaştırma
-- Grafik çıktılarının yorumlanması
+- İlk Shiny uygulamasının çalıştırılması
+- Basit bir arayüz oluşturma
 
 ---
 
 ## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Aynı veri seti için
-  en az iki farklı grafik üretme
-  ve kısa yorum yazma
+- Verilen örnek Shiny uygulamasını çalıştırma
+  ve inceleme
 
 ### Kısa Sınav / Testler
-- Grafik türleri ve kullanım amaçları
+- Shiny temel kavramları
 
 ---
 
