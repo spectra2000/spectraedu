@@ -1,47 +1,60 @@
-# 12. Paketleme ve Proje Yapısı
+# Week 12 – R Paket Mantığı
 
 ---
 
 ## A. Dersin Amacı
 
-Bu haftada Streamlit uygulamalarının
-daha düzenli, sürdürülebilir ve
-yeniden kullanılabilir olması için
-proje yapısı ve paketleme kavramları ele alınacaktır.
+Bu haftada öğrenciler, R programlama dilinde
+paket kavramını ve paketlerin
+neden önemli olduğunu öğrenecektir.
 
-Öğrenciler, küçük uygulamaları
-profesyonel projelere dönüştürmenin
-temel prensiplerini öğrenecektir.
+Amaç, şimdiye kadar yazılan kodların
+daha düzenli, tekrar kullanılabilir
+ve paylaşılabilir hâle getirilmesini sağlamaktır.
 
 ---
 
-## B. Ders Kaynakları
+## B. Ders İçeriği
+
+- R paket kavramı
+- Paket yapısı (klasör düzeni)
+- Fonksiyonların paket içine alınması
+- DESCRIPTION ve NAMESPACE dosyaları
+- Paket mantığının paket programlarla ilişkisi
+
+---
+
+## C. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 12 – Paketleme ve Proje Yapısı](lecture-notes.md)
+- [Hafta 12 – R Paket Mantığı](lecture-notes.md)
 
 ### Dış Kaynaklar
-- 
+- R Packages (Hadley Wickham)
+- CRAN Paket Rehberi
 
 ---
 
-## C. Uygulamalar
-- Basit bir Streamlit projesinin klasör yapısının incelenmesi
-- Kodun dosyalara bölünerek düzenlenmesi
+## D. Uygulamalar
+
+- Basit bir R paketi oluşturma
+- Fonksiyonları paket yapısına taşıma
+- Paket klasör yapısını inceleme
 
 ---
 
-## D. Haftalık Ölçme ve Değerlendirme
+## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Mevcut bir Streamlit uygulamasını düzenli bir proje yapısına dönüştürme
+- Daha önce yazılmış bir R fonksiyonunu
+  basit bir paket yapısına dönüştürme
 
 ### Kısa Sınav / Testler
-- 
+- Paket yapısı ve temel dosyalar
 
 ---
 
-## E. Görsel Anlatım
+## F. Görsel Anlatım
 
 ### Canlı Ders Katılım Linki
 - 
