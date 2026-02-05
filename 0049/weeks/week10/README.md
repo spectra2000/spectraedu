@@ -1,46 +1,60 @@
-# 10. API Tabanlı Uygulama
+# Week 10 – Reaktif Yapılar
 
 ---
 
 ## A. Dersin Amacı
 
-Bu haftada Streamlit uygulamalarında
-harici servislerle iletişim kurmayı sağlayan
-API (Application Programming Interface) kavramı ele alınacaktır.
+Bu haftada öğrenciler, Shiny uygulamalarının
+dinamik ve etkileşimli çalışmasını sağlayan
+**reaktif yapıların** nasıl çalıştığını öğrenecektir.
 
-Öğrenciler, dış kaynaklardan veri alarak
-daha dinamik ve gerçek hayata yakın
-paket programlar geliştirmeyi öğrenecektir.
+Reaktif yapılar, kullanıcı girdilerine göre
+uygulamanın otomatik olarak güncellenmesini sağlar
+ve Shiny’nin en kritik bileşenlerinden biridir.
 
 ---
 
-## B. Ders Kaynakları
+## B. Ders İçeriği
+
+- Reaktif kavramı
+- reactive()
+- observe() ve observeEvent()
+- render fonksiyonları
+- Reaktif akışın kontrolü
+
+---
+
+## C. Ders Kaynakları
 
 ### Ders Notları
-- [Hafta 10 – API Tabanlı Uygulama](lecture-notes.md)
+- [Hafta 10 – Reaktif Yapılar](lecture-notes.md)
 
 ### Dış Kaynaklar
-- 
+- Shiny Reactive Programming Guide
+- Shiny Documentation – Reactivity
 
 ---
 
-## C. Uygulamalar
-- Basit bir API’den veri alma senaryosunun incelenmesi
-- API verisinin Streamlit arayüzünde gösterilmesi
+## D. Uygulamalar
+
+- Kullanıcı girdilerine bağlı dinamik hesaplama
+- Reaktif ifadelerle çıktıları güncelleme
+- observeEvent ile olay bazlı işlem yapma
 
 ---
 
-## D. Haftalık Ölçme ve Değerlendirme
+## E. Haftalık Ölçme ve Değerlendirme
 
 ### Ödev
-- Seçilen bir API’den veri alan basit bir Streamlit uygulaması tasarlama
+- En az iki farklı reaktif yapı kullanan
+  basit bir Shiny uygulaması geliştirme
 
 ### Kısa Sınav / Testler
-- 
+- Reaktif kavramlar ve kullanım amaçları
 
 ---
 
-## E. Görsel Anlatım
+## F. Görsel Anlatım
 
 ### Canlı Ders Katılım Linki
 - 
