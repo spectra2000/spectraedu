@@ -8,9 +8,10 @@ Bu haftada öğrenciler, R programlama dili kullanarak
 dosyalardan veri okuma ve dosyalara veri yazma
 işlemlerini öğrenecektir.
 
-Bu konu, paket programların dış kaynaklardan
-veri alabilmesi ve üretilen sonuçları
-kalıcı hâle getirebilmesi açısından temel öneme sahiptir.
+Bu konu, paket programların
+dış kaynaklardan veri alabilmesi ve
+üretilen sonuçları kalıcı hâle getirebilmesi açısından
+temel öneme sahiptir.
 
 ---
 
@@ -27,7 +28,7 @@ kalıcı hâle getirebilmesi açısından temel öneme sahiptir.
 ## C. Ders Kaynakları
 
 ### Ders Notları
-- Hafta 04 – Veri Okuma ve Dosya İşlemleri (lecture-notes.md)
+- [Hafta 04 – Veri Okuma ve Dosya İşlemleri](lecture-notes.md)
 
 ### Dış Kaynaklar
 - R Documentation – read.csv
@@ -38,7 +39,7 @@ kalıcı hâle getirebilmesi açısından temel öneme sahiptir.
 ## D. Uygulamalar
 
 - CSV dosyasından veri okuma
-- Okunan veriyi inceleme
+- Okunan verinin yapısını inceleme
 - Basit bir veri setini CSV dosyası olarak kaydetme
 
 ---
@@ -47,15 +48,15 @@ kalıcı hâle getirebilmesi açısından temel öneme sahiptir.
 
 ### Ödev
 - Verilen bir CSV dosyasını okuyup
-  temel inceleme fonksiyonlarını kullanarak
-  kısa bir rapor hazırlama
+  veri yapısını inceleyen
+  kısa bir R script’i yazma
 
 ### Kısa Sınav / Testler
-- Dosya okuma ve yazma mantığına yönelik sorular
+- Dosya okuma ve yazma mantığı
 
 ---
 
-## F. Görsel ve Ek İçerikler
+## F. Görsel Anlatım
 
 ### Canlı Ders Katılım Linki
 - 
