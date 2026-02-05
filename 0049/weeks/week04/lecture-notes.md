@@ -1,130 +1,124 @@
-# Hafta 04 – Input Bileşenleri
-**Ders:** Paket Programlar (Python / Streamlit Framework)  
+# Hafta 04 – Veri Okuma ve Dosya İşlemleri
+
+**Ders:** Paket Programlar  
+**Programlama Dili:** R  
 **Hafta:** 4  
-**Kapsam:** Kullanıcıdan veri alma ve etkileşim  
 
 ---
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, Streamlit uygulamalarında
-kullanıcı ile etkileşimi sağlayan
-input bileşenlerinin nasıl çalıştığını açıklamaktır.
+Bu haftanın amacı, R programlama dili kullanılarak
+dosyalardan veri okuma ve dosyalara veri yazma
+işlemlerini öğretmektir.
 
-Bu hafta sonunda öğrenciler:
-- Input bileşeni kavramını açıklar
-- Farklı input türlerini ayırt eder
-- Kullanıcı girdilerini uygulama akışında kullanır
-
----
-
-## 2. Input Bileşeni Nedir?
-
-**Input bileşeni**, kullanıcıdan veri almak için
-kullanılan arayüz elemanıdır.
-
-Bu bileşenler sayesinde:
-- Kullanıcı uygulamaya veri girer
-- Uygulama bu verilere göre davranış değiştirir
+Paket programlar genellikle kullanıcıdan veri alır
+veya dış kaynaklardan veri okur. Bu nedenle dosya
+işlemleri, paket program geliştirmenin temel
+bileşenlerinden biridir.
 
 ---
 
-## 3. Kullanıcı Etkileşimi Mantığı
+## 2. Dosya Kavramı ve Veri Kaynakları
 
-Streamlit’te:
-- Kullanıcı bir girdi verir
-- Uygulama yeniden çalışır
-- Ekran güncellenir
+Bir paket programda veri farklı kaynaklardan gelebilir:
+- CSV dosyaları
+- Excel dosyaları
+- Metin (TXT) dosyaları
+- Kullanıcı tarafından sağlanan dosyalar
 
-Bu mekanizma, Streamlit’in temel çalışma prensiplerinden biridir.
-
----
-
-## 4. Temel Input Türleri (Genel Bakış)
-
-Streamlit’te yaygın kullanılan input türleri:
-- Metin girdileri
-- Sayısal girdiler
-- Seçim tabanlı girdiler
-
-Her input türü, farklı kullanım senaryolarına uygundur.
+Bu derste temel olarak **CSV dosyaları** üzerinden
+ilerlenecektir.
 
 ---
 
-## 5. Metin Tabanlı Girdiler
+## 3. Çalışma Dizini (Working Directory)
 
-Metin girdileri:
-- İsim
-- Açıklama
-- Kısa notlar
+R’de dosya işlemleri yapılırken çalışma dizini
+kavramı önemlidir.
 
-gibi verilerin alınması için kullanılır.
+Çalışma dizini, R’nin dosyaları aradığı varsayılan
+klasördür.
 
-Bu girdiler genellikle serbest metin içerir.
+Mevcut çalışma dizinini öğrenmek için:
+
+    getwd()
+
+Çalışma dizinini değiştirmek için:
+
+    setwd("klasor/yolu/buraya")
 
 ---
 
-## 6. Sayısal Girdiler
+## 4. CSV Dosyası Okuma
 
-Sayısal girdiler:
-- Hesaplama gerektiren uygulamalarda
-- Ölçüm ve değer girişlerinde
+CSV dosyaları, tablo yapısında veri saklayan
+yaygın bir dosya formatıdır.
 
+R’de CSV dosyası okumak için `read.csv()` fonksiyonu
 kullanılır.
 
-Bu girdiler, kullanıcıdan yalnızca sayısal veri alır.
+    data <- read.csv("veri.csv")
+
+Bu işlem sonucunda veri bir **data frame** olarak
+belleğe alınır.
 
 ---
 
-## 7. Seçim Tabanlı Girdiler
+## 5. Okunan Veriyi İnceleme
 
-Seçim tabanlı girdiler:
-- Önceden belirlenmiş seçenekler sunar
-- Hatalı veri girişini azaltır
+Dosya okunduktan sonra verinin doğru okunup
+okunmadığı kontrol edilmelidir.
 
-Bu yapı:
-- Menü
-- Liste
-- Onay seçenekleri
+Bunun için sık kullanılan fonksiyonlar:
 
-gibi senaryolarda tercih edilir.
+    head(data)
+    str(data)
+    summary(data)
 
----
-
-## 8. Input Bileşenlerinde Kullanıcı Deneyimi
-
-Input tasarlanırken:
-- Anlaşılır etiketler kullanılmalıdır
-- Kullanıcı ne girmesi gerektiğini net şekilde görmelidir
-
-Bu yaklaşım:
-- Hataları azaltır
-- Kullanım kolaylığı sağlar
+Bu adım, paket programın hatasız çalışması için
+kritik öneme sahiptir.
 
 ---
 
-## 9. Input ve Uygulama Akışı İlişkisi
+## 6. Dosyaya Veri Yazma
 
-Kullanıcı girdileri:
-- Uygulamanın hangi yolu izleyeceğini belirler
-- Dinamik içerik üretimini sağlar
+R’de oluşturulan veya işlenen veriler dosyaya
+kaydedilebilir.
 
-Bu nedenle input bileşenleri,
-etkileşimli uygulamaların temelidir.
+Bir data frame’i CSV dosyasına yazmak için:
+
+    write.csv(data, "sonuc.csv", row.names = FALSE)
+
+Bu işlem, paket programın ürettiği çıktıyı
+kullanıcıya sunmak için kullanılır.
 
 ---
 
-## 10. Haftanın Kazanımları
+## 7. Dosya İşlemlerinin Paket Program Mantığındaki Yeri
+
+Dosya işlemleri:
+- Veri girişini sağlar
+- Analiz sonuçlarını saklar
+- Programın tekrar kullanılabilir olmasını sağlar
+
+Bu nedenle dosya okuma ve yazma işlemleri,
+paket programların arka planında temel rol oynar.
+
+---
+
+## 8. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Input bileşenlerinin amacını açıklar
-- Farklı input türlerini kullanır
-- Kullanıcı etkileşimli uygulama mantığını kavrar
+- Çalışma dizini kavramını bilir
+- CSV dosyası okuyabilir
+- Veriyi dosyaya yazabilir
+- Paket programlarda dosya işlemlerinin önemini kavrar
 
 ---
 
-## 11. Sonraki Haftaya Hazırlık
+## 9. Sonraki Haftaya Hazırlık
 
-- State (durum) kavramını araştırınız.
-- Uygulama içi verilerin nasıl saklandığını düşününüz.
-
+- Veri temizleme kavramını araştırınız
+- Okunan veriler üzerinde hangi işlemlerin
+  yapılabileceğini düşününüz
