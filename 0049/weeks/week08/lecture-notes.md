@@ -1,4 +1,4 @@
-# Hafta 08 – Mini Uygulama (R ile Paket Program Mantığı)
+# Hafta 08 – Shiny UI Bileşenleri
 
 **Ders:** Paket Programlar  
 **Programlama Dili:** R  
@@ -8,144 +8,94 @@
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, önceki haftalarda öğrenilen
-tüm R becerilerini bir araya getirerek
-mini bir paket program geliştirmektir.
-
-Bu çalışma, öğrencinin
-konuları bütüncül şekilde
-kavramasını hedefler.
+Bu haftanın amacı,
+Shiny uygulamalarında
+kullanıcı arayüzünü oluşturan
+temel bileşenleri öğretmektir.
 
 ---
 
-## 2. Mini Uygulama Nedir?
+## 2. UI (User Interface) Kavramı
 
-Mini uygulama, belirli bir problemi
-çözmeye odaklanan,
-küçük ölçekli bir yazılım parçasıdır.
+UI, kullanıcı ile
+uygulama arasındaki
+etkileşim noktasıdır.
 
-Bir mini uygulama genellikle:
-- Veri alır
-- Veriyi işler
-- Anlamlı çıktı üretir
+İyi bir UI:
+- Anlaşılır
+- Kullanımı kolay
+- Amaca uygun
 
----
-
-## 3. Uygulama Senaryosu
-
-Bu hafta için örnek senaryo:
-
-Bir CSV dosyasından
-öğrenci notlarını okuyarak:
-- Temel istatistikleri hesaplayan
-- Grafik üreten
-- Sonuçları kullanıcıya sunan
-bir mini uygulama geliştirmek
+olmalıdır.
 
 ---
 
-## 4. Uygulama Akışı
+## 3. Layout Yapıları
 
-Mini uygulamanın genel akışı şu şekildedir:
-1. Veri dosyasını okuma
-2. Veriyi temizleme
-3. Veriyi özetleme
-4. Grafik oluşturma
-5. Çıktıları kaydetme
+Shiny’de arayüz düzeni
+layout yapıları ile oluşturulur.
 
-Bu akış, gerçek hayattaki
-paket programların çalışma mantığını yansıtır.
+En sık kullanılan layout:
+
+    fluidPage()
 
 ---
 
-## 5. Veri Okuma
+## 4. Input Bileşenleri
 
-Uygulama, harici bir dosyadan
-veri okuyarak başlar.
+Kullanıcıdan veri almak için
+input bileşenleri kullanılır.
 
-    data <- read.csv("ogrenci_notlari.csv")
-
-Okunan verinin yapısı
-kontrol edilmelidir.
-
-    str(data)
+Örnek input bileşenleri:
+- sliderInput
+- selectInput
+- textInput
 
 ---
 
-## 6. Veri Temizleme
+## 5. Örnek Input Kullanımı
 
-Eksik veya hatalı veriler,
-uygulama sonuçlarını etkileyebilir.
-
-Eksik satırları temizlemek için:
-
-    clean_data <- na.omit(data)
-
-Bu adım, uygulamanın
-daha güvenilir çalışmasını sağlar.
+    sliderInput(
+      inputId = "yas",
+      label = "Yaş",
+      min = 0,
+      max = 100,
+      value = 25
+    )
 
 ---
 
-## 7. Veri Özetleme
+## 6. Output Bileşenleri
 
-Temel özet istatistikler
-hesaplanabilir.
+Output bileşenleri,
+sonuçların kullanıcıya
+gösterilmesini sağlar.
 
-    summary(clean_data)
-
-Gerekirse belirli sütunlar
-üzerinde özel hesaplamalar yapılır.
-
----
-
-## 8. Görselleştirme
-
-Uygulama sonuçları
-grafiklerle desteklenir.
-
-    hist(clean_data$not)
-
-Grafikler, sonuçların
-daha anlaşılır olmasını sağlar.
+Örnek output bileşenleri:
+- textOutput
+- plotOutput
 
 ---
 
-## 9. Çıktı Üretme
+## 7. UI Bileşenlerinin Paket Programlardaki Rolü
 
-Uygulama çıktıları
-dosya olarak kaydedilebilir.
-
-    write.csv(clean_data, "temiz_veri.csv", row.names = FALSE)
-
-Bu işlem, paket programın
-kullanıcıya kalıcı çıktı sunmasını sağlar.
+UI bileşenleri sayesinde:
+- Kullanıcı programı kontrol eder
+- Analiz süreci etkileşimli hâle gelir
+- Program daha kullanıcı dostu olur
 
 ---
 
-## 10. Mini Uygulamanın Paket Program Mantığı
-
-Bu mini uygulama:
-- Girdi alır
-- İşlem yapar
-- Çıktı üretir
-
-Bu yapı, gerçek hayattaki
-paket programların
-temel çalışma mantığını temsil eder.
-
----
-
-## 11. Haftanın Kazanımları
+## 8. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Mini bir R uygulaması geliştirebilir
-- Öğrenilen konuları birlikte kullanabilir
-- Paket program mantığını
-  uygulamalı olarak kavrar
+- UI kavramını açıklar
+- Temel input ve output bileşenlerini kullanabilir
+- Basit bir Shiny arayüzü oluşturabilir
 
 ---
 
-## 12. Sonraki Haftaya Hazırlık
+## 9. Sonraki Haftaya Hazırlık
 
-- Etkileşimli uygulama kavramını araştırınız
-- Shiny framework’ünün temel amacını inceleyiniz
+- Server mantığını araştırınız
+- Reaktif yapı kavramını inceleyiniz
