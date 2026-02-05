@@ -8,141 +8,146 @@
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, veri setleri üzerinde
-özetleme ve gruplama işlemlerini öğretmek ve
-paket programların kullanıcıya anlamlı bilgiler
-sunabilmesini sağlamaktır.
+Bu haftanın amacı, veri setlerinden
+anlamlı bilgiler elde etmek için
+özetleme ve gruplama işlemlerinin
+nasıl yapıldığını öğretmektir.
 
-Ham veriler çoğu zaman doğrudan yorumlanamaz.
-Bu nedenle özetleme ve gruplama işlemleri
-kritik öneme sahiptir.
+Paket programlar çoğu zaman
+ham veriyi değil,
+özetlenmiş ve yorumlanabilir
+bilgileri kullanıcıya sunar.
 
 ---
 
 ## 2. Veri Özetleme Nedir?
 
-Veri özetleme, bir veri setindeki bilgilerin
-temel istatistikler kullanılarak
-daha anlaşılır hâle getirilmesidir.
+Veri özetleme, büyük veri setlerini
+daha küçük ve anlaşılır hâle
+getirme sürecidir.
 
-Özetleme işlemleri genellikle:
-- Ortalama
-- Medyan
-- Minimum
-- Maksimum
-- Toplam
-
-gibi ölçütleri içerir.
+Bu işlem sayesinde:
+- Genel eğilimler görülür
+- Aykırı değerler fark edilir
+- Verinin yapısı anlaşılır
 
 ---
 
-## 3. summary Fonksiyonu
+## 3. Temel Özet Fonksiyonları
 
-R’de bir veri setinin hızlı özetini almak için
-`summary()` fonksiyonu kullanılır.
+R’de en sık kullanılan
+özetleme fonksiyonları şunlardır:
 
     summary(data)
 
-Bu fonksiyon, her değişken için temel
-istatistiksel bilgileri gösterir.
+Bu fonksiyon:
+- Minimum
+- Maksimum
+- Ortalama
+- Medyan
+
+gibi temel istatistikleri verir.
 
 ---
 
-## 4. Temel İstatistiksel Fonksiyonlar
+## 4. Tek Değişken Üzerinde Özetleme
 
-Tek tek değişkenler üzerinde
-özetleme yapmak mümkündür.
+Belirli bir sütun için
+özet istatistikler hesaplanabilir.
 
-Örnekler:
+Örneğin:
 
-    mean(data$score)
-    median(data$score)
-    min(data$score)
-    max(data$score)
-    sum(data$score)
+    mean(data$not)
+    median(data$not)
+    min(data$not)
+    max(data$not)
 
-Bu fonksiyonlar paket programların
-arka planında sıkça kullanılır.
+Bu işlemler,
+paket programlarda
+tek bir ölçümün hızlıca
+analiz edilmesini sağlar.
 
 ---
 
 ## 5. Gruplama Kavramı
 
-Gruplama, verinin belirli bir değişkene göre
-parçalara ayrılarak analiz edilmesini ifade eder.
+Gruplama, verilerin
+belirli bir değişkene göre
+alt kümelere ayrılmasıdır.
 
 Örneğin:
-- Bölgeye göre satışlar
-- Sınıfa göre not ortalamaları
-- Kategoriye göre ürün sayıları
+- Bölgelere göre satış
+- Sınıflara göre notlar
+- Kategorilere göre maliyetler
 
 ---
 
-## 6. aggregate Fonksiyonu
+## 6. Gruplara Göre Hesaplama
 
-R’de gruplama yaparak özet hesaplamak için
-`aggregate()` fonksiyonu kullanılır.
+R’de gruplama işlemleri
+`aggregate()` fonksiyonu ile yapılabilir.
 
 Örnek:
 
-    aggregate(score ~ class, data = data, FUN = mean)
+    aggregate(not ~ sinif, data = data, mean)
 
-Bu kod, her sınıf için
-ortalama puanı hesaplar.
-
----
-
-## 7. Birden Fazla Özet Hesabı
-
-Gruplara göre farklı özetler de alınabilir.
-
-    aggregate(score ~ class, data = data, FUN = sum)
-
-Fonksiyon parametresi değiştirilerek
-istenen özet değeri elde edilir.
+Bu komut,
+her sınıf için
+ortalama notu hesaplar.
 
 ---
 
-## 8. Gruplanmış Verilerin Yorumlanması
+## 7. Birden Fazla Özet Hesaplama
 
-Gruplanmış veriler:
-- Karşılaştırma yapmayı kolaylaştırır
-- Eğilimleri ortaya çıkarır
-- Paket program çıktılarının
-  kullanıcı tarafından anlaşılmasını sağlar
+Gruplar için
+farklı özetler de alınabilir.
 
-Bu nedenle gruplama,
-raporlama ve karar destek sistemlerinde
-yaygın olarak kullanılır.
+Örneğin:
+
+    aggregate(not ~ sinif, data = data, summary)
+
+Bu sayede her grup için
+detaylı özet istatistikler elde edilir.
 
 ---
 
-## 9. Veri Özetlemenin Paket Programlardaki Rolü
+## 8. Özet Tabloların Paket Programlardaki Rolü
 
-Paket programlar genellikle:
-- Büyük veri setlerini alır
-- Özetler üretir
-- Kullanıcıya sade sonuçlar sunar
+Özet tablolar:
+- Karmaşık verileri sadeleştirir
+- Karar verme sürecini kolaylaştırır
+- Kullanıcıya net bilgi sunar
 
-Bu hafta öğrenilen kavramlar,
-paket programların temel işlevlerini
-oluşturur.
+Bu nedenle paket programlarda
+en sık üretilen çıktılardan biridir.
+
+---
+
+## 9. Veri Özetlemenin Paket Program Mantığı
+
+Bu haftada öğrenilen işlemler sayesinde:
+- Ham veri anlamlı bilgiye dönüşür
+- Kullanıcı sonuçları hızlıca yorumlar
+- Program daha işlevsel hâle gelir
+
+Veri özetleme,
+paket programların
+en kritik adımlarından biridir.
 
 ---
 
 ## 10. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Veri özetleme işlemlerini yapabilir
+- Veri özetleme kavramını açıklar
 - Temel istatistikleri hesaplayabilir
-- Gruplama mantığını kavrar
-- Paket programlarda özet bilginin
-  önemini anlar
+- Gruplama işlemleri yapabilir
+- Gruplara göre özet tablolar oluşturabilir
 
 ---
 
 ## 11. Sonraki Haftaya Hazırlık
 
-- Veri görselleştirme kavramını araştırınız
-- Özetlenen verilerin grafikle
-  nasıl sunulabileceğini düşününüz
+- Grafik türlerini araştırınız
+- Verinin görselleştirilmesinin
+  neden önemli olduğunu düşününüz
