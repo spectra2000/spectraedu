@@ -8,120 +8,132 @@
 
 ## 1. Dersin Amacı
 
-Bu haftanın amacı, veri setlerinden elde edilen
-bilgilerin grafikler yardımıyla
-görselleştirilmesini öğretmektir.
+Bu haftanın amacı, veri setlerinden
+elde edilen bilgilerin
+grafikler aracılığıyla
+nasıl görselleştirileceğini öğretmektir.
 
-Grafikler, sayısal bilgilerin
-daha hızlı ve anlaşılır şekilde
-yorumlanmasını sağlar.
+Paket programlar,
+kullanıcıya çoğu zaman
+sayısal tablolar yerine
+görsel çıktılar sunar.
 
 ---
 
 ## 2. Veri Görselleştirme Nedir?
 
-Veri görselleştirme, verilerin grafiksel
-temsiller kullanılarak sunulmasıdır.
+Veri görselleştirme,
+sayısal verilerin grafikler yardımıyla
+görsel forma dönüştürülmesidir.
 
-Görselleştirme sayesinde:
-- Eğilimler daha kolay fark edilir
-- Karşılaştırmalar yapılabilir
-- Karmaşık bilgiler sadeleştirilir
+Bu sayede:
+- Veriler daha hızlı anlaşılır
+- Eğilimler kolayca fark edilir
+- Sonuçlar daha etkili sunulur
 
 ---
 
-## 3. R’de Grafik Oluşturma
+## 3. Grafik Türleri
+
+En sık kullanılan grafik türleri:
+- Çizgi grafik (line plot)
+- Çubuk grafik (bar plot)
+- Histogram
+- Nokta grafiği (scatter plot)
+
+Her grafik türü,
+farklı veri yapıları için uygundur.
+
+---
+
+## 4. R ile Grafik Oluşturma
 
 R’de temel grafikler
-`plot()` fonksiyonu ile oluşturulur.
+`plot()` fonksiyonu ile oluşturulabilir.
 
-    plot(data$age, data$score)
+Örnek:
 
-Bu grafik, iki değişken arasındaki
-ilişkiyi görsel olarak gösterir.
+    plot(data$yas, data$not)
 
----
-
-## 4. Temel Grafik Türleri
-
-R’de sık kullanılan grafik türleri şunlardır:
-- Çizgi grafik
-- Nokta grafik
-- Sütun grafik
-- Histogram
-
-Her grafik türü farklı
-veri yapıları için uygundur.
+Bu grafik,
+iki sayısal değişken arasındaki
+ilişkiyi gösterir.
 
 ---
 
 ## 5. Histogram
 
-Histogram, sayısal verilerin
-dağılımını göstermek için kullanılır.
+Histogramlar,
+bir değişkenin dağılımını
+görselleştirmek için kullanılır.
 
-    hist(data$score)
+Örnek:
 
-Histogramlar, veri yoğunluğunu
-anlamak için önemlidir.
+    hist(data$not)
 
----
+Bu grafik sayesinde:
+- Verinin yoğunlaştığı aralıklar
+- Aykırı değerler
 
-## 6. Sütun Grafik (Bar Plot)
-
-Sütun grafikler, kategorik
-verilerin karşılaştırılması için kullanılır.
-
-    barplot(table(data$class))
-
-Bu grafik, her sınıftaki
-gözlem sayısını gösterir.
+daha kolay fark edilir.
 
 ---
 
-## 7. Grafiklere Başlık ve Etiket Ekleme
+## 6. Grafik Başlıkları ve Etiketler
 
 Grafiklerin anlaşılır olması için
 başlık ve eksen etiketleri eklenmelidir.
 
+Örnek:
+
     plot(
-      data$age,
-      data$score,
-      main = "Yaş ve Puan İlişkisi",
+      data$yas,
+      data$not,
+      main = "Yaş ve Not İlişkisi",
       xlab = "Yaş",
-      ylab = "Puan"
+      ylab = "Not"
     )
 
 ---
 
-## 8. Grafiklerin Paket Programlardaki Rolü
+## 7. Grafiklerin Paket Programlardaki Rolü
 
 Paket programlarda grafikler:
-- Sonuçları görsel hâle getirir
-- Kullanıcıya hızlı geri bildirim sağlar
-- Karar destek süreçlerini güçlendirir
+- Analiz sonuçlarını özetler
+- Kullanıcıya hızlı içgörü sağlar
+- Karar verme sürecini destekler
 
-Bu nedenle görselleştirme,
-paket programların vazgeçilmez
-bir bileşenidir.
+Bu nedenle grafikler,
+paket programların
+en önemli çıktılarındandır.
+
+---
+
+## 8. Grafik Yorumlama
+
+Bir grafik oluşturmak kadar,
+grafiği doğru yorumlamak da önemlidir.
+
+Grafik yorumlarken:
+- Genel eğilimlere
+- Aykırı değerlere
+- Dağılım yapısına
+
+dikkat edilmelidir.
 
 ---
 
 ## 9. Haftanın Kazanımları
 
 Bu haftanın sonunda öğrenci:
-- Temel grafik türlerini bilir
+- Temel grafik türlerini tanır
 - R ile grafik oluşturabilir
-- Grafiklerin ne zaman
-  kullanılacağını kavrar
-- Paket programlarda
-  görselleştirmenin önemini anlar
+- Grafik başlık ve etiketlerini düzenleyebilir
+- Grafiklerin paket programlardaki önemini kavrar
 
 ---
 
 ## 10. Sonraki Haftaya Hazırlık
 
-- Birden fazla grafiğin
-  birlikte nasıl kullanılacağını araştırınız
-- Grafiklerin Shiny içinde
-  nasıl gösterileceğini düşününüz
+- Etkileşimli uygulama kavramını araştırınız
+- Shiny framework’ünün ne amaçla kullanıldığını inceleyiniz
